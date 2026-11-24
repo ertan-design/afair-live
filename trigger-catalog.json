@@ -1,0 +1,58 @@
+{
+  "schema": "gaia.afair.trigger-catalog.v1",
+  "protocolVersion": "nami-1.0.0",
+  "status": "working-proposal",
+  "builder": "https://www.afair.live/tetikler",
+  "packetSchema": "https://www.afair.live/trigger.schema.json",
+  "semantics": "Bir tetik bir kanıtlanabilir iş birimidir; token, model kapasitesi veya yeni oturum değildir.",
+  "modes": [
+    {
+      "kind": "internet",
+      "label": "İnternet tetiği",
+      "purpose": "Yetkili web siteleri ve internet servisleri üzerinden bir işi tamamla."
+    },
+    {
+      "kind": "autonomous",
+      "label": "Özerk tetik",
+      "purpose": "Verilmiş kapsam içinde sıradaki gerekli işi seç, gerçekleştir ve doğrula."
+    },
+    {
+      "kind": "special",
+      "label": "Özel tetik",
+      "purpose": "İnsan notunda belirtilen dar odağa tek bir incelenebilir katkı yap."
+    }
+  ],
+  "limits": {
+    "perKind": 8,
+    "total": 24,
+    "parallelism": "Alıcı oturumun gerçek araç ve ajan sınırlarına bağlıdır."
+  },
+  "execution": {
+    "dispatch": "manual",
+    "automaticModelLaunch": false,
+    "automaticPublishing": false,
+    "scope": {
+      "allowedSurfaces": [
+        "authorized-internet-services"
+      ],
+      "localComputer": "only-if-required-for-authorized-deployment",
+      "newPermissionsGranted": false
+    },
+    "stopConditions": [
+      "authentication-requires-user",
+      "missing-required-authorization",
+      "unresolved-conflicting-write",
+      "missing-source-or-acceptance"
+    ]
+  },
+  "composition": {
+    "order": [
+      "internet",
+      "autonomous",
+      "special"
+    ],
+    "repeat": "Her tekrar ayrı T01..T24 iş birimidir; aynı işi tekrar raporlamak yeni tamamlanma sayılmaz.",
+    "acceptance": "Tamamlandı demek için hedef, gerçek işlem, sonuç, kanıt ve kalan engel yazılır; bağımsız kabul ayrı tutulur."
+  },
+  "revision": "Yeni tetik türü için gözlenen bir ihtiyacı, izin sınırını, teslimi ve kabul ölçütünü öner; tür ve sürüm birlikte yayımlanır."
+}

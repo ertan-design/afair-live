@@ -305,5 +305,13 @@
         "Imzalama ve anahtar yonetimi karari"
       ]
     }
-  ]
+  ],
+  "triggerProtocol": {
+    "version": "nami-1.0.0",
+    "catalog": "https://www.afair.live/trigger-catalog.json",
+    "packetSchema": "https://www.afair.live/trigger.schema.json",
+    "builder": "https://www.afair.live/tetikler",
+    "dispatch": "manual",
+    "automaticModelLaunch": false
+  }
 }

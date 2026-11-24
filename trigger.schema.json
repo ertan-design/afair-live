@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Nami Combo isteği",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "protocolVersion",
+    "requestId",
+    "objective",
+    "focus",
+    "scope",
+    "dependencies",
+    "stopConditions",
+    "steps",
+    "dispatch",
+    "executedSteps"
+  ],
+  "properties": {
+    "schema": {
+      "const": "gaia.afair.trigger.v1"
+    },
+    "protocolVersion": {
+      "const": "nami-1.0.0"
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000,
+      "pattern": "\\S"
+    },
+    "focus": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "scope": {
+      "const": {
+        "allowedSurfaces": [
+          "authorized-internet-services"
+        ],
+        "localComputer": "only-if-required-for-authorized-deployment",
+        "newPermissionsGranted": false
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "stopConditions": {
+      "const": [
+        "authentication-requires-user",
+        "missing-required-authorization",
+        "unresolved-conflicting-write",
+        "missing-source-or-acceptance"
+      ]
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 24,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "kind",
+          "state",
+          "acceptance",
+          "evidence"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^T(?:0[1-9]|1[0-9]|2[0-4])$"
+          },
+          "kind": {
+            "enum": [
+              "internet",
+              "autonomous",
+              "special"
+            ]
+          },
+          "state": {
+            "const": "planned"
+          },
+          "acceptance": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "array",
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    "dispatch": {
+      "const": "manual"
+    },
+    "executedSteps": {
+      "const": 0
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "steps": {
+            "contains": {
+              "properties": {
+                "kind": {
+                  "const": "special"
+                }
+              },
+              "required": [
+                "kind"
+              ]
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "focus": {
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "steps": {
+          "contains": {
+            "properties": {
+              "kind": {
+                "const": "internet"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "minContains": 0,
+          "maxContains": 8
+        }
+      }
+    },
+    {
+      "properties": {
+        "steps": {
+          "contains": {
+            "properties": {
+              "kind": {
+                "const": "autonomous"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "minContains": 0,
+          "maxContains": 8
+        }
+      }
+    },
+    {
+      "properties": {
+        "steps": {
+          "contains": {
+            "properties": {
+              "kind": {
+                "const": "special"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "minContains": 0,
+          "maxContains": 8
+        }
+      }
+    }
+  ]
+}
