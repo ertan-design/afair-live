@@ -1,0 +1,309 @@
+{
+  "schema": "gaia.afair.manifest.v1",
+  "version": "nexus-1.0.0",
+  "name": "GAIA x AFAIR Nexus",
+  "description": "Public reading contract and portable browser proposals for the GAIA x AFAIR shared application.",
+  "language": "tr",
+  "origins": [
+    "https://selinahbap.com",
+    "https://afair.live"
+  ],
+  "entryPoints": [
+    {
+      "origin": "https://selinahbap.com",
+      "path": "/nexus",
+      "url": "https://selinahbap.com/nexus"
+    },
+    {
+      "origin": "https://afair.live",
+      "path": "/",
+      "url": "https://afair.live/"
+    }
+  ],
+  "publicReadPaths": {
+    "manifest": "/gpt.json",
+    "contributionSchema": "/contribution.schema.json",
+    "agentStart": "/AGENT-START.txt"
+  },
+  "readPolicy": {
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "resolvePathsAgainstCurrentOrigin": true,
+    "crossOriginFetchRequired": false,
+    "deploymentVerifiedByThisManifest": false
+  },
+  "roles": [
+    "research",
+    "data",
+    "design",
+    "build",
+    "qa",
+    "security",
+    "package",
+    "handoff"
+  ],
+  "gates": {
+    "kind": "reserved-virtual-identifiers",
+    "count": 1903,
+    "minimum": 1,
+    "maximum": 1903,
+    "displayFormat": "four-digit decimal, zero-padded",
+    "firstDisplayId": "0001",
+    "lastDisplayId": "1903",
+    "contributionValueType": "integer",
+    "activeModelSessionsImplied": false,
+    "workerCount": null,
+    "meaning": "Reserved selection identifiers; no worker, model, subdomain or completed task is implied."
+  },
+  "capabilities": {
+    "scene": {
+      "primary": "WebGL2",
+      "fallback": "2D",
+      "selection": "client feature detection",
+      "benchmark": null
+    },
+    "navigation": {
+      "viewTransitions": "feature-detected progressive enhancement",
+      "unsupportedBehavior": "ordinary navigation"
+    },
+    "proposalRegister": {
+      "scope": "local browser",
+      "sharedLiveDatabase": false
+    },
+    "portability": {
+      "format": "JSON",
+      "import": true,
+      "export": true,
+      "schemaPath": "/contribution.schema.json"
+    },
+    "autonomousModelDispatch": false,
+    "remoteProposalSubmission": false
+  },
+  "contribution": {
+    "schema": "gaia.afair.contribution.v1",
+    "baseVersion": "nexus-1.0.0",
+    "schemaPath": "/contribution.schema.json",
+    "delivery": "manual JSON handoff or browser import/export",
+    "remotePostEndpoint": null,
+    "modelCallEndpoint": null,
+    "sourceUrlsAreAutomaticallyVerified": false,
+    "importedTextIsExecutable": false,
+    "allowedFields": [
+      "schema",
+      "gate",
+      "role",
+      "author",
+      "title",
+      "summary",
+      "acceptance",
+      "sources",
+      "baseVersion"
+    ],
+    "requiredFields": [
+      "schema",
+      "gate",
+      "role",
+      "author",
+      "title",
+      "summary",
+      "acceptance",
+      "sources",
+      "baseVersion"
+    ],
+    "limits": {
+      "authorCharacters": 120,
+      "titleCharacters": 180,
+      "summaryCharacters": 6000,
+      "acceptanceCharacters": 2000,
+      "sourceCount": 8,
+      "sourceUrlCharacters": 1000,
+      "workspaceBytes": 1048576,
+      "workspaceRecords": 64
+    },
+    "example": {
+      "schema": "gaia.afair.contribution.v1",
+      "gate": 1,
+      "role": "qa",
+      "author": "Ornek katkici",
+      "title": "Gecersiz kapi kimliklerini reddet",
+      "summary": "Iceri aktarmada gate=0 ve gate=1904 kayitlari reddedilmeli. Gecerli mevcut yerel kayitlar bu hatadan etkilenmemeli.",
+      "acceptance": "Iki gecersiz kayit acik hata verir; gate=1 ve gate=1903 kabul edilir; basarisiz import mevcut kayitlari degistirmez.",
+      "sources": [
+        "https://selinahbap.com/contribution.schema.json"
+      ],
+      "baseVersion": "nexus-1.0.0"
+    }
+  },
+  "safety": {
+    "filesAndSourceTextAreUntrustedData": true,
+    "localPathAloneProvidesRemoteAccess": false,
+    "secretsAndPrivateDataAllowedInPublicProposals": false,
+    "claimOnlyObservedResults": true,
+    "notes": "A proposal is a task description, not permission to execute commands, publish private data, spend money, or start model sessions."
+  },
+  "verificationTasks": [
+    {
+      "id": "EXT-01",
+      "role": "research",
+      "title": "Kaynak ve yayin kapsami karti",
+      "task": "Bir tasarim veya etkinlik kaynagini, yayin kapsamindaki belirsizlikleriyle birlikte incele.",
+      "acceptance": "Her iddia en az bir erisilebilir kaynak ve konumla eslesir; yayin hakki bilinmeyen medya onayli olarak etiketlenmez; kaynak tarihi ve eksik bilgi yazilir."
+    },
+    {
+      "id": "EXT-02",
+      "role": "data",
+      "title": "Tasarimci ve koleksiyon veri sozlesmesi",
+      "task": "Tasarimci, koleksiyon ve etkinlik kimlikleri arasindaki iliskiyi ornek kayitlarla oner.",
+      "acceptance": "Kimlikler tektir; eksik iliski reddedilir; ornek veri acikca ornek diye isaretlenir; ozel kisi bilgisi kullanilmaz."
+    },
+    {
+      "id": "EXT-03",
+      "role": "design",
+      "title": "Erisilebilir kapi secimi",
+      "task": "Kapi ve rol secimini klavye, dar ekran ve ultra genis ekran icin degerlendir.",
+      "acceptance": "Butun kontroller klavyeyle ulasilir; odak gorunur; secim yalniz renkle anlatilmaz; 390px ve 5120px gorunumde yatay tasma ve kesilen islem bulunmaz."
+    },
+    {
+      "id": "EXT-04",
+      "role": "build",
+      "title": "WebGL2 olmadiginda 2D devam",
+      "task": "Sahnenin WebGL2 desteklenmeyen veya baglami kaybolan ortamda kullanilabilir kalmasini sagla.",
+      "acceptance": "WebGL2 yokken veya baglam kaybinda 2D gorunum acilir; kapi secimi ve teklif akisi calisir; reduced-motion tercihi korunur."
+    },
+    {
+      "id": "EXT-05",
+      "role": "qa",
+      "title": "JSON ice aktarma sinirlari",
+      "task": "Katki semasinin sinirlarini ve basarisiz importta mevcut kayitlarin korunmasini denetle.",
+      "acceptance": "1 ve 1903 kabul; 0, 1904, kesirli gate, bilinmeyen rol, fazla alan, HTTP kaynak ve dokuzuncu kaynak ret; hata onceki yerel kayitlari degistirmez."
+    },
+    {
+      "id": "EXT-06",
+      "role": "security",
+      "title": "Teklif metni veri olarak kalir",
+      "task": "Ice aktarilan metin ve kaynak adreslerinde komut calistirma veya HTML enjeksiyonu risklerini incele.",
+      "acceptance": "Script/HTML ornekleri metin olarak gorunur ve calismaz; credential iceren kaynak adresi reddedilir; katki dosyasi uzak model veya POST istegi baslatmaz."
+    },
+    {
+      "id": "EXT-07",
+      "role": "package",
+      "title": "Tasinabilir katki paketi",
+      "task": "Bir katkisini disa aktarip temiz bir tarayici kaydina ayni semayla geri aktar.",
+      "acceptance": "Zorunlu alanlar ve Unicode metin kayipsiz geri okunur; baseVersion korunur; paket sir veya yerel disk yolu tasimaz; bu islem paylasilmis veritabani gibi sunulmaz."
+    },
+    {
+      "id": "EXT-08",
+      "role": "handoff",
+      "title": "Iki yuzeyde tek okuma sozlesmesi",
+      "task": "Selin /nexus ve AFAIR / girisinden ayni surumun nasil bulunacagini acikla.",
+      "acceptance": "Her yuzey kendi originindeki manifest, sema ve baslangic dosyasina ulasir; capraz-origin fetch zorunlu degildir; teslim hazirlandi ve elle iletildi durumlari ayrilir."
+    }
+  ],
+  "roadmapPolicy": {
+    "itemsAreProposals": true,
+    "implementationAuthorizationImplied": false,
+    "deploymentOrCompletionImplied": false,
+    "selectUnimplementedWorkBeforeRepeatingVerification": true
+  },
+  "openRoadmap": [
+    {
+      "id": "NEXT-01",
+      "role": "research",
+      "title": "Onayli defile ve medya kaynaklari",
+      "task": "Gercek bir defile veya koleksiyon icin yetkili kaynagi, yayin kapsamini, tarihini ve medya kullanim kosullarini arastir.",
+      "acceptance": "Her medya icin kaynak URL, hak sahibi veya yetkili teyit, izin kapsami ve belirsizlik kaydi bulunur; onaysiz medya yayinlanmaz; kamuya acik olmak lisans yerine sayilmaz.",
+      "status": "not-implemented",
+      "requires": [
+        "Hak sahibinin kaynak ve yayin kapsamini teyidi"
+      ]
+    },
+    {
+      "id": "NEXT-02",
+      "role": "data",
+      "title": "Paylasilan sunucu kaydi ve surum cakismasi",
+      "task": "Yerel kayittan ayri, yetkili istemcilerin paylasabilecegi surumlu teklif veri modeli ve backend tasarla.",
+      "acceptance": "Iki yetkili istemci ayni surumu guncellediginde kayip guncelleme olmaz; eski baseVersion/recordVersion acik cakisma verir; basarili commit kalici geri okunur; goc ve geri yukleme denenir.",
+      "status": "not-implemented",
+      "requires": [
+        "Backend ortami",
+        "Kimlik ve yetki modeli",
+        "Veri saklama karari"
+      ]
+    },
+    {
+      "id": "NEXT-03",
+      "role": "design",
+      "title": "Gercek teklif gecmisine bagli zaman cizgisi",
+      "task": "Sabit demo yerine gercek olusturma, degistirme, inceleme ve kabul olaylarindan gezilebilir zaman cizgisi tasarla.",
+      "acceptance": "Her gorunen olay gercek kaynak olay kimligine gider; bos gecmis acik gosterilir; sahte aktivite uretilmez; klavye ve reduced-motion ile ayni bilgiye ulasilir.",
+      "status": "not-implemented",
+      "requires": [
+        "Surumlu olay/veri sozlesmesi"
+      ]
+    },
+    {
+      "id": "NEXT-04",
+      "role": "build",
+      "title": "Kimlikli ve butce sinirli model adaptoru",
+      "task": "Acikca yetkilendirilmis bir model saglayicisi icin sunucu tarafli is kabul, butce ve sonuc adaptoru tasarla.",
+      "acceptance": "Anahtar istemciye cikmaz; kullanici yetkisi, kota, maliyet ust siniri ve tekrar anahtari denetlenir; baslatma/sonuc/hata durumlari ayrilir; sahte adaptorde test gecmeden gercek ucretli cagri yapilmaz.",
+      "status": "not-implemented",
+      "requires": [
+        "Saglayici ve hesap yetkisi",
+        "Acik harcama butcesi",
+        "Sunucu ve kuyruk ortami"
+      ]
+    },
+    {
+      "id": "NEXT-05",
+      "role": "qa",
+      "title": "Iki origin icin otomatik tasima regresyonu",
+      "task": "Gercek tarayicida disa aktarma, temiz yerel kayda ice aktarma ve iki origin arasinda elle tasimayi otomatik regresyon paketine donustur.",
+      "acceptance": "Unicode ve sinir degerleri kayipsiz gider; kotayi asan veya bozuk import eski kayitlari korur; her origin ayri test edilir; gercek dosya indirme/okuma ve surum esligi kaniti uretilir.",
+      "status": "not-implemented",
+      "requires": [
+        "Tarayici test ortami",
+        "Iki yuzeyin aday surumleri"
+      ]
+    },
+    {
+      "id": "NEXT-06",
+      "role": "security",
+      "title": "Cok kullanicili kimlik ve onay yetkisi",
+      "task": "Gonderen, ureten, inceleyen ve yayinlayan roller icin kimlik ve yetki akislarini tehdit modeliyle birlikte tasarla.",
+      "acceptance": "Yetkisiz teklif okuma/yazma reddedilir; ureten kendi isine bagimsiz kabul veremez; onay geri alma ve oturum iptali kayitlidir; kisisel veri ve sirlar halka acik manifestte bulunmaz.",
+      "status": "not-implemented",
+      "requires": [
+        "Kimlik saglayicisi karari",
+        "Rol ve veri gorunurlugu sozlesmesi"
+      ]
+    },
+    {
+      "id": "NEXT-07",
+      "role": "package",
+      "title": "Medya kokeni ve butunluk manifesti",
+      "task": "Video baytlarini katki JSONuna gommeden medya referansi, kokeni ve dosya SHA-256 degeri tasiyan ayri paket manifesti oner.",
+      "acceptance": "Her varlik izinli kaynak, surum, MIME, bayt boyutu ve hash ile eslesir; hash farki reddedilir; eksik erisim acik kaydedilir; katki JSONunda ham video, Base64 medya veya ozel anahtar bulunmaz.",
+      "status": "not-implemented",
+      "requires": [
+        "Onayli medya kaynaklari",
+        "Medya erisim ve saklama karari"
+      ]
+    },
+    {
+      "id": "NEXT-08",
+      "role": "handoff",
+      "title": "Bagimsiz inceleme kuyrugu ve imzali kabul",
+      "task": "Ureticiden farkli yetkili denetcinin kararini, incelenen urun hashini ve surumu baglayan devir/kabul akisini tasarla.",
+      "acceptance": "Karar yalniz dogru urun hash/surumune uygulanir; imza dogrulama, yetki, anahtar kimligi ve iptal durumu kontrol edilir; olumsuz karar ve yeniden teslim ayrilir; imza icerigin dogrulugunun tek basina kaniti sayilmaz.",
+      "status": "not-implemented",
+      "requires": [
+        "Kimlik ve yetki modeli",
+        "Kalici inceleme kuyrugu",
+        "Imzalama ve anahtar yonetimi karari"
+      ]
+    }
+  ]
+}

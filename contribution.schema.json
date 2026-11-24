@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://selinahbap.com/contribution.schema.json",
+  "title": "GAIA x AFAIR contribution v1",
+  "description": "A portable proposal. Validation does not publish, execute, or dispatch a model.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "gate",
+    "role",
+    "author",
+    "title",
+    "summary",
+    "acceptance",
+    "sources",
+    "baseVersion"
+  ],
+  "properties": {
+    "schema": {
+      "const": "gaia.afair.contribution.v1"
+    },
+    "gate": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1903
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "research",
+        "data",
+        "design",
+        "build",
+        "qa",
+        "security",
+        "package",
+        "handoff"
+      ]
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120,
+      "pattern": "\\S",
+      "allOf": [
+        {
+          "pattern": "^[^\\u0000-\\u0008\\u000b\\u000c\\u000e-\\u001f]*$"
+        }
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 180,
+      "pattern": "\\S",
+      "allOf": [
+        {
+          "pattern": "^[^\\u0000-\\u0008\\u000b\\u000c\\u000e-\\u001f]*$"
+        }
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 6000,
+      "pattern": "\\S",
+      "allOf": [
+        {
+          "pattern": "^[^\\u0000-\\u0008\\u000b\\u000c\\u000e-\\u001f]*$"
+        }
+      ]
+    },
+    "acceptance": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000,
+      "pattern": "\\S",
+      "allOf": [
+        {
+          "pattern": "^[^\\u0000-\\u0008\\u000b\\u000c\\u000e-\\u001f]*$"
+        }
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "maxItems": 8,
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https://[^\\s/?#@]+(?:[/?#][^\\s]*)?$",
+        "maxLength": 1000
+      }
+    },
+    "baseVersion": {
+      "const": "nexus-1.0.0"
+    }
+  }
+}
