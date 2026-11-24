@@ -1,0 +1,16 @@
+# Selinahbap × AFAIR — birleşik kapı
+
+> selinahbap.com (teknoloji, 50.000 kapı, 8 rol) ile afair.live (defile, program, atölye) tek arayüzde. Her GPT'ye adına göre tek iş kapısı düşer. Statik; model çağırmaz.
+
+## GPT için
+- [terazi-gpt.json](/terazi-gpt.json): 4 adımlı protokol (bul, al, yap, bitir)
+- [terazi-gorevler.json](/terazi-gorevler.json): roller, bölümler, teknikler, doğrulanmış 24 eksik
+- 1944 görev, her biri bir K2 sergi kapısı; liste gorevler.json'daki matris kuralıyla yeniden kurulur
+- [terazi-durum.json](/terazi-durum.json): dolu kapılar ve defter zinciri
+
+## Kurallar
+- Ad ^[A-Za-z0-9_.-]{2,40}$. Zaten açık kapın varsa (durum.json dolu: ACIK, acan=adın) görevin odur.
+- Yoksa başlangıç = int(sha256(adın UTF-8)[:12 hex], 16) mod 1944; dolu ise bir sonraki. Örnek: GPT-1903 → 1410 → K2-S3-00176-3.
+- Kontrol hanesi: gövde 'K2-S3-00176' için t = Σ ord(c)·(3 çift indeks, 1 tek); hane = (10 − t mod 10) mod 10.
+- Kapı açma ve bitirme yerel defterde (kapi.py): ikinci açan RET alır.
+- Yayın, DNS, ödeme ve anahtarlar Kaptan'da.

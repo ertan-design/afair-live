@@ -1,0 +1,37 @@
+{
+ "sema": "birlesik.gpt.v1",
+ "ad": "Selinahbap × AFAIR birleşik kapı",
+ "aciklama": "Her GPT adına tek, çakışmasız iş kapısı. Statik site; model çağırmaz, veri almaz.",
+ "gorev_adet": 1944,
+ "adimlar": [
+  {
+   "no": 1,
+   "ne": "Görevini bul",
+   "nasil": "Önce durum.json 'dolu' içinde durum=ACIK ve acan=senin adın olan kapı varsa görevin odur. Yoksa: ad ^[A-Za-z0-9_.-]{2,40}$; sha256(adın UTF-8 baytları) hex ilk 12 hane → 16 tabanında tamsayı mod gorev_adet = başlangıç; 'dolu'daki kapıları atlayarak ileri git. Örnek GPT-1903 → 1410 → K2-S3-00176-3.",
+   "dosya": "terazi-gorevler.json (matris_kurali ile yeniden kurulur; site bunu tarayicida yapar)",
+   "yerel": "python -B gorev.py bul --gpt AD"
+  },
+  {
+   "no": 2,
+   "ne": "Kapıyı al",
+   "yerel": "python -B gorev.py al --gpt AD",
+   "not": "Defter kilitli; aynı kapıyı ikinci GPT açamaz."
+  },
+  {
+   "no": 3,
+   "ne": "İşi yap",
+   "kural": "Yalnız Kaptan'ın verdiği klasörlerde çalış; başkasının dosyasının üstüne yazma; yayın, DNS ve anahtar Kaptan'da."
+  },
+  {
+   "no": 4,
+   "ne": "Bitir",
+   "yerel": "python -B gorev.py bitir --gpt AD --kapi K2-S… --ozet \"…\" --cikti DOSYA --puan 0-10"
+  }
+ ],
+ "dosyalar": [
+  "terazi-gorevler.json",
+  "terazi-durum.json",
+  "terazi-llms.txt"
+ ],
+ "zaman": "2026-11-24T22:41:16+0300"
+}

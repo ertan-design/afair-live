@@ -1,0 +1,13 @@
+{
+ "sema": "birlesik.durum.v1",
+ "zaman": "2026-11-24T22:41:16+0300",
+ "gorev_adet": 1944,
+ "dolu": {},
+ "defter": {
+  "satir": 188,
+  "son": "f5eda7bfbcad87305736fa539ea1659ed320f097562fe5988db3886851a94536",
+  "zincir_dogru": true
+ },
+ "kapi_toplam": 444050,
+ "kapi_degisen": 93
+}
