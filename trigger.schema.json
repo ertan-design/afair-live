@@ -26,7 +26,8 @@
     "requestId": {
       "type": "string",
       "minLength": 1,
-      "maxLength": 100
+      "maxLength": 100,
+      "pattern": "\\S"
     },
     "objective": {
       "type": "string",
@@ -63,41 +64,201 @@
       "type": "array",
       "minItems": 1,
       "maxItems": 24,
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "id",
-          "kind",
-          "state",
-          "acceptance",
-          "evidence"
-        ],
-        "properties": {
-          "id": {
-            "type": "string",
-            "pattern": "^T(?:0[1-9]|1[0-9]|2[0-4])$"
-          },
-          "kind": {
-            "enum": [
-              "internet",
-              "autonomous",
-              "special"
-            ]
-          },
-          "state": {
-            "const": "planned"
-          },
-          "acceptance": {
-            "type": "string",
-            "minLength": 1
-          },
-          "evidence": {
-            "type": "array",
-            "maxItems": 0
+      "items": false,
+      "prefixItems": [
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T01"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T02"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T03"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T04"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T05"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T06"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T07"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T08"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T09"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T10"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T11"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T12"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T13"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T14"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T15"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T16"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T17"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T18"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T19"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T20"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T21"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T22"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T23"
+            }
+          }
+        },
+        {
+          "$ref": "#/$defs/step",
+          "properties": {
+            "id": {
+              "const": "T24"
+            }
           }
         }
-      }
+      ]
     },
     "dispatch": {
       "const": "manual"
@@ -187,5 +348,44 @@
         }
       }
     }
-  ]
+  ],
+  "$defs": {
+    "step": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "state",
+        "acceptance",
+        "evidence"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^T(?:0[1-9]|1[0-9]|2[0-4])$"
+        },
+        "kind": {
+          "enum": [
+            "internet",
+            "autonomous",
+            "special"
+          ]
+        },
+        "state": {
+          "const": "planned"
+        },
+        "acceptance": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S",
+          "maxLength": 2000
+        },
+        "evidence": {
+          "type": "array",
+          "maxItems": 0
+        }
+      }
+    }
+  }
 }
