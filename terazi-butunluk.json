@@ -1,6 +1,6 @@
 {
  "sema": "terazi.butunluk.v1",
- "paket_sha": "8704b2f5475c9e35779119fc5af88a2468b3c41e976312e659f4f78da6139f51",
+ "paket_sha": "a0b90d92047d2dbd034fe6e455a51c6fe4c25af7de356e19e366a015b0f9945d",
  "algoritma": "SHA-256 (dosyanin tam baytlari)",
  "kullanim": "Her dosyayi /<ad> adresinden indir, SHA-256 hesapla, 'sha' ile karsilastir. Sitede: Defter > Butunlugu denetle.",
  "gorev_kapisi": "K2-S7-00099-3",
@@ -25,21 +25,425 @@
    "bayt": 834,
    "sha": "995f376bec7de88ea555b8c55cc68b71335d44f61651e127b7858216d5b940dc"
   },
+  "terazi-k-K1-S8-00001-4.html": {
+   "bayt": 1212,
+   "sha": "d27000a4557a6ac7f1d04bf42dd5b2392ad7c1e31ba85fee45d6ca4ba772d735"
+  },
+  "terazi-k-K1-S8-00002-1.html": {
+   "bayt": 1278,
+   "sha": "8c1ec9bb5cb2021966f5b80458e84159862dd39d0352d58a8c7cb9bdc87b5c77"
+  },
+  "terazi-k-K1-S8-00003-8.html": {
+   "bayt": 1303,
+   "sha": "5257de96c45a8b1d43cbbc8eb39e9cdf857a21c1dd3fa30d1902f9a7f681ea43"
+  },
+  "terazi-k-K1-S8-00004-5.html": {
+   "bayt": 1417,
+   "sha": "28b6dae55c5d96ddf26a10ac01f55a008aff1c6261d800ff20291bbac2cf227e"
+  },
+  "terazi-k-K1-S8-00005-2.html": {
+   "bayt": 1392,
+   "sha": "a6333a4c35efb44b8e8969273a76cbfccc2e47ab83e1c2dbb9fd3d9c04382dae"
+  },
+  "terazi-k-K1-S8-00006-9.html": {
+   "bayt": 1361,
+   "sha": "b3d306a9bbce5d379c84736392280b79e2a3419732986f71c5558d9d9feab0c4"
+  },
+  "terazi-k-K1-S8-00007-6.html": {
+   "bayt": 1406,
+   "sha": "59448013b57084ff3c23064956352a38d9fc8d4caf44452cf84bd19a0ba10bd8"
+  },
+  "terazi-k-K2-S7-00099-3.html": {
+   "bayt": 1507,
+   "sha": "4f6c51c0a1ea4db43152c53e7f1e88a8a1e54b20c509d5bdd2670967a748a6cd"
+  },
+  "terazi-k-K3-S1-00001-3.html": {
+   "bayt": 1856,
+   "sha": "0d0cc3b17faa2be88ef3bce701ce9abd1df42129bdb91b067feeacb2ff699973"
+  },
+  "terazi-k-K3-S1-00002-0.html": {
+   "bayt": 1744,
+   "sha": "9ea15a1378cbbca5c43a43cefee4da66b2af081748b4fbe92ff2f011ada15dfc"
+  },
+  "terazi-k-K3-S1-00003-7.html": {
+   "bayt": 1758,
+   "sha": "2c5308b12de2c6a1fba112d6eecaffa6e5b22765c2b7dd77b889175ca056ee9c"
+  },
+  "terazi-k-K3-S1-00004-4.html": {
+   "bayt": 1532,
+   "sha": "dfda732f9c42ac0641cc4642f426237581dc158d2984925351f7c2f665a3f744"
+  },
+  "terazi-k-K3-S1-00005-1.html": {
+   "bayt": 1875,
+   "sha": "cf53c9a877de0d4d9e4a29d11006b1af769c5dd6e96f6a9aad5df5434d9b41c8"
+  },
+  "terazi-k-K3-S1-00006-8.html": {
+   "bayt": 1681,
+   "sha": "2e816fe4cbeda1aee48451ae8df5bd08f1d957d4176c849965e0e19871983159"
+  },
+  "terazi-k-K3-S1-00007-5.html": {
+   "bayt": 1790,
+   "sha": "851af22b99351cc369119597da0a24c6003f9f5d5f13f1243486caf37a227eaa"
+  },
+  "terazi-k-K3-S1-00008-2.html": {
+   "bayt": 1755,
+   "sha": "e052e50dd6072ba02adeb09951abc35481240a0b9f98c8fd8fa8d818d1fab4e3"
+  },
+  "terazi-k-K3-S1-00009-9.html": {
+   "bayt": 1706,
+   "sha": "3f95c6348b74d2c908ee77a3cc500c67d266bde0f6ab5c8b1b2146ec13556103"
+  },
+  "terazi-k-K3-S1-00010-5.html": {
+   "bayt": 1680,
+   "sha": "26bdf0bd12b0f1aee1682b4aec43827c421d537fa04a76698160dafe6e058be5"
+  },
+  "terazi-k-K3-S1-00011-2.html": {
+   "bayt": 1764,
+   "sha": "54efb4c3796b171adf8935cbf6822166e5a3f67a7730e803eebe1b73b2b8231e"
+  },
+  "terazi-k-K3-S2-00001-0.html": {
+   "bayt": 1718,
+   "sha": "9e05867eae669d50c3800ce42558202bb6de311d5b005ef75b81b96a7f20ca91"
+  },
+  "terazi-k-K3-S2-00002-7.html": {
+   "bayt": 1657,
+   "sha": "c13d53b2e794cfdfcd4f378f96c53d83f990266eb74369d44eb8724597ca6f7f"
+  },
+  "terazi-k-K3-S2-00003-4.html": {
+   "bayt": 1629,
+   "sha": "6b0361bf1532552cea2198fa950d24ab1cfb72658eab42fe09526a6ba122b3e4"
+  },
+  "terazi-k-K3-S2-00004-1.html": {
+   "bayt": 1612,
+   "sha": "0593fe51af6ad43090116caf3a623bc04263cb8df71eae502a930b2d18abfc6f"
+  },
+  "terazi-k-K3-S2-00005-8.html": {
+   "bayt": 1843,
+   "sha": "61c387c702729a5f94daeb792f0b32630f6504ec8b1d3d654b51584a1a578dd8"
+  },
+  "terazi-k-K3-S2-00006-5.html": {
+   "bayt": 1753,
+   "sha": "3d3f1dafa0247386e00fdd02de7a4bbe4e873af2dc85ba5eb450d31b30b8fd1d"
+  },
+  "terazi-k-K3-S2-00007-2.html": {
+   "bayt": 1753,
+   "sha": "378c67910c6d0542d7ce6f40167e6a39d7859e8b17faa3237ef0d7126ed0b677"
+  },
+  "terazi-k-K3-S2-00008-9.html": {
+   "bayt": 1673,
+   "sha": "71bfbaa07f891b61002ad2b1a53c3119b502a8debb1a511f552fafa1f27404c1"
+  },
+  "terazi-k-K3-S2-00009-6.html": {
+   "bayt": 1600,
+   "sha": "3f17a4ca04b72242ef86f72f78b69ea68c6e455352e65212f5f829c2a51cd63f"
+  },
+  "terazi-k-K3-S2-00010-2.html": {
+   "bayt": 1582,
+   "sha": "43352145b16b0d2ef9dadc4c09e7956570749a487d6e1c73abab39cd7d90ff73"
+  },
+  "terazi-k-K3-S2-00011-9.html": {
+   "bayt": 1578,
+   "sha": "7718774c322403718b3323dcef69b8b436aede0cefad8ce02da8fd58b2e7bd47"
+  },
+  "terazi-k-K3-S3-00001-7.html": {
+   "bayt": 1842,
+   "sha": "24ea32e27d85059e29c3b006341b4eb655e95271e964733c7e7f0d1a37037fe6"
+  },
+  "terazi-k-K3-S3-00002-4.html": {
+   "bayt": 1841,
+   "sha": "1cc4205e786c14f3e906498989614052e77d01fbd92635adddd52011827aa6dc"
+  },
+  "terazi-k-K3-S3-00003-1.html": {
+   "bayt": 1767,
+   "sha": "8ceb48264b4423dc0994a6c30c34258bdbba8daa1536d9fe00309940f5f255e6"
+  },
+  "terazi-k-K3-S3-00004-8.html": {
+   "bayt": 1517,
+   "sha": "4ed431c88f1e2fee9c68cd10aebba2bd094b3ab25a3957fc6dc7248d771e5aa6"
+  },
+  "terazi-k-K3-S3-00005-5.html": {
+   "bayt": 1881,
+   "sha": "f51ce72696608ca926cada42045d930da5e69105587284d9ca4245516b480db1"
+  },
+  "terazi-k-K3-S3-00006-2.html": {
+   "bayt": 1955,
+   "sha": "67fb3adfb1de03d67480dadafdc8d5436b416429d303704a8be6e15f96ee8260"
+  },
+  "terazi-k-K3-S3-00007-9.html": {
+   "bayt": 1637,
+   "sha": "077bc8fb21554f25dbe8371c557a09c7db7c6679219eca1fa8630ad2665142d4"
+  },
+  "terazi-k-K3-S3-00008-6.html": {
+   "bayt": 1801,
+   "sha": "d49f9fe39d8ac9df20ad44697b999fdb01fa1ce5b3ad09dae745a293d2ee0768"
+  },
+  "terazi-k-K3-S3-00009-3.html": {
+   "bayt": 1696,
+   "sha": "25d5a881e877fb9e4470cc1dd0daa6e0d4e239b1b08268a25da7c772d44b2003"
+  },
+  "terazi-k-K3-S3-00010-9.html": {
+   "bayt": 1649,
+   "sha": "10cced6cca3b8c1ef6d0bd06050f285f600cf0aada00efb0d04022a8f71ce6f0"
+  },
+  "terazi-k-K3-S3-00011-6.html": {
+   "bayt": 1698,
+   "sha": "072e3bc8df6e13301f64bb39405cf76ba5468986dbdc58f3b43eb1e358b8205f"
+  },
+  "terazi-k-K3-S4-00001-4.html": {
+   "bayt": 1820,
+   "sha": "db3eab56edc0e742bde4c5e25ebea707a57f9cde1ea42010f0062099a4cb5a96"
+  },
+  "terazi-k-K3-S4-00002-1.html": {
+   "bayt": 1664,
+   "sha": "5102229b1e436e3b0c340711fb26d7c57efc7193678543256bf2d8bbb555fee4"
+  },
+  "terazi-k-K3-S4-00003-8.html": {
+   "bayt": 1675,
+   "sha": "af817e625489ca08df56590e9211b2111a6ec7538f6b40f7fdd1b9e5cff10d2e"
+  },
+  "terazi-k-K3-S4-00004-5.html": {
+   "bayt": 1640,
+   "sha": "b4ae67d112b32ea4863b057b934135f7179d82728d8f6e6e5899afc977933945"
+  },
+  "terazi-k-K3-S4-00005-2.html": {
+   "bayt": 1720,
+   "sha": "8c06ca33cb463749bbb3c01e31daeac24490cbe53187dc082796f1fd460537ff"
+  },
+  "terazi-k-K3-S4-00006-9.html": {
+   "bayt": 1767,
+   "sha": "3cf3b5719ae66fb4129bb0915ea49acdcb7c1c2f2d93624a07986d7100317953"
+  },
+  "terazi-k-K3-S4-00007-6.html": {
+   "bayt": 1581,
+   "sha": "4faed482f14ab9dbce63ebdcefd061f80ffade9d78f73e01125ab1e06903b2fa"
+  },
+  "terazi-k-K3-S4-00008-3.html": {
+   "bayt": 1714,
+   "sha": "aa448dc19d907f9f33d086cae97cf0fe45393853bb8de42d540396aefbca62c3"
+  },
+  "terazi-k-K3-S4-00009-0.html": {
+   "bayt": 1570,
+   "sha": "8d809c24e2eed2241a87828ceb2ea44782bc3dc616ef8eebc8396943b8ebf701"
+  },
+  "terazi-k-K3-S4-00010-6.html": {
+   "bayt": 1617,
+   "sha": "71f2efbe76c9c04caed8154c06465fed31e241519ca007209c6169477637c346"
+  },
+  "terazi-k-K3-S4-00011-3.html": {
+   "bayt": 1639,
+   "sha": "55522a63529affe7655e19ba44a017f0649c474c9676d6959b7c34cb12c3aad7"
+  },
+  "terazi-k-K3-S5-00001-1.html": {
+   "bayt": 2049,
+   "sha": "bad0bee19db9127151a390a64f298ce69bf9f58ec9c4995fabebd6bbd9b368c7"
+  },
+  "terazi-k-K3-S5-00002-8.html": {
+   "bayt": 1920,
+   "sha": "3515da4c47ad722ee97fdf12ca149935646cdd742361bbffcfb4d98debd13fe6"
+  },
+  "terazi-k-K3-S5-00003-5.html": {
+   "bayt": 1964,
+   "sha": "367f843f1dee7f6d451b571ca08c945d10f1de6b622d2727b1d709fbd00d2402"
+  },
+  "terazi-k-K3-S5-00004-2.html": {
+   "bayt": 1558,
+   "sha": "fc2fbb4ddc0a19e5e3d4935f2cb7f139ccdd3d69e6cf0e496688d47a33441481"
+  },
+  "terazi-k-K3-S5-00005-9.html": {
+   "bayt": 2170,
+   "sha": "fe7e030d760c4e345a5eb39cc0f6a80a4f6a05bb9cd5d7951c1af8e6a5a3b9c5"
+  },
+  "terazi-k-K3-S5-00006-6.html": {
+   "bayt": 2043,
+   "sha": "9bf718e5cd6c81e9ff88ac10c8299c74095beea3659801aa5196c6d67abcdd52"
+  },
+  "terazi-k-K3-S5-00007-3.html": {
+   "bayt": 1939,
+   "sha": "c3f26304fab592b6e834d625d3a1389b5b80a7b3d1ce9cb42b781ab2ee5b7623"
+  },
+  "terazi-k-K3-S5-00008-0.html": {
+   "bayt": 2158,
+   "sha": "8ee87017a1ff6b5f3ad55caad5ab727b43f1b1a87c3e56ce3858f060cac96ece"
+  },
+  "terazi-k-K3-S5-00009-7.html": {
+   "bayt": 1491,
+   "sha": "638a2b42dbdbd858b213136f710de46fba30aceca7ab0ed9da015e5c31fc46c4"
+  },
+  "terazi-k-K3-S5-00010-3.html": {
+   "bayt": 1905,
+   "sha": "88fd6cc1f58a53a006fc7aa2ac545a5cd2f0c81419e2d2455028ba85dc95cfe4"
+  },
+  "terazi-k-K3-S5-00011-0.html": {
+   "bayt": 1878,
+   "sha": "a40484ae1fddcd31b50386c6e043819eceefd7ee29726cb28c46a31b25e80f8c"
+  },
+  "terazi-k-K3-S6-00001-8.html": {
+   "bayt": 1966,
+   "sha": "eb5edc13679c0a790142b36156b22c652e6e5e53fda1651479391f54d199336b"
+  },
+  "terazi-k-K3-S6-00002-5.html": {
+   "bayt": 1855,
+   "sha": "e7f72c5e1928392d187521d33cee75d66dab44ec903235bbabb3a6b2bc52a440"
+  },
+  "terazi-k-K3-S6-00003-2.html": {
+   "bayt": 1909,
+   "sha": "efa47d30adfee8ec9e9977d713a49cf265373caa58876a1868ee23a5624d38cb"
+  },
+  "terazi-k-K3-S6-00004-9.html": {
+   "bayt": 1482,
+   "sha": "c0d464b92c3859fdc44f2b5c51bad7db2e601aa1caa6eff6509412fc64751b98"
+  },
+  "terazi-k-K3-S6-00005-6.html": {
+   "bayt": 1697,
+   "sha": "9b75e0211cfdd072e1a68b984981cf348960c26a28fe246ca84e2a0e93efd246"
+  },
+  "terazi-k-K3-S6-00006-3.html": {
+   "bayt": 1734,
+   "sha": "1666d3ce73d707fc6df07ffe18ed35c002b8fdd6995564b78cd45c28efce3976"
+  },
+  "terazi-k-K3-S6-00007-0.html": {
+   "bayt": 1660,
+   "sha": "ecd75d88e4d60f59703b04298033dc5aaeb6a59750cf7a22bb6d7a7bbec8cd33"
+  },
+  "terazi-k-K3-S6-00008-7.html": {
+   "bayt": 1832,
+   "sha": "43451c9f8d695b853bb04c2f0bde8528930b080006399a92398e0ae451a224c4"
+  },
+  "terazi-k-K3-S6-00009-4.html": {
+   "bayt": 1681,
+   "sha": "7992fd39b5dc8a5b6a7cfe727bf4fa43897d58739947e582d1ec641c786f58c4"
+  },
+  "terazi-k-K3-S6-00010-0.html": {
+   "bayt": 1690,
+   "sha": "c521816707e6c09258c5282f43b464a162eb21678441f076c30803cf6b77a888"
+  },
+  "terazi-k-K3-S6-00011-7.html": {
+   "bayt": 1771,
+   "sha": "d60cb328129d95b03bb40b3123d38771af0ee9ee11392856d1725c7aea5bc47a"
+  },
+  "terazi-k-K3-S7-00001-5.html": {
+   "bayt": 2102,
+   "sha": "cd1b6d01f9435384af4cb9c095fe8594f396d0357faade8c633ad88bf162715f"
+  },
+  "terazi-k-K3-S7-00002-2.html": {
+   "bayt": 1938,
+   "sha": "cfe27a6498dcfcab64f9aa81dfa114ce7444dab69d8368bb5194a527dcd6e2b3"
+  },
+  "terazi-k-K3-S7-00003-9.html": {
+   "bayt": 2014,
+   "sha": "ead19aee6340bbe0d0102d0dfe0f5e3b2cb0659ad83298f8daea446fbb66ce8a"
+  },
+  "terazi-k-K3-S7-00004-6.html": {
+   "bayt": 1643,
+   "sha": "a4b6651ee23b88ecd257f1673af740138185e43906ab09d53eb893d9a362aa7e"
+  },
+  "terazi-k-K3-S7-00005-3.html": {
+   "bayt": 1888,
+   "sha": "326442ba66fd62029e9dc2848866aa51fbf83212c8c5e72a2b05ceb6a1714965"
+  },
+  "terazi-k-K3-S7-00006-0.html": {
+   "bayt": 1916,
+   "sha": "9fcf1dfbbb1399d49cc0cf999185161cc2a579e381fb0d55e772640a7f5af6c2"
+  },
+  "terazi-k-K3-S7-00007-7.html": {
+   "bayt": 1832,
+   "sha": "36a6c0a74e0997ab9d8ba1f09d4249575340144b76dfa821682469d4869c9a5d"
+  },
+  "terazi-k-K3-S7-00008-4.html": {
+   "bayt": 1869,
+   "sha": "10744c38e6fe8d2b5953af7494b5fa8bbcc422a0331d304397485e48d0ff8d21"
+  },
+  "terazi-k-K3-S7-00009-1.html": {
+   "bayt": 1723,
+   "sha": "76bdf5f817bfeeec39acf49bcab5251abc9cb9710b16878c1c80104139c9698d"
+  },
+  "terazi-k-K3-S7-00010-7.html": {
+   "bayt": 1833,
+   "sha": "9fa5ac67bb699e57abdf61874ed944bbd7c66fe4397cb5ef2899d97c42500848"
+  },
+  "terazi-k-K3-S7-00011-4.html": {
+   "bayt": 1841,
+   "sha": "bb356b3ff0c7ab4673672a1396142dc344f387fe8b4ca12370f195da6dc6894c"
+  },
+  "terazi-k-K3-S8-00001-2.html": {
+   "bayt": 2396,
+   "sha": "4de2b19afb8361aa3f353bcbefdfa7501c6bc4405f8f6a438d75f25d73d36d6e"
+  },
+  "terazi-k-K3-S8-00002-9.html": {
+   "bayt": 2204,
+   "sha": "5c0583fa9084c369835cefde434b87d8551e0386e0b694823de759627e0b1c9b"
+  },
+  "terazi-k-K3-S8-00003-6.html": {
+   "bayt": 2300,
+   "sha": "42ec70d184e1d5f9574069e039d564324df020f7313fcfb464339ee09e3af974"
+  },
+  "terazi-k-K3-S8-00004-3.html": {
+   "bayt": 1765,
+   "sha": "48d8105ca57cf4374fb1e38eaecb4e78345a3498b54ac4287cbe4108300eb4f0"
+  },
+  "terazi-k-K3-S8-00005-0.html": {
+   "bayt": 2337,
+   "sha": "8f50023811be354426c7b17cc01b1cac3697b6b376f2ab3b7faa1e6a241c71ea"
+  },
+  "terazi-k-K3-S8-00006-7.html": {
+   "bayt": 2411,
+   "sha": "fb610e1309bf815791c4edaddb8f0fd89019fdf3c0955a79721eea093266b343"
+  },
+  "terazi-k-K3-S8-00007-4.html": {
+   "bayt": 2190,
+   "sha": "4e9a9bb6d1d9aad3da92f80e8f204daaa7472ff4453bc1ba3455f1d900acad30"
+  },
+  "terazi-k-K3-S8-00008-1.html": {
+   "bayt": 2324,
+   "sha": "0eb4a3186d8c422eaf72514dc4ec5eb0941391999192a34110c2e8a06b81bc35"
+  },
+  "terazi-k-K3-S8-00009-8.html": {
+   "bayt": 2134,
+   "sha": "4244937def296e586dbff78a96bc1ade0efca24fd08d6dd313582aba9ac70901"
+  },
+  "terazi-k-K3-S8-00010-4.html": {
+   "bayt": 2320,
+   "sha": "b4c94e7800595e877ce89b94dd40d3e8b82ab5360be135cdbb39374275068a83"
+  },
+  "terazi-k-K3-S8-00011-1.html": {
+   "bayt": 2183,
+   "sha": "22368192e964d965bae09dd4e65378d0c52707519bcb4e89f27f7ea1031b78bd"
+  },
   "terazi-kapi.html": {
    "bayt": 1053,
    "sha": "1de7c7221560116b631b560984270d4b28e5d76a6bf27cfd63be9178c2b071db"
+  },
+  "terazi-kapilar.html": {
+   "bayt": 8881,
+   "sha": "b4359f8d5736edfb46d97217e5f88cb90d9df93afa683c3971912ff6623c998b"
+  },
+  "terazi-katalog.html": {
+   "bayt": 25173,
+   "sha": "f193a65fccfe71d3937bdc0ed10eb722774f888d3a953eb6fccf73486056f767"
+  },
+  "terazi-kutu.html": {
+   "bayt": 2651,
+   "sha": "049b177b06fabd6e338776b399f007a06f97c816233b75a86d6e0c8f3810d390"
   },
   "terazi-llms.txt": {
    "bayt": 1225,
    "sha": "f8faf0d2b6edfba13a2c368f81f137105c9a6e865d9a8fabd46e00b44ae323b3"
   },
+  "terazi-stil-4689b0449c.css": {
+   "bayt": 1130,
+   "sha": "4689b0449c10a3de509ebfd59aaa8cbcdcb54d1b0a0aa03bd7b7c491fda0d4d3"
+  },
+  "terazi-stil-6d54599de4.css": {
+   "bayt": 1152,
+   "sha": "6d54599de409fc65688e912ff84be96ce653c5073c40557cfb848c8e8d562777"
+  },
   "terazi.css": {
-   "bayt": 16975,
-   "sha": "9478bc1bc12a1f1d1f3b361ffcbef2e4206cb1fbc0e0abd30b5d85202733aaf0"
+   "bayt": 17484,
+   "sha": "cf8da8b0b5617c354e0a4a5252c9b5c49d59d3457624e83c89ac51741e7dcd6b"
   },
   "terazi.html": {
-   "bayt": 9928,
-   "sha": "92a1019eba4770a3bc6f670af4a3bcd82048640cd9e3acdd2299f09de1604667"
+   "bayt": 10389,
+   "sha": "b908689570dc2dcb7181acae70f48c211ef4e59d8060779f78908cf27b84a14b"
   },
   "terazi.js": {
    "bayt": 38973,

@@ -218,3 +218,10 @@ html[data-hareket="kapali"]::view-transition-group(*), html[data-hareket="kapali
 .butunluk { margin-top: 1.5em; display: grid; gap: .6em; }
 .butunluk-liste { margin: 0; padding-left: 1.4em; font-size: .85em; display: grid; gap: .2em; }
 .butunluk-liste li { overflow-wrap: anywhere; }
+
+/* uretilenler */
+.uretim { margin-top: 1.5em; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16em), 1fr)); gap: .8em; }
+.uretim a { display: grid; gap: .2em; padding: .8em 1em; border-radius: 10px; background: #050a13; border: 1px solid var(--cizgi); text-decoration: none; color: var(--yazi); }
+.uretim a:hover { border-color: var(--mint); }
+.uretim b { color: var(--kayisi); font-family: Georgia, serif; font-size: 1.1em; }
+.uretim span { color: var(--soluk); font-size: .85em; }
