@@ -1,6 +1,6 @@
 {
  "sema": "terazi.butunluk.v1",
- "paket_sha": "547b785d62023126704a048fbc07f61d9dda0027bef2b0297668a0bdb1b82421",
+ "paket_sha": "7492640de9a3d21f96927caa54b286120190369f452c3df530bed16dadc6661e",
  "algoritma": "SHA-256 (dosyanin tam baytlari)",
  "kullanim": "Her dosyayi /<ad> adresinden indir, SHA-256 hesapla, 'sha' ile karsilastir. Sitede: Defter > Butunlugu denetle.",
  "gorev_kapisi": "K2-S7-00099-3",
@@ -8,6 +8,34 @@
   "terazi-atlas.js": {
    "bayt": 2651,
    "sha": "45ef1c2a36eb14f8acf33228335e57d19c390fe22aac72abeda8431e1387ffba"
+  },
+  "terazi-dila-2.jpg": {
+   "bayt": 19550,
+   "sha": "bfefae8470ae4bce7957d3c58a31dab7df10f0dcd0d0e9b754df1ab442457dd3"
+  },
+  "terazi-dila-2.mp4": {
+   "bayt": 465052,
+   "sha": "68073a0b7a908a17786ca493ae115576c5ddf51ef191801a534e7fa69ce8c1d8"
+  },
+  "terazi-dila-3.jpg": {
+   "bayt": 22281,
+   "sha": "381a1ea12750d307b1ed5c3e254886d3d32c6fad21d8323446eeba60fe0d317a"
+  },
+  "terazi-dila-3.mp4": {
+   "bayt": 243968,
+   "sha": "7128aa2ccf32ea88a99935333ca9966754ac441b35626210966d26207ac927ff"
+  },
+  "terazi-dila-4.jpg": {
+   "bayt": 16515,
+   "sha": "11b6ddf6bb36b293633c8b2cbc96bbbee9bb0510ea01133a81d89e96347409e6"
+  },
+  "terazi-dila-4.mp4": {
+   "bayt": 302987,
+   "sha": "fc472fda038a3546ce5615ca28707900fe7ee0d1d7f7bb7f45208f08adfb3040"
+  },
+  "terazi-dila.html": {
+   "bayt": 4209,
+   "sha": "8bb0ddcdb3439058ddcfbfc416b7f8e1efe3bac2fd9d888adec60227d9de736d"
   },
   "terazi-durum.json": {
    "bayt": 351,
@@ -446,12 +474,12 @@
    "sha": "6d54599de409fc65688e912ff84be96ce653c5073c40557cfb848c8e8d562777"
   },
   "terazi.css": {
-   "bayt": 17484,
-   "sha": "cf8da8b0b5617c354e0a4a5252c9b5c49d59d3457624e83c89ac51741e7dcd6b"
+   "bayt": 18271,
+   "sha": "aedb0edc7741e2d14622b9c600ed51c94d81bb6af46b0a633925acc3e3dfa8a0"
   },
   "terazi.html": {
-   "bayt": 10389,
-   "sha": "b908689570dc2dcb7181acae70f48c211ef4e59d8060779f78908cf27b84a14b"
+   "bayt": 10529,
+   "sha": "037bd273f586942a1c713162a0c0b59f1b4a804ad1368b326f0d64567a3c0373"
   },
   "terazi.js": {
    "bayt": 38973,

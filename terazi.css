@@ -225,3 +225,12 @@ html[data-hareket="kapali"]::view-transition-group(*), html[data-hareket="kapali
 .uretim a:hover { border-color: var(--mint); }
 .uretim b { color: var(--kayisi); font-family: Georgia, serif; font-size: 1.1em; }
 .uretim span { color: var(--soluk); font-size: .85em; }
+
+/* dila video rafi */
+.dila h1 { font-size: clamp(2.2rem, 1.4rem + 4vw, 6.5rem); }
+.dila-raf { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22em), 1fr)); gap: 1.2em; margin: 1.5em 0; }
+.dila-kart { margin: 0; display: grid; gap: .6em; background: linear-gradient(160deg, var(--panel), var(--panel2)); border: 1px solid var(--cizgi); border-radius: var(--yuvarlak); padding: .8em; }
+.dila-kart video { width: 100%; max-width: 100%; aspect-ratio: 16 / 9; border-radius: 10px; background: #1a1220; display: block; }
+.dila-kart figcaption { display: grid; gap: .25em; font-size: .85em; }
+.dila-kart figcaption b { font-family: Georgia, serif; color: var(--kayisi); font-size: 1.15em; }
+.dila-kart figcaption span { color: var(--soluk); overflow-wrap: anywhere; }
