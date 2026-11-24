@@ -260,26 +260,34 @@
   ],
   "compatibleContributionSchema": "/contribution.schema.json",
   "realWorksSummary": {
-    "uretim_zaman": "2026-11-24T23:19:04+03:00",
-    "canli_web_uc_sayisi": 212,
-    "sistem_olcum_araci_sayisi": 0,
-    "toplam_dogrulanmis_gercek_is": 212,
+    "uretim_zaman": "2026-11-24T23:24:00+03:00",
+    "canli_web_uc_sayisi": 213,
+    "sistem_olcum_araci_sayisi": 168,
+    "toplam_dogrulanmis_gercek_is": 381,
     "kategori_dagilimi": {
       "BIRLESIK_SAHNE_APP": 29,
       "GORSEL_ANIMASYON_TOHUMU": 17,
-      "ERTANARAZ_CANLI_KAPSUL": 67,
+      "ERTANARAZ_CANLI_KAPSUL": 68,
       "RYTE_TERFI_ESERI": 85,
+      "SISTEM_OLCUM_ARACI": 168,
       "EKOSISTEM_CANLI_ALAN_ADI": 14
     },
     "istasyon_dagilimi": {
-      "GEMINI": 36,
-      "CODEX": 27,
-      "CLAUDE": 43,
-      "SCIENCE": 27,
-      "ORTAK": 65,
+      "GEMINI": 57,
+      "CODEX": 45,
+      "CLAUDE": 60,
+      "SCIENCE": 139,
+      "ORTAK": 66,
       "GAIA_AG": 14
     },
-    "alti_sistem_dagilimi": {},
+    "alti_sistem_dagilimi": {
+      "AIOS": 21,
+      "BOULDERDASH": 54,
+      "CEVHER": 58,
+      "GAIA": 10,
+      "RYTE": 17,
+      "NAMI": 8
+    },
     "kapi_federasyonu": {
       "bekleyen": 400000,
       "sergide": 40000,
