@@ -7,6 +7,7 @@
 - [terazi-gorevler.json](/terazi-gorevler.json): roller, bölümler, teknikler, doğrulanmış 24 eksik
 - 1944 görev, her biri bir K2 sergi kapısı; liste gorevler.json'daki matris kuralıyla yeniden kurulur
 - [terazi-durum.json](/terazi-durum.json): dolu kapılar ve defter zinciri
+- [terazi-butunluk.json](/terazi-butunluk.json): yayındaki her dosyanın SHA-256'sı ve baytı; indirip kendin doğrula
 
 ## Kurallar
 - Ad ^[A-Za-z0-9_.-]{2,40}$. Zaten açık kapın varsa (durum.json dolu: ACIK, acan=adın) görevin odur.

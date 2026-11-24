@@ -101,7 +101,7 @@ const YETENEK = [
   ["starting", "@starting-style", () => "CSSStartingStyleRule" in window, "Popover girişi", "Girişsiz açılış"],
   ["interp", "interpolate-size", () => destek("interpolate-size: allow-keywords"), "Makine uçları açılır kutusu", "Anında açılış"],
   ["field", "field-sizing", () => destek("field-sizing: content"), "Parçalar alanı", "Sabit yükseklik"],
-  ["crypto", "Web Crypto SHA-256", () => !!globalThis.crypto?.subtle, "GPT kapısı, paket özeti", "Güvenli bağlam gerekir (https/localhost)"],
+  ["crypto", "Web Crypto SHA-256", () => !!globalThis.crypto?.subtle, "GPT kapısı, paket özeti, bütünlük denetimi", "Güvenli bağlam gerekir (https/localhost)"],
   ["rm", "prefers-reduced-motion", () => true, "Tüm hareket + elle anahtar", "—"],
   ["speculation", "Speculation Rules", () => !!(HTMLScriptElement.supports && HTMLScriptElement.supports("speculationrules")), "Kullanılmıyor: yayın sitesinin CSP'si satır içi kurala izin vermiyor", "Normal gezinme"],
 ];
@@ -473,6 +473,34 @@ function defterCiz(hata) {
     <p class="kucuk">Durum zamanı ${kac(DURUM.zaman || "—")}. Site k000001–k050000 adreslerini, defter K&lt;katman&gt;-S&lt;seri&gt;-&lt;no&gt; kimliklerini kullanır; iki biçimin eşlemesi açık bir görevdir.</p>`;
 }
 
+// ---------- butunluk: yayin paketini Web Crypto ile yeniden hesapla ----------
+function butunlukKur() {
+  const b = $("#butunluk-dugme"), oz = $("#butunluk-ozet"), ol = $("#butunluk-liste"); if (!b) return;
+  b.addEventListener("click", async () => {
+    if (!algi.crypto) { oz.textContent = "Web Crypto yok: sayfa https ya da localhost üzerinden açılmalı."; return; }
+    b.disabled = true; oz.textContent = "Bütünlük dosyası okunuyor…"; ol.innerHTML = "";
+    try {
+      const r = await fetch("/terazi-butunluk.json", { cache: "no-store" });
+      if (!r.ok) throw new Error(r.status === 404 ? "bütünlük dosyası yok (yalnız yayın paketinde üretilir)" : "HTTP " + r.status);
+      const m = await r.json();
+      const dosyalar = Object.entries(m.dosya || {});
+      let tutan = 0;
+      const sonuc = await Promise.all(dosyalar.map(async ([ad, d]) => {
+        try {
+          const y = await fetch("/" + ad, { cache: "no-store" });
+          const h = [...new Uint8Array(await crypto.subtle.digest("SHA-256", await y.arrayBuffer()))].map(x => x.toString(16).padStart(2, "0")).join("");
+          const ok = y.ok && h === d.sha;
+          if (ok) tutan++;
+          return { ad, ok, h, d };
+        } catch (e) { return { ad, ok: false, h: "okunamadı", d }; }
+      }));
+      ol.innerHTML = sonuc.map(x => `<li class="${x.ok ? "var" : "yok"}"><code>${kac(x.ad)}</code> · ${sayi.format(x.d.bayt)} B · ${x.ok ? "tutar" : "TUTMUYOR"} <small class="kucuk">${kac(x.h.slice(0, 16))}…</small></li>`).join("");
+      oz.textContent = `${tutan}/${dosyalar.length} dosya tutuyor. Paket sürümü ${String(m.paket_sha || "").slice(0, 12)}…${m.gorev_kapisi ? ` · görev kapısı ${m.gorev_kapisi}` : ""}.`;
+    } catch (e) { oz.textContent = "Denetlenemedi: " + e.message; }
+    b.disabled = false;
+  });
+}
+
 // ---------- kapi sayfasi ----------
 async function kapiSayfa() {
   const m = $("#kapi-ic"); if (!m) return;
@@ -511,7 +539,7 @@ function baslat() {
   if (ust) new ResizeObserver(() => document.documentElement.style.setProperty("--ust-h", ust.offsetHeight + "px")).observe(ust);
   if (document.documentElement.dataset.sayfa === "kapi") { kapiSayfa(); return; }
   // her bolum ayri: biri hata verirse digerleri yine kurulur
-  for (const [ad, f] of [["vitrin", vitrinCiz], ["sayac", sayacKur], ["kopru", kopruKur], ["atlas", atlasKur], ["gpt", gptKur], ["perde", perdeKur]]) {
+  for (const [ad, f] of [["vitrin", vitrinCiz], ["sayac", sayacKur], ["kopru", kopruKur], ["atlas", atlasKur], ["gpt", gptKur], ["butunluk", butunlukKur], ["perde", perdeKur]]) {
     try { const p = f(); p?.catch?.(e => console.error(ad, e)); } catch (e) { console.error(ad, e); }
   }
 }

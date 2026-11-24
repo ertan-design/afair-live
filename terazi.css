@@ -213,3 +213,8 @@ html[data-hareket="kapali"]::view-transition-group(*), html[data-hareket="kapali
   html:not([data-hareket="acik"])::view-transition-group(*), html:not([data-hareket="acik"])::view-transition-old(*), html:not([data-hareket="acik"])::view-transition-new(*) { animation: none !important; }
 }
 @media (prefers-reduced-motion: reduce) { @view-transition { navigation: none; } }
+
+/* butunluk denetimi */
+.butunluk { margin-top: 1.5em; display: grid; gap: .6em; }
+.butunluk-liste { margin: 0; padding-left: 1.4em; font-size: .85em; display: grid; gap: .2em; }
+.butunluk-liste li { overflow-wrap: anywhere; }
