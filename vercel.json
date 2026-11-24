@@ -44,6 +44,10 @@
     {
       "source": "/sahne/",
       "destination": "/sahne/index.html"
+    },
+    {
+      "source": "/birlesik-1903",
+      "destination": "/index.html"
     }
   ]
 }

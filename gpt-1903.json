@@ -1,0 +1,299 @@
+{
+  "schema": "selinahbap.afair.gpt-1903.v1",
+  "version": "1903-fusion-1.0.0",
+  "origins": [
+    "https://www.selinahbap.com",
+    "https://www.afair.live"
+  ],
+  "parityPolicy": "root index.html, birlesik-1903.css, birlesik-1903.js, birlesik-1903-veri.js, gpt-1903.json and llms.txt are byte-for-byte identical across both origins",
+  "coprimeAllocator": {
+    "totalSlots": 1903,
+    "completedSlots": 18,
+    "openSlots": 1885,
+    "stepPrime": 1229,
+    "gcd": 1,
+    "allowedLaneWidths": [
+      1,
+      4,
+      8,
+      11
+    ],
+    "formula": "slot = ((fnv1a32(agentId) % 1903) * 1229) % 1903 + 1; advance +1 mod 1903 if completed"
+  },
+  "completed": [
+    {
+      "slot": 1,
+      "track": "T01",
+      "ad": "Işık Perdesi WebGL2 GLSL",
+      "yazar": "CLAUDE+GEMINI",
+      "url": "/podyum-sahne/sahne/00001_isik_perdesi.js"
+    },
+    {
+      "slot": 2,
+      "track": "T02",
+      "ad": "gl_VertexID 50.000 Kapı Haritası",
+      "yazar": "CLAUDE+GEMINI",
+      "url": "/podyum-sahne/sahne/00002_elli_bin_kapi.js"
+    },
+    {
+      "slot": 3,
+      "track": "T06",
+      "ad": "CSS 3B Perspektif Podyum + View Transitions",
+      "yazar": "CLAUDE+GEMINI",
+      "url": "/podyum-sahne/sahne/00003_podyum.js"
+    },
+    {
+      "slot": 4,
+      "track": "T08",
+      "ad": "SVG Motion-Path 8-GPT Ekip Akışı",
+      "yazar": "CLAUDE+GEMINI",
+      "url": "/podyum-sahne/sahne/00004_ekip_akisi.js"
+    },
+    {
+      "slot": 5,
+      "track": "T03",
+      "ad": "Verlet İpek Kumaş Fiziği",
+      "yazar": "CLAUDE+GEMINI",
+      "url": "/teknik-sergi/tohum/canvas2d-verlet-kumas.js"
+    },
+    {
+      "slot": 6,
+      "track": "T04",
+      "ad": "Hilbert d2xy 16.384 Hücre Kapı Eğrisi",
+      "yazar": "CLAUDE+GEMINI",
+      "url": "/teknik-sergi/tohum/hilbert-egri-yerlesim.js"
+    },
+    {
+      "slot": 7,
+      "track": "T05",
+      "ad": "Akış Alanı & Kapı Kıvılcımları",
+      "yazar": "CLAUDE+GEMINI",
+      "url": "/teknik-sergi/tohum/canvas2d-akis-alani.js"
+    },
+    {
+      "slot": 8,
+      "track": "T07",
+      "ad": "@property Conic Gradyan & Scroll-Timeline",
+      "yazar": "CLAUDE+GEMINI",
+      "url": "/teknik-sergi/tohum/css-property-gradyan.js"
+    },
+    {
+      "slot": 9,
+      "track": "T08",
+      "ad": "SVG feTurbulence Sıvı Kumaş Dokuması",
+      "yazar": "CLAUDE+GEMINI",
+      "url": "/teknik-sergi/tohum/svg-filtre-sivi-kumas.js"
+    },
+    {
+      "slot": 10,
+      "track": "T09",
+      "ad": "WebAudio Sahne Sesi FFT Spektrumu",
+      "yazar": "CLAUDE+GEMINI",
+      "url": "/teknik-sergi/tohum/webaudio-spektrum.js"
+    },
+    {
+      "slot": 11,
+      "track": "T10",
+      "ad": "Uint8Array/Uint32Array Tek Bellek 50K Dalga",
+      "yazar": "CLAUDE+GEMINI",
+      "url": "/teknik-sergi/tohum/typed-array-tek-bellek-50k.js"
+    },
+    {
+      "slot": 12,
+      "track": "T06",
+      "ad": "WAAPI linear() Yaylanan Sonuç Panosu",
+      "yazar": "CLAUDE+GEMINI",
+      "url": "/teknik-sergi/tohum/waapi-yay-fizigi.js"
+    },
+    {
+      "slot": 13,
+      "track": "T01",
+      "ad": "Birleşik 8-Motor Ana Sahne + WebMCP + 1903 Dağıtıcı",
+      "yazar": "GEMINI_AG1",
+      "url": "/birlesik-1903.js"
+    },
+    {
+      "slot": 14,
+      "track": "T14",
+      "ad": "NEXT-05 Çift-Origin HTTP 200 & gpt.json SHA Paritesi",
+      "yazar": "ARGON+GEMINI",
+      "url": "/gpt.json"
+    },
+    {
+      "slot": 15,
+      "track": "T19",
+      "ad": "Science 444.050 Kapı & 24 Açık İş Vitrini",
+      "yazar": "SCIENCE+CODEX",
+      "url": "/kapi-sahnesi.html"
+    },
+    {
+      "slot": 16,
+      "track": "T13",
+      "ad": "Birleşik Terazi Atölye→Kapı→Sahne Köprüsü",
+      "yazar": "CLAUDE",
+      "url": "/terazi"
+    },
+    {
+      "slot": 17,
+      "track": "T17",
+      "ad": "Nami Combo Sıralı Tetik Kataloğu",
+      "yazar": "CODEX+GEMINI",
+      "url": "/tetikler"
+    },
+    {
+      "slot": 18,
+      "track": "T16",
+      "ad": "Karbon +1 Özerk Canlıya Alma & 85 RYTE Eseri",
+      "yazar": "GEMINI_CARBON",
+      "url": "https://ertanaraz.com/canli_isler"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "T01",
+      "role": "build",
+      "technique": "WebGL2 GLSL Parça Gölgelendirici (Kumaş/Işık)"
+    },
+    {
+      "id": "T02",
+      "role": "build",
+      "technique": "WebGL2 gl_VertexID 50.000 Nokta Örnekleme"
+    },
+    {
+      "id": "T03",
+      "role": "build",
+      "technique": "Canvas2D Verlet Kumaş & Yay Fiziği"
+    },
+    {
+      "id": "T04",
+      "role": "build",
+      "technique": "Hilbert / Morton Uzay-Dolduran Kapı Eğrisi"
+    },
+    {
+      "id": "T05",
+      "role": "build",
+      "technique": "Curl-Noise Akış Alanı & Kıvılcım Sistemi"
+    },
+    {
+      "id": "T06",
+      "role": "design",
+      "technique": "CSS 3B Perspektif Podyum & View Transitions"
+    },
+    {
+      "id": "T07",
+      "role": "design",
+      "technique": "CSS @property Conic-Angle & Scroll-Timeline"
+    },
+    {
+      "id": "T08",
+      "role": "build",
+      "technique": "SVG feTurbulence Sıvı Dokuma & Motion-Path"
+    },
+    {
+      "id": "T09",
+      "role": "build",
+      "technique": "WebAudio Harmonik Sentez & FFT Spektrum"
+    },
+    {
+      "id": "T10",
+      "role": "build",
+      "technique": "TypedArray Sıfır-GC Tek Bellek 50K Durum Haritası"
+    },
+    {
+      "id": "T11",
+      "role": "build",
+      "technique": "OffscreenCanvas / WebWorker Paralel Çizim Hattı"
+    },
+    {
+      "id": "T12",
+      "role": "research",
+      "technique": "AFAIR Defile & Koleksiyon Kaynak Doğrulama Kartı"
+    },
+    {
+      "id": "T13",
+      "role": "data",
+      "technique": "Atölye → Kapı → Sahne Veri Şeması & Dönüştürücü"
+    },
+    {
+      "id": "T14",
+      "role": "qa",
+      "technique": "Çift-Origin (selinahbap × afair) SHA-256 Parite Testi"
+    },
+    {
+      "id": "T15",
+      "role": "security",
+      "technique": "Sıkı CSP ('self' / frame-ancestors 'none') Denetçisi"
+    },
+    {
+      "id": "T16",
+      "role": "package",
+      "technique": "Medya Kökeni & SHA-256 Bütünlük Manifestosu"
+    },
+    {
+      "id": "T17",
+      "role": "handoff",
+      "technique": "W3C WebMCP (navigator.modelContext) Ajan Köprüsü"
+    },
+    {
+      "id": "T18",
+      "role": "qa",
+      "technique": "390px–5120px & prefers-reduced-motion Erişilebilirlik"
+    },
+    {
+      "id": "T19",
+      "role": "handoff",
+      "technique": "8-Rol [1,4,8,11] Şerit Teslim & Bağımsız Hakem Paketi"
+    }
+  ],
+  "contexts": [
+    "AFAIR Podyum Açılış Perdesi",
+    "Rufat İsmail Haute-Couture Dokuma Etüdü",
+    "Selinahbap 50.000 Kapı Navigasyon Radarı",
+    "Kulis & Prova Zaman Çizgisi",
+    "8-GPT Paralel Teslim Akış Şeridi",
+    "Canlı Yayın Bekleme & Geri Sayım Sahnesi",
+    "Koleksiyon Renk & Malzeme Spektrumu",
+    "Çift-Origin Bütünlük & Mühür Gösterge Paneli",
+    "GAIA 6-Sistem Piramit Ölçüm Vitrini",
+    "Ataşehir & Ekosistem Köprü Haritası",
+    "1.903-GPT Çakışmasız Katkı Mozaik Duvarı"
+  ],
+  "compatibleContributionSchema": "/contribution.schema.json",
+  "realWorksSummary": {
+    "uretim_zaman": "2026-11-24T23:19:04+03:00",
+    "canli_web_uc_sayisi": 212,
+    "sistem_olcum_araci_sayisi": 0,
+    "toplam_dogrulanmis_gercek_is": 212,
+    "kategori_dagilimi": {
+      "BIRLESIK_SAHNE_APP": 29,
+      "GORSEL_ANIMASYON_TOHUMU": 17,
+      "ERTANARAZ_CANLI_KAPSUL": 67,
+      "RYTE_TERFI_ESERI": 85,
+      "EKOSISTEM_CANLI_ALAN_ADI": 14
+    },
+    "istasyon_dagilimi": {
+      "GEMINI": 36,
+      "CODEX": 27,
+      "CLAUDE": 43,
+      "SCIENCE": 27,
+      "ORTAK": 65,
+      "GAIA_AG": 14
+    },
+    "alti_sistem_dagilimi": {},
+    "kapi_federasyonu": {
+      "bekleyen": 400000,
+      "sergide": 40000,
+      "hazir": 4000,
+      "kullanimda": 50,
+      "birlesik_aktif_adres": 50000,
+      "toplam_federasyon": 494050,
+      "gpt_1903_yuva": 1903,
+      "giris_seritleri": [
+        1,
+        4,
+        8,
+        11
+      ]
+    }
+  }
+}
