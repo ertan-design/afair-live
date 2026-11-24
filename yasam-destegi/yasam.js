@@ -55,5 +55,7 @@
     catch (error) { draft = null; enableDraftActions(false); status.textContent = error.message || 'Saklanan taslak açılamadı.'; }
   });
   byId('erase').addEventListener('click',() => { try { localStorage.removeItem(storageKey); status.textContent = 'Bu sayfaya ait yerel kayıt silindi. Ekrandaki taslak gönderilmedi.'; } catch { status.textContent = 'Tarayıcı yerel kayda erişime izin vermiyor.'; } });
+  const requestedService = new URLSearchParams(window.location.search).get('konu');
+  service.value = requestedService !== null && Object.hasOwn(services,requestedService) ? requestedService : 'terzi';
   renderService();
 })();
