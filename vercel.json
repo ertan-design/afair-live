@@ -48,6 +48,14 @@
     {
       "source": "/birlesik-1903",
       "destination": "/index.html"
+    },
+    {
+      "source": "/dila",
+      "destination": "/dila/index.html"
+    },
+    {
+      "source": "/dila/",
+      "destination": "/dila/index.html"
     }
   ]
 }
