@@ -89,7 +89,7 @@
   }
 
   function sahneBagla(meta, kapsayici, rm) {
-    var slug = T[meta.t][0], spec = TOHUMLAR[slug];
+    var slug = T[meta.t][0], spec = (window.__SERGI_56 && window.__SERGI_56[meta.no]) || TOHUMLAR[slug];
     if (!spec || typeof spec.mount !== 'function') throw new Error(slug + ' modülü hazır değil');
     var p = P[meta.p], pal = { bg: p[2], fg: p[3], a: p[4], b: p[5], c: p[6] };
     var host = document.createElement('div');
@@ -239,7 +239,7 @@
   var gecerliKod = '';
   function kaynakGoster(meta) {
     var slug = T[meta.t][0];
-    gecerliKod = KAYNAKLAR[slug] || '// kaynak bulunamadı';
+    gecerliKod = (window.__SERGI_KAYNAK_56 && window.__SERGI_KAYNAK_56[String(meta.no)]) || KAYNAKLAR[slug] || '// kaynak bulunamadı';
     $('#dlg-k-baslik').textContent = kid(meta.no) + ' · ' + meta.baslik + ' · sha ' + meta.sha.slice(0, 8);
     $('#dlg-k-kod').textContent = gecerliKod;
     dK.showModal();

@@ -56,6 +56,14 @@
     {
       "source": "/dila/",
       "destination": "/dila/index.html"
+    },
+    {
+      "source": "/podyum-sahne/kapi",
+      "destination": "/podyum-sahne/kapi/index.html"
+    },
+    {
+      "source": "/podyum-sahne/kapi/",
+      "destination": "/podyum-sahne/kapi/index.html"
     }
   ]
 }

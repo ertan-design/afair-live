@@ -131,21 +131,13 @@ h3 { font-size: 17px; margin-bottom: 10px; color: var(--altin); }
   .kahraman-ic, .iki-sutun { grid-template-columns: 1fr; }
 }
 
-/* Dila tercih ve podyum provası */
-#bu-gece,#podyum-prova,#iki-mezura,#galeri {scroll-margin-top:9rem}
-#bu-gece .dila-onay,#bu-gece .dila-ziyaret {display:flex;flex-wrap:wrap;align-items:center;gap:.7em;margin-block:1.2em .6em}
-#bu-gece input[type=checkbox] {width:1.25em;height:1.25em;accent-color:#7fffd4;flex:none}
-#bu-gece .dila-onay {cursor:pointer}
-#bu-gece .dila-ziyaret select {max-width:100%;color:inherit;background:#18233e;font:inherit;border:1px solid #536385;border-radius:.35rem;padding:.4em}
-#bu-gece button:disabled {opacity:.5;cursor:default}
-#bu-gece :focus-visible,#podyum-prova :focus-visible {outline:3px solid #7fffd4;outline-offset:3px}
-.dila-podyum canvas {display:block;width:100%;height:auto;border-radius:.45rem;background:#10192e}
-.dila-podyum figcaption {margin-top:.65em;color:var(--soluk)}
-@media(max-width:640px) {#bu-gece .dila-tercih,#podyum-prova .dila-podyum{grid-template-columns:minmax(0,1fr)}}
-@media(min-width:3200px) {
-  #bu-gece,#podyum-prova {max-width:4400px;font-size:48px}
-  #bu-gece h2,#podyum-prova h2 {font-size:80px}
-  #bu-gece h3 {font-size:54px}
-  #bu-gece label,#bu-gece button,#bu-gece .btn,#bu-gece input,#bu-gece select,#bu-gece .deger,#bu-gece .durum-satiri,#bu-gece .kucuk-etiket,#podyum-prova .kucuk-etiket,#podyum-prova .aciklama {font-size:48px}
-  #bu-gece .baslik-satiri,#podyum-prova .baslik-satiri {gap:36px}
-}
+.dort-front-cubugu{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;max-width:1340px;margin:14px auto 0;padding:0 24px}
+.dort-front-cubugu a{display:flex;flex-direction:column;gap:2px;padding:10px 14px;border-radius:12px;background:#141f3a;border:1px solid var(--cizgi);color:var(--metin);text-decoration:none}
+.dort-front-cubugu a:hover,.dort-front-cubugu a.aktif-front{border-color:var(--su);background:rgba(94,242,214,.11)}
+.dort-front-cubugu strong{font:700 11px ui-monospace,Consolas,monospace;color:var(--altin);letter-spacing:.1em}
+.dort-front-cubugu span{font-size:12.5px;color:var(--soluk)}
+.tam-tuval{width:100%;height:340px;display:block;border-radius:14px;border:1px solid var(--cizgi);background:#121b33}
+.dokuman-sekmeler{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+.dok-btn{font-size:12px;padding:6px 11px;border-radius:99px;background:#131d36;border:1px solid var(--cizgi);color:var(--metin)}
+.dok-btn.secili{background:var(--su);color:#10192e;border-color:var(--su)}
+.dokuman-icerik{background:#11192f;border:1px solid var(--cizgi);border-radius:14px;padding:18px;font:13px/1.6 ui-monospace,Consolas,monospace;color:#e2e8f0;white-space:pre-wrap;max-height:460px;overflow:auto}
