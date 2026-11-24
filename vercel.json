@@ -20,10 +20,11 @@
       ]
     }
   ],
-  "rewrites": [
+  "redirects": [
     {
+      "destination": "/",
       "source": "/nexus",
-      "destination": "/index.html"
+      "permanent": false
     }
   ]
 }
