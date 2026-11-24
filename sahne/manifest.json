@@ -1,10 +1,10 @@
 {
- "surum": "1.1.0",
+ "surum": "1.2.0",
  "dosyalar": [
   {
    "yol": "doors/index.json",
    "bayt": 491,
-   "sha256": "6cb6f172fae1f4a397d508d96e37472394d898e28290192f60df5efc676ed003"
+   "sha256": "e463fb0d4fdddc4b3d9b1778b646c1a01ce170b21c79afabfecd465f0e7afd42"
   },
   {
    "yol": "doors/kullanimda.json",
@@ -18,8 +18,8 @@
   },
   {
    "yol": "index.html",
-   "bayt": 5908,
-   "sha256": "d85b2446a14574b8afc8b5f034fdf5472301d085dc689148cd4f920928ad109e"
+   "bayt": 5928,
+   "sha256": "014152a201a12fd76c1a8fc2d9e5c18ab5d5ebebb6e7854a6a6c51c16d09d80a"
   },
   {
    "yol": "llms.txt",

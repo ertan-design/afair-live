@@ -2,20 +2,19 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<base href="/sahne/">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Selinahbap × AFAIR Sahnesi</title>
 <meta name="description" content="Selinahbap kapı motoru ile AFAIR/LIVE yayın sahnesinin birleşik arayüzü: 444.050 kapı, 50 canlı slot, GPT şeritleri 1/4/8/11.">
-<link rel="describedby" type="text/markdown" href="llms.txt">
+<link rel="describedby" type="text/markdown" href="/sahne/llms.txt">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Dataset","name":"Selinahbap × AFAIR kapıları",
  "description":"444.050 numaralı kapı: kimlik, katman, blok, şerit ve SHA-256 mühürü tek formülden çıkar. Kullanımdaki 50 kapı AFAIR/LIVE yayın slotudur. Mühür kuralı seal.md dosyasında, örnek kapılar doors klasöründedir.",
  "inLanguage":"tr","license":"https://creativecommons.org/licenses/by/4.0/",
- "distribution":[{"@type":"DataDownload","contentUrl":"doors/index.json","encodingFormat":"application/json"},
-  {"@type":"DataDownload","contentUrl":"doors/kullanimda.json","encodingFormat":"application/json"},
-  {"@type":"DataDownload","contentUrl":"seal.md","encodingFormat":"text/markdown"}]}
+ "distribution":[{"@type":"DataDownload","contentUrl":"/sahne/doors/index.json","encodingFormat":"application/json"},
+  {"@type":"DataDownload","contentUrl":"/sahne/doors/kullanimda.json","encodingFormat":"application/json"},
+  {"@type":"DataDownload","contentUrl":"/sahne/seal.md","encodingFormat":"text/markdown"}]}
 </script>
-<link rel="stylesheet" href="sahne.css">
+<link rel="stylesheet" href="/sahne/sahne.css">
 </head>
 <body>
 <div class="w"><nav>
@@ -95,6 +94,6 @@
  "pist":"kullanimda katmani = AFAIR/LIVE yayin slotlari (K-444001..K-444050)",
  "kural":["kapi dosya degil formuldur","yalniz acilan kapi kayit birakir","ayni kapiya ikinci giren reddedilir","kapi disina yazilmaz","ureten olcmez"]}
 </script>
-<script src="sahne.js" defer></script>
+<script src="/sahne/sahne.js" defer></script>
 </body>
 </html>
