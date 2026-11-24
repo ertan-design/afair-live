@@ -1,0 +1,34 @@
+{
+  "model": "seedance_2_5",
+  "quoted_credits": 70,
+  "second_job_observed_seconds": 151,
+  "timing_note": "Submission to observed completion, includes polling delay. First job time not measured.",
+  "playback": [
+    {
+      "seconds": 5.05,
+      "width": 1280,
+      "height": 720,
+      "played": true,
+      "error": null
+    },
+    {
+      "seconds": 5.05,
+      "width": 1280,
+      "height": 720,
+      "played": true,
+      "error": null
+    }
+  ],
+  "files": [
+    {
+      "file": "galeride-ipek.mp4",
+      "bytes": 1186314,
+      "sha256": "f963fa3260b4100dd1cf0a7d74405bbdbb09c91eee73eed3830a6f3c4e620a46"
+    },
+    {
+      "file": "terzinin-dokunusu.mp4",
+      "bytes": 1195218,
+      "sha256": "23c422e74b19e7170495a065e7dfe06eef6de7b6dfc360eb862304880807fe6a"
+    }
+  ]
+}
