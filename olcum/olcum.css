@@ -1,0 +1,16 @@
+:root{--bg:#121011;--bg2:#1a1516;--ink:#faefe6;--mut:#c5b9ac;--line:#3c322e;--gold:#f2cb9c;--ok:#7fd1a0;--no:#ed8666;--na:#8a7f76;--tech:#7fd1c7;color-scheme:dark}
+@media (prefers-color-scheme:light){:root{--bg:#f7f1ea;--bg2:#fffaf4;--ink:#22191a;--mut:#6d5f55;--line:#e1d4c6;--gold:#9a6327;--ok:#1f7a4d;--no:#b2412a;--na:#8a7f76;--tech:#1f7f75;color-scheme:light}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 "Segoe UI",system-ui,sans-serif}
+.w{width:min(100% - 32px,72rem);margin:auto;padding:20px 0 40px}a{color:var(--gold)}
+nav{display:flex;gap:16px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--line);font-size:14px}
+h1{font:400 clamp(30px,5vw,56px)/1 Georgia,serif;letter-spacing:-.03em;margin:22px 0 8px}h2{font:400 26px Georgia,serif;margin:28px 0 8px}
+.mut{color:var(--mut)}.eye{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:18px}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:14px 0}
+.c{background:var(--bg2);border:1px solid var(--line);padding:12px}.c b{display:block;font:400 28px Georgia,serif}.c span{color:var(--mut);font-size:13px}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:center;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}.ok{color:var(--ok)}.no{color:var(--no);font-weight:700}.na{color:var(--na)}
+.YAYIN_ADAYI{color:var(--ok);font-weight:700}.DURDUR{color:var(--no);font-weight:700}.ONARIM{color:var(--gold);font-weight:700}
+.pir{display:flex;flex-direction:column;align-items:center;gap:4px;margin:16px 0}.p{text-align:center;padding:6px 0;border-radius:4px;color:#121011;font-size:14px}
+.p.tepe{width:34%;background:#c49be8}.p.orta{width:62%;background:#6cc79f}.p.taban{width:100%;background:#e0b06a}
+.list a{display:block;padding:14px;border:1px solid var(--line);background:var(--bg2);margin:8px 0;text-decoration:none}.list a b{color:var(--ink);display:block;font:400 22px Georgia,serif}
+footer{margin-top:28px;color:var(--mut);font-size:13px}code{font:12px ui-monospace,Consolas,monospace}

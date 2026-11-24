@@ -1,0 +1,28 @@
+{
+ "dosyalar": [
+  {
+   "yol": "aletler/index.html",
+   "sha256": "d9bc1f50e16468b4c71ce7cb72ab5c6d8abd0e9c7b88bf4cf123516fcc2a2165"
+  },
+  {
+   "yol": "index.html",
+   "sha256": "25885f4d1a8e1ad06d949222f288ca27af3611bd5d9e7c05a75cc1dd5bc36dae"
+  },
+  {
+   "yol": "kapi-hakemi/index.html",
+   "sha256": "ca20fc29c8fa03a5badabe51f10c0936b44a6f7210f125a15122638323d5ec72"
+  },
+  {
+   "yol": "llms.txt",
+   "sha256": "83f5e886ae7a14eaa95a1da8398c9b0b335aa2f0ff97710dc60f8bb0a05ffc61"
+  },
+  {
+   "yol": "olcum.css",
+   "sha256": "5446e31efdc92a357ebb86abb2f2079791e4467fb7c75c77c79cfe227703f2c3"
+  },
+  {
+   "yol": "veri.json",
+   "sha256": "c51945b06b0a51b82d3b1323a4e11a000bc0f7914bfea55425dc21745d307fe8"
+  }
+ ]
+}

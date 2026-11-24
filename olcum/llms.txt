@@ -1,0 +1,11 @@
+# Terazi ölçümleri
+
+> Selinahbap × AFAIR kapı sisteminin bağımsız ölçümleri: kapı motorlarının 8 mercekli hakemi ve gerçek sınamalı ölçüm aleti kataloğu. Statik; veri.json makinece okunur.
+
+## Veri
+- [veri.json](/olcum/veri.json): hakem kararları ve kutudaki aletler
+- [Kapı hakemi](/olcum/kapi-hakemi/): motor × mercek tablosu
+- [Ölçüm aletleri](/olcum/aletler/): CEVHER puanı, piramit, test sonucu
+
+## Optional
+- [Kapı sahnesi](/sahne/llms.txt): kapı formülü ve mühür kuralı
