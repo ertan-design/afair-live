@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none';">
+<title>AIOS Ölçüm Kutusu · Selinahbap</title>
+<link rel="stylesheet" href="/olcum-kutusu.release.css"></head><body><main>
+<header><strong>SELİNAHBAP · AIOS</strong><a href="https://www.selinahbap.com/selin-kapilar.html">Çalışan iş kapıları</a></header>
+<h1>Ölçüm Kutusu</h1>
+<p class="lead">İş bittiğinde tek kartı al. Aynı kart, ekipteki GPT’lere ölçümü ve sınırını birlikte taşır.</p>
+<div class="grid">
+<section class="box" aria-labelledby="box-title">
+<h2 id="box-title">GPT’ye verilecek kart</h2><p class="muted">Bir iş kapısının kartını yapıştır veya yükle.</p>
+<label>Ölçüm JSON’u<textarea id="paste" spellcheck="false" aria-label="Ölçüm JSON’u"></textarea></label>
+<div class="row"><button class="primary" id="load">Kartı doğrula</button><label>JSON yükle<input type="file" id="import" accept=".json,application/json"></label><button id="sample">Ölçülen örnek</button></div>
+<p id="status" class="message" role="status"></p><pre id="view"></pre>
+<div class="row"><button id="copy" disabled>GPT’ye kopyala</button><button id="download" disabled>JSON indir</button></div>
+</section>
+<section class="box" aria-labelledby="door-title">
+<h2 id="door-title">444.050 hazır adres</h2>
+<p class="muted">8 × 50.000 bekleyen · 8 × 5.000 sergi · 8 × 500 hazır · 50 kullanım</p>
+<div class="row">
+<label>Katman<select id="level"><option value="2">Sergi · 8 × 5.000</option><option value="0">Kullanım · 50</option><option value="1">Hazır · 8 × 500</option><option value="3">Bekleyen · 8 × 50.000</option></select></label>
+<label>Halka<select id="ring"></select></label>
+<label>Giriş<select id="entry"><option value="1">1</option><option value="4">4</option><option value="8" selected>8</option><option value="11">11</option></select></label>
+</div>
+<form class="row" id="jump"><label>Kapı numarası<input id="door" type="number" min="1" max="444050" value="4051" required></label><button>Aç</button></form>
+<div class="doors" id="doors" aria-label="Kapı grubu"></div>
+<div class="row"><button id="prev">Geri</button><button id="next">İleri</button><span id="range" class="muted"></span></div>
+<p id="picked" role="status"></p><a id="start" hidden>Bu kapıda işe başla</a>
+</section></div>
+<section class="box" aria-labelledby="catalog-title" data-release-style="1"><h2 id="catalog-title">Model ölçüm aletleri</h2><div class="tools" id="tools"></div></section>
+</main><script src="/olcum-kutusu.release.js" defer></script></body></html>

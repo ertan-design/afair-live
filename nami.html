@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101923">
+<meta name="description" content="Selin Ahbap Nami tetikleri. Özerk öneri, özel kabul kontrolü ve canlı HTTPS kanıtını tek koşuda birleştir.">
+<title>Nami Tetikleri · Selin Ahbap</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/nami.css"><script src="/nami.js" defer></script>
+</head><body>
+<a class="skip" href="#main">İçeriğe geç</a>
+<header class="shell"><a href="/" class="brand">selinahbap</a><nav aria-label="Selin Ahbap"><a href="/calisma-alani">Çalışma Alanı</a><a href="/kapilar">Kapı Atlası</a></nav></header>
+<main class="shell" id="main">
+<div class="heading"><h1>Nami Tetikleri</h1><p>Bir kapı seç. Özerk öneriyi, özel kontrolü ve internet kanıtını tek komboda çalıştır.</p></div>
+<section class="modes" aria-label="Tanımlı tetikler">
+<article><h2>Özerk</h2><p>İşin seçili durumuna göre sıradaki adımı önerir.</p><button data-mode="özerk" type="button">+1 Özerk</button></article>
+<article><h2>Özel</h2><p>Kapının rolünü seçtiğin kabul ölçütüyle karşılaştırır.</p><button data-mode="özel" type="button">+1 Özel</button></article>
+<article><h2>İnternet</h2><p>Canlı adresten HTTP durumu, süre ve gövde özeti alır.</p><button data-mode="internet" type="button">+1 İnternet</button></article>
+</section>
+<div class="grid">
+<section class="panel" aria-labelledby="combo-heading"><h2 id="combo-heading">Kombo</h2>
+<form id="run-form">
+<label for="combo">Tetikler</label><textarea id="combo" rows="3" maxlength="440" required>+1 özerk tetik
++1 özel tetik
++1 internet tetiği</textarea>
+<div class="fields">
+<label>Kapı numarası<input type="number" id="gate" min="1" max="50000" value="1903" required></label>
+<label>İşin mevcut durumu<select id="work-state"><option value="empty">Adres seçildi</option><option value="draft">Taslak hazır</option><option value="ready">Teslim hazır</option><option value="accepted">Kabul edildi</option></select></label>
+<label>Özel kontrol · beklenen rol<select id="expected"><option value="Keşif">Keşif</option><option value="Kaynak">Kaynak</option><option value="Tasarım">Tasarım</option><option value="Üretim">Üretim</option><option value="Ölçüm">Ölçüm</option><option value="Kontrol">Kontrol</option><option value="Paket">Paket</option><option value="Devir">Devir</option></select></label>
+<label>İnternet hedefi<select id="endpoint"><option value="gate">Seçili kapı</option><option value="work">Çalışma Alanı</option><option value="home">Ana sayfa</option></select></label>
+</div>
+<div class="actions"><button class="primary" id="run" type="submit">Komboyu çalıştır</button><button id="again" type="button" hidden>Yeni koşu</button></div>
+</form><p id="run-status" role="status" aria-live="polite"></p>
+</section>
+<section class="panel" aria-labelledby="result-heading">
+<div class="result-title"><h2 id="result-heading">Sonuç</h2><button id="copy" type="button" disabled>JSON’u kopyala</button></div>
+<p id="counts" class="muted">0 deneme · 0 başarılı · 0 başarısız · 0 model çağrısı</p>
+<p id="receipt" class="muted"></p><ol id="results"></ol>
+<textarea id="copy-fallback" rows="6" aria-label="Sonuç JSON’u" readonly hidden></textarea>
+</section>
+</div>
+</main>
+</body></html>

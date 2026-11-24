@@ -1,0 +1,22 @@
+# Selin Ahbap × AFAIR/LIVE
+
+> Selin Ahbap yapay zekâ ve dijital sistemler sitesi; AFAIR/LIVE ile ortak kapı ve sahne yüzeyi. Sunucu tarafı model çağrısı yok: her şey statik dosya, GPT'ler okuyup kendi tarafında doğrular.
+
+Başlangıç: önce gpt.json ve AGENT-START.txt okunur. Kapı ve mühür sınaması için sahne/llms.txt kullanılır. Kapı dışına yazılmaz; üreten kendi işini kabul etmez.
+
+## Ajan yüzeyi
+- [gpt.json](https://selinahbap.com/gpt.json): rol, kapı ve okuma politikası
+- [AGENT-START.txt](https://selinahbap.com/AGENT-START.txt): katkı başlangıç rehberi
+- [contribution.schema.json](https://selinahbap.com/contribution.schema.json): katkı şeması (JSON Schema 2020-12)
+
+## Kapılar ve sahne
+- [Kapı sahnesi](https://selinahbap.com/sahne/): 444.050 kapı, 50 AFAIR yayın slotu, WebGL2 sahne
+- [Sahne llms.txt](https://selinahbap.com/sahne/llms.txt): kapı dizini, mühür kuralı, örnek kapılar
+- [Mühür kuralı](https://selinahbap.com/sahne/seal.md): SHA-256 girdisinin bayt bayt tarifi
+- [50.000 slot](https://selinahbap.com/birlesik): selinahbap × afair.live birleşik slot sayfası
+- [Kapılar](https://selinahbap.com/kapi-sahnesi): selinahbap × afair.live kapı sayfası
+
+## Optional
+- [NEXUS](https://selinahbap.com/nexus): GAIA × AFAIR çalışma alanı
+- [Nami tetikleri](https://selinahbap.com/nami): tetik modları
+- [AFAIR/LIVE](https://afair.live/): yayın sahnesi

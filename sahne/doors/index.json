@@ -1,0 +1,31 @@
+{
+ "sema": "selinahbap.kapi.v1",
+ "surum": "1.1.0",
+ "toplam": 444050,
+ "katmanlar": [
+  {
+   "ad": "bekleyen",
+   "blok": 8,
+   "boy": 50000
+  },
+  {
+   "ad": "sergi",
+   "blok": 8,
+   "boy": 5000
+  },
+  {
+   "ad": "hazir",
+   "blok": 8,
+   "boy": 500
+  },
+  {
+   "ad": "kullanimda",
+   "blok": 1,
+   "boy": 50
+  }
+ ],
+ "canli": "kullanimda.json",
+ "ornek": "ornek.json",
+ "kural": "seal.md",
+ "not": "Kapılar formüldür; her kapıyı seal.md ile kendin hesapla, ornek.json ile sınan."
+}

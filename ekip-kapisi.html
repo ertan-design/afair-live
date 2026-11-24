@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<title>GAIA Ekip Kapısı · Selinahbap</title>
+<link rel="stylesheet" href="/ekip-kapisi.release.css"></head><body><main>
+<header><strong>SELİNAHBAP · GAIA</strong><nav class="row" aria-label="Selinahbap araçları"><a href="#donus">İş dönüşü</a><a href="https://www.selinahbap.com/selin-kapilar.html">İş kapıları</a><a href="https://www.selinahbap.com/olcum-kutusu.html">Ölçüm kutusu</a></nav></header>
+<h1>Ekip Kapısı</h1>
+<p class="muted">Bir web sayfasından sekiz iş çıkar. Hazırladığın paketi ekipte seçtiğin istasyona ver.</p>
+<div class="gates" aria-label="Üç aşama">
+<div class="gate"><strong>1 · Kapsam</strong><span id="gate1">Alıcı ve kaynak bekleniyor.</span></div>
+<div class="gate"><strong>2 · Kanıt</strong><span id="gate2">Dosya özeti bekleniyor.</span></div>
+<div class="gate"><strong>3 · Teslim</strong><span id="gate3">Paket bekleniyor.</span></div>
+</div>
+<div class="layout">
+<section class="panel" aria-labelledby="send-title">
+<h2 id="send-title">Tek tetik</h2>
+<form id="send">
+<div class="actors"><label>Üreten istasyon<select id="sender"></select></label><label>Alıcı istasyon<select id="recipient"></select></label></div>
+<label>Sayfa<select id="route"><option value="/">Selinahbap ana sayfa</option><option value="/selin-kapilar.html" selected>İş kapıları</option><option value="/olcum-kutusu.html">Ölçüm kutusu</option><option value="/ekip.html">Ekip akışı</option><option value="/ekip-kapisi.html">Ekip kapısı</option></select></label>
+<details><summary>Yerel taslak ve önceki ölçüm</summary>
+<label>Yerel HTML taslağı<input type="file" id="local" accept=".html,.htm,text/html"></label>
+<label>Önceki GAIA JSON paketi<input type="file" id="prior" accept=".json,application/json"></label>
+</details>
+<button class="primary" id="generate">8 işi hazırla</button>
+</form>
+<p id="status" class="status" role="status" aria-live="polite"></p>
+<div class="row" aria-label="Paket biçimleri"><button id="copy" disabled>Metni kopyala</button><button id="json" disabled>GAIA JSON</button><button id="jsonl" disabled>JSONL</button></div>
+<details data-release-style="1"><summary>Gelen paketi doğrula</summary>
+<label>Seçili alıcıya gelen GAIA JSON<input type="file" id="incoming" accept=".json,application/json"></label>
+<p id="verified" class="mono" role="status"></p>
+</details>
+</section>
+<section class="panel" aria-labelledby="result-title">
+<h2 id="result-title">Sekiz iş ve ilk ölçümler</h2>
+<p class="muted" id="intro">İşler hazırlandığında alıcı, ölçüm ve sonraki adım burada görünür.</p>
+<p id="seal" class="mono hash"></p><div id="jobs" class="jobs"></div>
+</section>
+</div>
+<section class="panel return-panel" id="donus" aria-labelledby="return-title">
+<h2 id="return-title">GAIA iş dönüşü</h2><p class="muted">İşi al, başlat ve sonucu mühürle. Kabul için ayrı hakem aynı dosyanın özetini yeniden hesaplar.</p>
+<fieldset id="return-lock">
+<div class="return-input">
+<label>Gelen GAIA paketi<input id="return-source" type="file" accept=".json,application/json"></label>
+<label>Önceki dönüş kaydı<input id="return-import" type="file" accept=".json,application/json" disabled></label>
+</div>
+<button type="button" id="return-use" disabled>Hazırlanan paketi kullan</button>
+<p class="return-meta mono" id="return-meta"></p>
+<div class="return-input">
+<label>İş<select id="return-task" disabled></select></label>
+<label>Hakem istasyonu<select id="return-reviewer" disabled></select></label>
+<label>Sonuç veya kabul için dosya<input id="return-artifact" type="file" disabled></label>
+<label>Ret veya hata nedeni<select id="return-reason" disabled>
+<option value="evidence_missing">Kanıt eksik</option><option value="test_failed">Test başarısız</option><option value="scope_mismatch">Kapsam uyuşmuyor</option>
+</select></label>
+</div>
+<div class="row return-actions">
+<button type="button" id="return-ack" disabled>İşi al</button><button type="button" id="return-start" disabled>Başlat</button>
+<button type="button" id="return-result" disabled>Sonucu mühürle</button><button type="button" id="return-fail" disabled>Hata kaydet</button>
+<button type="button" id="return-accept" disabled>Kabul et</button><button type="button" id="return-reject" disabled>Reddet</button>
+</div>
+<ol class="chain-list" id="return-events"></ol>
+<div class="row"><button type="button" id="return-save" disabled>Dönüş JSON’u indir</button></div>
+</fieldset>
+<p id="return-status" class="status" role="status" aria-live="polite"></p>
+</section>
+</main><script src="/ekip-kapisi.release.js" defer></script></body></html>

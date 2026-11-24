@@ -1,0 +1,50 @@
+{
+ "surum": "1.1.0",
+ "dosyalar": [
+  {
+   "yol": "doors/index.json",
+   "bayt": 491,
+   "sha256": "6cb6f172fae1f4a397d508d96e37472394d898e28290192f60df5efc676ed003"
+  },
+  {
+   "yol": "doors/kullanimda.json",
+   "bayt": 7651,
+   "sha256": "f136701a05c0dfcc809984763207d52bc83ff0950e608ef7a350bce5600450ea"
+  },
+  {
+   "yol": "doors/ornek.json",
+   "bayt": 1479,
+   "sha256": "9cd548bc1032c7f47f9876eb5c452010d33aad68e380d994b4d7c1710eabb0b5"
+  },
+  {
+   "yol": "index.html",
+   "bayt": 5908,
+   "sha256": "d85b2446a14574b8afc8b5f034fdf5472301d085dc689148cd4f920928ad109e"
+  },
+  {
+   "yol": "llms.txt",
+   "bayt": 908,
+   "sha256": "2b9210ef064adedad0d547c088e618583d064da42189be83825d40df4417306e"
+  },
+  {
+   "yol": "robots.txt",
+   "bayt": 23,
+   "sha256": "16ceb5ee3e0dc13aa9adf31a3ebbe45a1d965b8c2b9f72eaf84e5911e140ed95"
+  },
+  {
+   "yol": "sahne.css",
+   "bayt": 6655,
+   "sha256": "e97f0e7726d33de4d4455d90425910b3f5a047dfb71a1ec65eb8e330a1f2378f"
+  },
+  {
+   "yol": "sahne.js",
+   "bayt": 12944,
+   "sha256": "14a0683e26422ad772a0070e8c281c270ea93d1ea03ad64e656244c1b1367c69"
+  },
+  {
+   "yol": "seal.md",
+   "bayt": 720,
+   "sha256": "ab14b0576e4da90ea626828ac76789222116a0eedd0524613f803e3a0602ce03"
+  }
+ ]
+}

@@ -20,11 +20,30 @@
       ]
     }
   ],
-  "redirects": [
+  "rewrites": [
     {
-      "destination": "/",
-      "source": "/nexus",
-      "permanent": false
+      "source": "/podyum-sahne",
+      "destination": "/podyum-sahne/index.html"
+    },
+    {
+      "source": "/podyum-sahne/",
+      "destination": "/podyum-sahne/index.html"
+    },
+    {
+      "source": "/teknik-sergi",
+      "destination": "/teknik-sergi/index.html"
+    },
+    {
+      "source": "/teknik-sergi/",
+      "destination": "/teknik-sergi/index.html"
+    },
+    {
+      "source": "/sahne",
+      "destination": "/sahne/index.html"
+    },
+    {
+      "source": "/sahne/",
+      "destination": "/sahne/index.html"
     }
   ]
 }

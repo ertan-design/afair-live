@@ -1,0 +1,114 @@
+[
+ {
+  "n": 1,
+  "kimlik": "K-000001",
+  "katman": "bekleyen",
+  "blok": 1,
+  "sira": 1,
+  "serit": {
+   "1": 1,
+   "4": 1,
+   "8": 1,
+   "11": 1
+  },
+  "muhur": "16e221ccb439"
+ },
+ {
+  "n": 50000,
+  "kimlik": "K-050000",
+  "katman": "bekleyen",
+  "blok": 1,
+  "sira": 50000,
+  "serit": {
+   "1": 1,
+   "4": 4,
+   "8": 8,
+   "11": 5
+  },
+  "muhur": "ed016e71f409"
+ },
+ {
+  "n": 400000,
+  "kimlik": "K-400000",
+  "katman": "bekleyen",
+  "blok": 8,
+  "sira": 50000,
+  "serit": {
+   "1": 1,
+   "4": 4,
+   "8": 8,
+   "11": 7
+  },
+  "muhur": "8f2f82beccdc"
+ },
+ {
+  "n": 400001,
+  "kimlik": "K-400001",
+  "katman": "sergi",
+  "blok": 1,
+  "sira": 1,
+  "serit": {
+   "1": 1,
+   "4": 1,
+   "8": 1,
+   "11": 8
+  },
+  "muhur": "23cbb14e874a"
+ },
+ {
+  "n": 440001,
+  "kimlik": "K-440001",
+  "katman": "hazir",
+  "blok": 1,
+  "sira": 1,
+  "serit": {
+   "1": 1,
+   "4": 1,
+   "8": 1,
+   "11": 1
+  },
+  "muhur": "11f5f5d464a3"
+ },
+ {
+  "n": 444001,
+  "kimlik": "K-444001",
+  "katman": "kullanimda",
+  "blok": 1,
+  "sira": 1,
+  "serit": {
+   "1": 1,
+   "4": 1,
+   "8": 1,
+   "11": 8
+  },
+  "muhur": "0f6d25435d42"
+ },
+ {
+  "n": 444050,
+  "kimlik": "K-444050",
+  "katman": "kullanimda",
+  "blok": 1,
+  "sira": 50,
+  "serit": {
+   "1": 1,
+   "4": 2,
+   "8": 2,
+   "11": 2
+  },
+  "muhur": "f4102be74e2b"
+ },
+ {
+  "n": 123457,
+  "kimlik": "K-123457",
+  "katman": "bekleyen",
+  "blok": 3,
+  "sira": 23457,
+  "serit": {
+   "1": 1,
+   "4": 1,
+   "8": 1,
+   "11": 4
+  },
+  "muhur": "4ade1bd981f8"
+ }
+]

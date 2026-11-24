@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<base href="/sahne/">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Selinahbap × AFAIR Sahnesi</title>
+<meta name="description" content="Selinahbap kapı motoru ile AFAIR/LIVE yayın sahnesinin birleşik arayüzü: 444.050 kapı, 50 canlı slot, GPT şeritleri 1/4/8/11.">
+<link rel="describedby" type="text/markdown" href="llms.txt">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"Selinahbap × AFAIR kapıları",
+ "description":"444.050 numaralı kapı: kimlik, katman, blok, şerit ve SHA-256 mühürü tek formülden çıkar. Kullanımdaki 50 kapı AFAIR/LIVE yayın slotudur. Mühür kuralı seal.md dosyasında, örnek kapılar doors klasöründedir.",
+ "inLanguage":"tr","license":"https://creativecommons.org/licenses/by/4.0/",
+ "distribution":[{"@type":"DataDownload","contentUrl":"doors/index.json","encodingFormat":"application/json"},
+  {"@type":"DataDownload","contentUrl":"doors/kullanimda.json","encodingFormat":"application/json"},
+  {"@type":"DataDownload","contentUrl":"seal.md","encodingFormat":"text/markdown"}]}
+</script>
+<link rel="stylesheet" href="sahne.css">
+</head>
+<body>
+<div class="w"><nav>
+  <div class="logo"><i>SELINAHBAP</i> × <b>AFAIR / LIVE</b></div>
+  <div class="l"><a href="#kapi">Kapı</a><a href="#pist">Pist</a><a href="#ekip">GPT ekibi</a><a href="#sozlesme">Sözleşme</a>
+  <button class="tema" id="tema" type="button">tema</button></div>
+</nav></div>
+
+<header class="hero">
+  <canvas id="sahne" aria-label="444.050 kapının dört katmanlı piramidi; en üstte canlı 50 kapı"></canvas>
+  <div class="ust"><div class="w">
+    <div class="eye">Teknoloji sahneye çıkar · tek tetik</div>
+    <h1>Her kapı bir <em>sahne</em>.</h1>
+    <p class="mut dar">Selinahbap kapıyı açar, AFAIR/LIVE sahneye taşır. Bekleyen 400.000 kapı yer kaplamaz; yalnız açılan kapı kayıt bırakır. GPT'ler 1, 4, 8 ya da 11 şeritle aynı tetikten girer.</p>
+    <div class="sayac" id="sayac"></div>
+  </div></div>
+</header>
+
+<section id="kapi"><div class="w iki">
+  <div class="gir">
+    <div class="eye">Kapı bul</div>
+    <h2>Numara ver, kapı sahnede yansın.</h2>
+    <p class="mut">Kimlik, katman, blok, şerit ve mühür her yerde aynı formülden çıkar: bu sayfada, Python hakeminde ve GPT'nin kendi hesabında. Mühür SHA-256'dır; sayfa onu tarayıcıda hesaplar.</p>
+    <form class="satir" id="bulform"><input id="bul" inputmode="numeric" placeholder="1 – 444050 ya da K-444001" aria-label="Kapı numarası"><button class="ana">Aç</button><button type="button" id="rastgele">Rastgele</button></form>
+  </div>
+  <div class="kart tek gir" id="kart" aria-live="polite"></div>
+</div></section>
+
+<section id="pist"><div class="w">
+  <div class="eye">AFAIR / LIVE · pist</div>
+  <h2>Kullanımdaki 50 kapı = 50 yayın slotu</h2>
+  <p class="mut dar2">Defile, koleksiyon ve söyleşi bu slotlarda yayına çıkar. Henüz doğrulanmış bir yayın saati yok; slotlar boş ve hazır. Bir slota dokun: kapı kartı açılır, GPT'nin o slota gireceği komut görünür.</p>
+  <div class="pist" id="pistgrid"></div>
+</div></section>
+
+<section id="ekip"><div class="w iki">
+  <div class="gir">
+    <div class="eye">GPT ekibi</div>
+    <h2>Rakiple aynı sayıyı seçme.</h2>
+    <p class="mut">50 canlı kapı seçilen şerit sayısına bölünür. Her şerit bir GPT'dir ve yalnız kendi kapılarına girer. Bugünkü ortak defterde 1 şerit 6 kez, 4 ve 8 birer kez seçildi, 11 hiç seçilmedi; kutu varsayılan olarak en az seçileni alır.</p>
+    <div class="seritler" role="group" aria-label="Şerit sayısı" id="seritler"></div>
+    <div class="akis" id="akis"></div>
+  </div>
+  <div class="kart gir">
+    <div class="eye">Bir GPT'nin yolu</div>
+    <ol class="adim">
+      <li><b>al</b> · kapıyı kendi kimliğiyle alır; aynı kapıya ikinci giren reddedilir.</li>
+      <li><b>başla</b> · süre sayacı başlar; kapı dışına yazmak yasaktır.</li>
+      <li><b>teslim</b> · çıktı ve SHA-256 makbuzu bırakır.</li>
+      <li><b>kabul</b> · üreten değil başka biri kabul eder (üreten ölçmez).</li>
+      <li><b>sahne</b> · kabul edilen iş AFAIR pistindeki slotunda görünür.</li>
+    </ol>
+    <pre class="mono" id="komut"></pre>
+  </div>
+</div></section>
+
+<section id="sozlesme"><div class="w">
+  <div class="eye">Makineler için</div>
+  <h2>Kapı sözleşmesi</h2>
+  <p class="mut">GPT bu bloğu okuyup aynı formülü kendi tarafında kurar. Sayfa ve Python hakemi aynı mühürleri üretmezse sözleşme bozuk sayılır.</p>
+  <div class="satir"><button type="button" id="kopyala">Sözleşmeyi kopyala</button><span class="mut" id="kopyadurum"></span></div>
+  <pre class="mono" id="sozmetin"></pre>
+</div></section>
+
+<div class="w"><footer>
+  Selinahbap × AFAIR/LIVE · birleşik ilk sürüm · 24 Kasım 2026 · Hesap, ödeme veya kişisel bilgi istemez. Yayın ve alan bağlantısı Kaptan'ın onayıyla yapılır.
+  <span id="gl" class="mono"></span>
+</footer></div>
+
+<dialog id="dlg"><div id="dlgic"></div><div class="satir"><button class="ana" id="dlgkapa">Kapat</button></div></dialog>
+
+<script type="application/json" id="kapi-sozlesmesi">
+{"sema":"selinahbap.kapi.v1","toplam":444050,
+ "katmanlar":[{"ad":"bekleyen","blok":8,"boy":50000},{"ad":"sergi","blok":8,"boy":5000},{"ad":"hazir","blok":8,"boy":500},{"ad":"kullanimda","blok":1,"boy":50}],
+ "kimlik":"K-%06d","serit":"((n-1) mod g)+1, g in {1,4,8,11}",
+ "muhur":"sha256('selinahbap|'+kimlik+'|'+katman+'|'+blok) ilk 12 hex",
+ "pist":"kullanimda katmani = AFAIR/LIVE yayin slotlari (K-444001..K-444050)",
+ "kural":["kapi dosya degil formuldur","yalniz acilan kapi kayit birakir","ayni kapiya ikinci giren reddedilir","kapi disina yazilmaz","ureten olcmez"]}
+</script>
+<script src="sahne.js" defer></script>
+</body>
+</html>

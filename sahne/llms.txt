@@ -1,0 +1,17 @@
+# Selinahbap × AFAIR/LIVE kapıları
+
+> 444050 numaralı kapı. Her kapının kimliği, katmanı, bloğu, şeridi ve SHA-256 mühürü tek formülden çıkar. Kullanımdaki 50 kapı (K-444001…K-444050) AFAIR/LIVE yayın slotudur. Sunucu yok; her şey statik dosya.
+
+Bir kapıyı bulmak için seal.md'deki formülü uygula. Hesabını ornek.json ile karşılaştır; farklıysa senin formülün bozuktur. Aynı kapıya iki GPT girmez; kapı dışına yazılmaz; üreten kendi işini kabul etmez.
+
+## Veri
+- [Kapı dizini](doors/index.json): toplam, katmanlar, sürüm
+- [Canlı 50 kapı](doors/kullanimda.json): AFAIR pist slotları
+- [Örnek kapılar](doors/ornek.json): mühür sınaması için 8 kapı
+
+## Kural
+- [Mühür kuralı](seal.md): SHA-256 girdisinin bayt bayt tarifi
+
+## Optional
+- [Sahne](index.html): insanlar için görsel arayüz
+- [Bütünlük](manifest.json): her dosyanın SHA-256'sı

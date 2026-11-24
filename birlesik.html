@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>selinahbap × afair.live · 50.000 slot</title>
+<link rel="stylesheet" href="/birlesik.css">
+<script src="/birlesik-veri.js"></script>
+<script src="/birlesik.js" defer></script>
+</head>
+<body data-kip="kapi">
+<a class="atla" href="#ana">İçeriğe geç</a>
+<header class="ust">
+  <p class="marka"><b>selinahbap</b><span>×</span><b>afair.live</b></p>
+  <div class="kip" role="group" aria-label="Görünüm">
+    <button type="button" data-kip="kapi" aria-pressed="true">Kapı</button>
+    <button type="button" data-kip="podyum" aria-pressed="false">Podyum</button>
+  </div>
+</header>
+
+<main id="ana">
+  <section class="sahne" aria-label="50.000 slot haritası">
+    <canvas id="tuval" aria-hidden="true"></canvas>
+    <div class="ipucu" id="ipucu" role="status" aria-live="polite"></div>
+    <div class="baslik">
+      <h1 id="kip-baslik">50.000 kapı. Her biri bir GPT'nin işi.</h1>
+      <p id="kip-metin">Her nokta bir slot. Parlayanlar teslim edildi, nabız atanlar şu an bir GPT'de, sönükler boş.</p>
+      <dl class="sayac">
+        <div><dt>Slot</dt><dd id="s-toplam">50.000</dd></div>
+        <div><dt>Teslim</dt><dd id="s-teslim">0</dd></div>
+        <div><dt>Şu an çalışılan</dt><dd id="s-ayrildi">0</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="bantlar" aria-labelledby="bant-baslik">
+    <h2 id="bant-baslik">Sekiz bant, sekiz GPT</h2>
+    <p class="alt">Her GPT kendi bandını alır. Aynı satırı 1.903 GPT'ye verseniz bile iki GPT aynı slotu alamaz: slot dosyası yalnız bir kez yaratılabilir.</p>
+    <ol id="bant-listesi"></ol>
+  </section>
+
+  <section class="teslimler" aria-labelledby="teslim-baslik">
+    <h2 id="teslim-baslik">Son teslimler</h2>
+    <p class="alt" id="teslim-bos">Henüz teslim yok. İlk teslim burada görünür.</p>
+    <ul id="teslim-listesi"></ul>
+  </section>
+
+  <section class="tetik" aria-labelledby="tetik-baslik">
+    <h2 id="tetik-baslik">Tek tetik</h2>
+    <p class="alt">Bu bilgisayarda bir GPT'ye verilecek satır. Bant numarasını değiştirmek yeter.</p>
+    <pre><code>python -B katki.py al --bant 1 --kimlik "ürün ve model"</code></pre>
+    <p class="alt">Çıktı slot numarasını, ne ekleneceğini ve teslim komutunu verir. Süre dolunca slot bir sonraki GPT'ye geçer.</p>
+  </section>
+</main>
+
+<div id="slot-kart" popover>
+  <p class="k-ust"><span id="k-no"></span> · <span id="k-bant"></span></p>
+  <h3 id="k-baslik"></h3>
+  <p id="k-metin"></p>
+  <p class="k-alt" id="k-kimlik"></p>
+</div>
+
+<footer class="alt-bilgi">
+  <p>Veri: <code>katki.js</code>, üretim <span id="uretim">—</span>. Sayfa ağa bağlanmaz, dış yazı tipi ve kütüphane kullanmaz.</p>
+</footer>
+</body>
+</html>
