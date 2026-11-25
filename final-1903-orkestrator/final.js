@@ -454,16 +454,39 @@
       sonCiktiNesnesi = { sema: 'dila.kapasite.terazi.v1', canliFps: durum.fps, dugumSayisi: topN, brierSkoru: Number(brier), kalibrasyonSapmaYuzde: Number(sapma), kanitSinifi: sinif };
     }
     else if (MOD === 'orkestrator_1903') {
-      var ajan = Number(val('inp-ajan', 11));
+      var ajan = Math.max(8, Math.min(17, Math.trunc(Number(val('inp-ajan', 11))) || 11));
       var hedef = val('inp-hedef', 'kumas');
       var tohum = val('inp-tohum', 'AFAIR-1903-DILA');
       var hash16 = fnvOzeti(tohum + '-' + ajan + '-' + hedef);
       var dosyalar = [];
-      for (var p = 1; p <= ajan; p++) dosyalar.push('slot_' + (p < 10 ? '0' + p : p) + '_' + hedef + '_' + hash16.slice(0, 6) + '.js');
-      html = '<strong>1903 GPT Eşzamanlı Dağıtım:</strong> <strong>' + ajan + ' ayrı yapay zekâ penceresi</strong> için sıfır dosya çakışmalı tekil kilit üretildi.<br>' +
-             '<strong>leapSeed Özeti:</strong> <code>' + hash16 + '</code><br>' +
-             '<strong>Örnek Tekil Çıktı Kilitleri:</strong> <code>' + dosyalar.slice(0, 4).join(', ') + ' ... ' + dosyalar[dosyalar.length - 1] + '</code>';
-      sonCiktiNesnesi = { sema: 'afair.1903.orkestrator.v1', eszamanliPencere: ajan, kume: hedef, leapSeed: tohum, zincirOzeti: hash16, kilitliDosyalar: dosyalar };
+      for (var p = 1; p <= ajan; p++) dosyalar.push('slot_' + (p < 10 ? '0' + p : p) + '_' + hedef + '_' + hash16.slice(0, 6) + '.md');
+      var roller = [
+        ['Kapsam','Amacı ve kullanıcıya teslim edilecek sonucu bir cümlede yaz.'],
+        ['Kaynak','Mevcut kaynakları ve eksikleri ayır. Her iddianın kaynağını yaz.'],
+        ['Kullanıcı akışı','İlk ekrandan sonuca giden adımları sırala.'],
+        ['Arayüz','Ana eylemi görünür yap. Mobil ve klavye kullanımını düşün.'],
+        ['Görsel','Özgün bir görsel hazırla. Kaynağı ve kullanım hakkını belirt.'],
+        ['Hareket','Oynatma, duraklatma ve elle yönlendirmeyi hazırla.'],
+        ['Veri','Örnek, ölçülmüş veri ve tahminleri çıktıda ayır.'],
+        ['Denetim','En az bir normal ve bir sınır senaryosu doğrula.'],
+        ['Erişilebilirlik','Klavye sırası, etiketler ve odak görünümünü denetle.'],
+        ['Performans','Açılış kaynaklarının boyutunu ölç.'],
+        ['İçerik','Metni kısa, açık ve doğrulanabilir hale getir.'],
+        ['Bağlantılar','Her düğmenin hedefini ve dönüş yolunu kontrol et.'],
+        ['Mobil','Dar ekranda taşmayı ve dokunma alanlarını sına.'],
+        ['Kaynak düzeni','Dosyaları okunabilir isimlerle teslim klasörüne koy.'],
+        ['Yayın kontrolü','Yalnız yayımlanan iş için canlı adres ve gözlemi kaydet.'],
+        ['Sürüm kaydı','Bu değişikliği ve etkilenen dosyaları kısa bir notla yaz.'],
+        ['Devir','Tamamlanan işi, kalan kısmı ve yeniden doğrulama adımını belirt.']
+      ];
+      var gorevler = dosyalar.map(function(dosya, ix) {
+        return { slot: ix + 1, dosya: dosya, rol: roller[ix][0],
+          prompt: 'Konu: ' + hedef + '\nGörev: ' + roller[ix][1] + '\nÇıktıyı yalnız teklif edilen ' + dosya + ' adıyla hazırla.' };
+      });
+      html = '<strong>Görev paketi:</strong> ' + gorevler.length + ' görev metni hazır.<br>' +
+             '<strong>Paket kimliği:</strong> <code>' + hash16 + '</code><br>' +
+             '<strong>İlk görev:</strong> ' + gorevler[0].rol;
+      sonCiktiNesnesi = { sema: 'afair.gorev_paketi.v1', kume: hedef, kimlik: hash16, gorevler: gorevler };
     }
     else if (MOD === 'terzi_randevu') {
       var bolge = val('inp-bolge', 'atasehir');

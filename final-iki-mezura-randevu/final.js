@@ -469,10 +469,10 @@
       var bolge = val('inp-bolge', 'atasehir');
       var saat = val('inp-saat', '14:30');
       var num = val('inp-numune', 'sumakh');
-      var kod = 'VIP-' + fnvOzeti(bolge + saat + num).slice(0, 8).toUpperCase();
-      html = '<strong>Terzi Müsaitlik Durumu:</strong> <strong>MÜSAİT (Onaylı)</strong> · Bölge: <strong>' + bolge.toUpperCase() + '</strong> · Saat: <strong>' + saat + '</strong><br>' +
-             '<strong>Hazırlanan Çanta:</strong> İki-Mezura Takımı + <strong>' + num.toUpperCase() + '</strong> Pantone TCX Kumaş Kartelası · Prova Kodu: <code>' + kod + '</code>';
-      sonCiktiNesnesi = { sema: 'afair.iki_mezura.randevu.v1', bolge: bolge, saat: saat, numunePaketi: num, provaKodu: kod, durum: 'MUSAIT_ONAYLI' };
+      var kod = 'PROVA-' + fnvOzeti(bolge + saat + num).slice(0, 8).toUpperCase();
+      html = '<strong>Prova talebi taslağı</strong> · Bölge: <strong>' + bolge.toUpperCase() + '</strong> · Tercih edilen saat: <strong>' + saat + '</strong><br>' +
+             '<strong>İstenen numune paketi:</strong> İki-Mezura Takımı + <strong>' + num.toUpperCase() + '</strong> Pantone TCX Kumaş Kartelası · Prova Kodu: <code>' + kod + '</code>';
+      sonCiktiNesnesi = { sema: 'afair.iki_mezura.randevu.v1', bolge: bolge, saat: saat, numunePaketi: num, provaKodu: kod, durum: 'TASLAK', musaitlikDogrulandi: false };
     }
     else if (MOD === 'podyum_8d') {
       var bpm = Number(val('inp-bpm', 98));
