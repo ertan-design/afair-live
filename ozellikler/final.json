@@ -40,7 +40,7 @@
       "category": "Geri getirilen",
       "restored": true,
       "url": "https://www.afair.live/final/kroma-aynasi/index.html",
-      "sha256": "e9fc61292da0fb84f0924574a158be46e19b43a8445891cc946adc862d6a6c38"
+      "sha256": "57ad1d5d5bbabe86e7cd90909a2867a73667374a2e89e2ce4bf665e2445ec77d"
     },
     {
       "path": "final/iki-mezura-kalip/index.html",
@@ -49,7 +49,7 @@
       "category": "Geri getirilen",
       "restored": true,
       "url": "https://www.afair.live/final/iki-mezura-kalip/index.html",
-      "sha256": "4abd4bb2e041f34dac7be39e3042a0260081ddd96740b1ff44a73dc114d0ec74"
+      "sha256": "aac10e4aa6029e13248f397ad4bb55929fe9ddb545c7543235c1362a1d2558ac"
     },
     {
       "path": "final/higgsreel-performans/index.html",
@@ -58,7 +58,7 @@
       "category": "Geri getirilen",
       "restored": true,
       "url": "https://www.afair.live/final/higgsreel-performans/index.html",
-      "sha256": "5b0c609998016a50a4aab12c64d7ac504810fab97c5ea76d17625b671ef56393"
+      "sha256": "d29988233af99b4380989829ed0877e694a1c6b823cb29c8716cf06885a9e0c1"
     },
     {
       "path": "final/atolye-8d-ses-ucus/index.html",
@@ -67,7 +67,7 @@
       "category": "Geri getirilen",
       "restored": true,
       "url": "https://www.afair.live/final/atolye-8d-ses-ucus/index.html",
-      "sha256": "0ce332c75ee1e3bada76973ae794ddd353018244b0b1aa9699eb5449a3e0c3ae"
+      "sha256": "d52da6f1cc049d3a44fd4c8b564a43541015931826ebb1f18e46e8f84e4e3f6b"
     },
     {
       "path": "sahne-slot/index.html",
@@ -637,5 +637,6 @@
       "sha256": "fe500b228ee2318070554624675c6b2b498e8f2e99eac39fb8ad1e8714f04639"
     }
   ],
-  "hash_normalization": "UTF-8 text; CRLF normalized to LF as in Git publication"
+  "hash_normalization": "UTF-8 text; CRLF normalized to LF as in Git publication",
+  "recovery_record": "/ozellikler/kurtarma-kaydi.json"
 }

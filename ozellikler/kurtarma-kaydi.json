@@ -1,0 +1,164 @@
+{
+  "schema": "afair.recovery.v1",
+  "source_commit": "785e92d25fd513f6a325f7c246ef0200eab30fe5",
+  "homepage_preserved": true,
+  "added_buttons": [
+    {
+      "url": "/ozellikler/terzi/",
+      "title": "Terzi, renk ve pasaport"
+    },
+    {
+      "url": "/final/atolye-8d-ses-ucus/",
+      "title": "İpek, ses ve uçuş"
+    },
+    {
+      "url": "/ozellikler/terzi/video",
+      "title": "Dila film masası"
+    }
+  ],
+  "html_repairs": [
+    {
+      "path": "final/iki-mezura-kalip/index.html",
+      "sha256": "aac10e4aa6029e13248f397ad4bb55929fe9ddb545c7543235c1362a1d2558ac"
+    },
+    {
+      "path": "final/higgsreel-performans/index.html",
+      "sha256": "d29988233af99b4380989829ed0877e694a1c6b823cb29c8716cf06885a9e0c1"
+    },
+    {
+      "path": "final/atolye-8d-ses-ucus/index.html",
+      "sha256": "d52da6f1cc049d3a44fd4c8b564a43541015931826ebb1f18e46e8f84e4e3f6b"
+    },
+    {
+      "path": "final/kroma-aynasi/index.html",
+      "sha256": "57ad1d5d5bbabe86e7cd90909a2867a73667374a2e89e2ce4bf665e2445ec77d"
+    },
+    {
+      "path": "ozellikler/video/index.html",
+      "sha256": "fa6c0a61548dbdf0c39798344bc31a7ec95dd026d1701f2666e5d0b3a330d082"
+    }
+  ],
+  "restored_assets": [
+    {
+      "path": "ozellikler/terzi/dila_8_konsept_senkron.jsonl",
+      "git_blob": "f4b205e89aad1699e328ab71ee4f0fe18077a2d9",
+      "source_path": "prizma/dila_8_konsept_senkron.jsonl"
+    },
+    {
+      "path": "ozellikler/terzi/dila_videolar.jsonl",
+      "git_blob": "03c51fc78866f8cec9a325a34d8f3f010cfa8469",
+      "source_path": "prizma/dila_videolar.jsonl"
+    },
+    {
+      "path": "ozellikler/terzi/filo_canli_durum.jsonl",
+      "git_blob": "c6d8d57554045fcb0e300543beea82c04cd315a3",
+      "source_path": "prizma/filo_canli_durum.jsonl"
+    },
+    {
+      "path": "ozellikler/terzi/live_sinema.css",
+      "git_blob": "794de1d74623a3c3f0a357e38a0ccfc8a98b9a6f",
+      "source_path": "prizma/live_sinema.css"
+    },
+    {
+      "path": "ozellikler/terzi/live_sinema.js",
+      "git_blob": "d6764219093d4936bdbffc3e4e8b5c940f23f097",
+      "source_path": "prizma/live_sinema.js"
+    },
+    {
+      "path": "ozellikler/terzi/manifest.json",
+      "git_blob": "9509eed8b3b2b152563475261794b8510d95d1c6",
+      "source_path": "prizma/manifest.json"
+    },
+    {
+      "path": "ozellikler/terzi/prizma-filo.js",
+      "git_blob": "c031535cfa22dc4a8091e8585adc775a9ddede7f",
+      "source_path": "prizma/prizma-filo.js"
+    },
+    {
+      "path": "ozellikler/terzi/prizma-front1.js",
+      "git_blob": "a3024d70bb5e358cd75082fe2a610103c4be68ca",
+      "source_path": "prizma/prizma-front1.js"
+    },
+    {
+      "path": "ozellikler/terzi/prizma-front3.js",
+      "git_blob": "aad0cb35af300ff12172bdb876f2228905891973",
+      "source_path": "prizma/prizma-front3.js"
+    },
+    {
+      "path": "ozellikler/terzi/prizma-front4.js",
+      "git_blob": "c7fc749af5eb86e9d6384e4dde3604a0fd575c54",
+      "source_path": "prizma/prizma-front4.js"
+    },
+    {
+      "path": "ozellikler/terzi/prizma-hub.js",
+      "git_blob": "9cec57eb91444a0a677a0dbeb1d737dcbbdd8749",
+      "source_path": "prizma/prizma-hub.js"
+    },
+    {
+      "path": "ozellikler/terzi/prizma-video.js",
+      "git_blob": "537c5b13e895589368b6956dc0698a3c24e2bd38",
+      "source_path": "prizma/prizma-video.js"
+    },
+    {
+      "path": "ozellikler/terzi/video/DILA_01_IKI_MEZURA_TERZI.jpg",
+      "git_blob": "eddf841b67002c84d585e4bb624dbf3629b40513",
+      "source_path": "prizma/video/DILA_01_IKI_MEZURA_TERZI.jpg"
+    },
+    {
+      "path": "ozellikler/terzi/video/DILA_01_IKI_MEZURA_TERZI.mp4",
+      "git_blob": "451585c8c1cefac0c75ef29d4a6821e24f855e4f",
+      "source_path": "prizma/video/DILA_01_IKI_MEZURA_TERZI.mp4"
+    },
+    {
+      "path": "ozellikler/terzi/video/DILA_02_AFAIR_STUDIO_AI_GALERI.jpg",
+      "git_blob": "4b206873e89c8b5fdde5d3348546aa1da38a7aa6",
+      "source_path": "prizma/video/DILA_02_AFAIR_STUDIO_AI_GALERI.jpg"
+    },
+    {
+      "path": "ozellikler/terzi/video/DILA_02_AFAIR_STUDIO_AI_GALERI.mp4",
+      "git_blob": "4225f4b9fcf4ee2b5b3eb07f77e74d14349c214d",
+      "source_path": "prizma/video/DILA_02_AFAIR_STUDIO_AI_GALERI.mp4"
+    },
+    {
+      "path": "ozellikler/terzi/video/DILA_03_YENI_SIYAH_AKUSTIK.jpg",
+      "git_blob": "9c30d35f83b8ebb6cfd29301f6476c1cef9a3efc",
+      "source_path": "prizma/video/DILA_03_YENI_SIYAH_AKUSTIK.jpg"
+    },
+    {
+      "path": "ozellikler/terzi/video/DILA_03_YENI_SIYAH_AKUSTIK.mp4",
+      "git_blob": "923abba76e8ff94c67c3d17f82e9875bfd60f098",
+      "source_path": "prizma/video/DILA_03_YENI_SIYAH_AKUSTIK.mp4"
+    },
+    {
+      "path": "ozellikler/terzi/video/DILA_04_MARKA_FILMI_MASTER_REEL.jpg",
+      "git_blob": "4b206873e89c8b5fdde5d3348546aa1da38a7aa6",
+      "source_path": "prizma/video/DILA_04_MARKA_FILMI_MASTER_REEL.jpg"
+    },
+    {
+      "path": "ozellikler/terzi/video/DILA_04_MARKA_FILMI_MASTER_REEL.mp4",
+      "git_blob": "ec5da846feb5ea911cbb80bb220a4ae2452f523d",
+      "source_path": "prizma/video/DILA_04_MARKA_FILMI_MASTER_REEL.mp4"
+    },
+    {
+      "path": "ozellikler/terzi/video/HF_01_GALERIDE_IPEK_FASTSTART.jpg",
+      "git_blob": "f0b99af072b65c9dba3ab7bedcdc39f85ec9274f",
+      "source_path": "prizma/video/HF_01_GALERIDE_IPEK_FASTSTART.jpg"
+    },
+    {
+      "path": "ozellikler/terzi/video/HF_01_GALERIDE_IPEK_FASTSTART.mp4",
+      "git_blob": "6c3902f222216dc9a2a2f81bdf303e0c56dd20f9",
+      "source_path": "prizma/video/HF_01_GALERIDE_IPEK_FASTSTART.mp4"
+    },
+    {
+      "path": "ozellikler/terzi/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.jpg",
+      "git_blob": "b8b4c3ada42d4f548bb45ca07695b8daac81f63b",
+      "source_path": "prizma/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.jpg"
+    },
+    {
+      "path": "ozellikler/terzi/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.mp4",
+      "git_blob": "0a3a84ac59d5b0ae4bda7206a743e65e6c6a2d37",
+      "source_path": "prizma/video/HF_02_TERZININ_DOKUNUSU_FASTSTART.mp4"
+    }
+  ],
+  "scope": "Asset and navigation recovery; not a complete acceptance test for all legacy product functions."
+}
