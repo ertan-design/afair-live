@@ -3,9 +3,18 @@
   "site": "afair-live",
   "origin": "https://www.afair.live",
   "homepage_preserved": true,
-  "entry_count": 62,
-  "restored_count": 4,
+  "entry_count": 63,
+  "restored_count": 5,
   "entries": [
+    {
+      "path": "sahne-slot/index.html",
+      "title": "50.000 slotlu sahne",
+      "description": "Işık perdesi, 50.000 kapı haritası, podyum ve 8 GPT akışı; her sahne bir slot, her slotu bir GPT ekler.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.live/sahne-slot/index.html",
+      "sha256": "3329612cc19f4fb21560982b11d7327e97b5021939b597fad8bbb2bef31ff986"
+    },
     {
       "path": "ozellikler/koleksiyon-yayini/index.html",
       "title": "Defile programı",

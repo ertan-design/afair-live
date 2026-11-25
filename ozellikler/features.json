@@ -2,6 +2,13 @@
   "site": "afair-live",
   "entries": [
     {
+      "path": "sahne-slot/index.html",
+      "title": "50.000 slotlu sahne",
+      "description": "Işık perdesi, 50.000 kapı haritası, podyum ve 8 GPT akışı; her sahne bir slot, her slotu bir GPT ekler.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
       "path": "ozellikler/koleksiyon-yayini/index.html",
       "title": "Defile programı",
       "description": "Dosyandan yerel video aç; gösterim listesini oluştur.",
