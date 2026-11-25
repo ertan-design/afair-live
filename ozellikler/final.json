@@ -13,7 +13,7 @@
       "category": "Geri getirilen",
       "restored": true,
       "url": "https://www.afair.live/ozellikler/koleksiyon-yayini/index.html",
-      "sha256": "2b943507f9e371f262e350d84777bd7b5afe596ebc52d2bb20555f3f48aacb8e"
+      "sha256": "3826357623e95a9aa8c08d40ee7953def632569f5713b7efdeab67b30f6a8b43"
     },
     {
       "path": "ozellikler/dila-reel/index.html",
@@ -31,7 +31,7 @@
       "category": "Geri getirilen",
       "restored": true,
       "url": "https://www.afair.live/ozellikler/paket-atolyesi/index.html",
-      "sha256": "ea3fe263b8d81c1ec5b05186d77ef600bf991b8efc57b88beeff2f4a0d1340f8"
+      "sha256": "98aebac6285269ac09d31f559e9abfac689b3a55ad308b44ac1ce99d3531d75a"
     },
     {
       "path": "ozellikler/olcu-kunye/index.html",
@@ -40,7 +40,7 @@
       "category": "Geri getirilen",
       "restored": true,
       "url": "https://www.afair.live/ozellikler/olcu-kunye/index.html",
-      "sha256": "749179765225d5f02c15e8d9f7c0f6714d73ed64b8a1876bc8933e2b1685f505"
+      "sha256": "867347ab950a6badf2a2abffed042ada8033b317d98f3ed5e7c33c5563174b8c"
     },
     {
       "path": "prizma/filo.html",
@@ -49,7 +49,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/prizma/filo.html",
-      "sha256": "cd533a6440f61faa99e5ed574e3b19729756bee798104de6fc0e1d8004e8aa3f"
+      "sha256": "0579ff6838635a47c33a854af6c601a8c4bc53eb295876d2fcfd9906deb8407b"
     },
     {
       "path": "podyum-sahne/kapi/index.html",
@@ -58,7 +58,7 @@
       "restored": false,
       "description": "Sahne ve film deneyimini aç.",
       "url": "https://www.afair.live/podyum-sahne/kapi/index.html",
-      "sha256": "ba506397f5aaa0a2db5b460784a4ff5b7bfd8f2a8aac9e9d55c2c029fa892823"
+      "sha256": "ab16a0c367863c383af88c29fc0744e19b229cfa848d0521798a6951e3bff877"
     },
     {
       "path": "selin-kapilar.html",
@@ -67,7 +67,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/selin-kapilar.html",
-      "sha256": "7d0df3c0de3395898f344346de3fe56bd44033a31dfe0951792c83f8d5dc6682"
+      "sha256": "a030e866d80957fb5e0533bdf1b53eb70be27d8b40ff1230d1cf31483d2b543c"
     },
     {
       "path": "birlesik.html",
@@ -76,7 +76,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/birlesik.html",
-      "sha256": "aa1b898ef38268b05b7eeee12e171a8bf6eadf5aa0da452c333521c9e534cae2"
+      "sha256": "ea8f64340b0788a5878a9d448f9ab24f57029542a8f240475afdac69bdc904f7"
     },
     {
       "path": "olcum/kapi-hakemi/index.html",
@@ -85,7 +85,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/olcum/kapi-hakemi/index.html",
-      "sha256": "5e188846f12715c5d427d57b5f7481f3c652337a580b2dda1906b527fd90c924"
+      "sha256": "9426f339edf220558c192038bb58092b79823e5a589c51277aa7237c55f8c6a2"
     },
     {
       "path": "olcum/aletler/index.html",
@@ -94,7 +94,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/olcum/aletler/index.html",
-      "sha256": "793f745c6279b43d412b0a151b3c7d74e5b5de77ec08c723ad8598f160f2e8c7"
+      "sha256": "763b05a76c971dcf52748d49bd916a24f4e337e21eaaba16a753d8c42ae79a5b"
     },
     {
       "path": "nexus.html",
@@ -103,7 +103,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/nexus.html",
-      "sha256": "437b2283a1787badc08e687567694924fa26d398d17445ddc0856de7787ad1b7"
+      "sha256": "9fafe6f3423db3bda33c058230ef7d09d9ded97a9adc853c414fca74caf7f963"
     },
     {
       "path": "podyum-canli/index.html",
@@ -112,7 +112,7 @@
       "restored": false,
       "description": "Sahne ve film deneyimini aç.",
       "url": "https://www.afair.live/podyum-canli/index.html",
-      "sha256": "4dc874d153378b2bfa250478983bd9066877e3ecbd8144d7eafafe3b6ec7a3f3"
+      "sha256": "e05939a94e077fc73ac90c237f2e21abd2777f5a3bb547c54d0b1f2b0c231e32"
     },
     {
       "path": "tetikler.html",
@@ -130,7 +130,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/uc-cati/index.html",
-      "sha256": "ceb01c02579c7dcbe2c17b2147495583a6a9eb6fe8f372c4cc85a2a913387609"
+      "sha256": "417765ffe5b42a552a014a5440375a9a9af537d09d69827d5134bb76ae95f517"
     },
     {
       "path": "calisma-rehberi/defile.html",
@@ -139,7 +139,7 @@
       "restored": false,
       "description": "Sahne ve film deneyimini aç.",
       "url": "https://www.afair.live/calisma-rehberi/defile.html",
-      "sha256": "a7b2ea11e076953531df389462031a023f533eceddfdab3d665bfb6e8481c5ed"
+      "sha256": "61d20f53d80f11c97144f2335960699f5558232e8f8f4fea7b64f1b4e0a07eaf"
     },
     {
       "path": "dokuma-ufuk/index.html",
@@ -148,7 +148,7 @@
       "restored": false,
       "description": "Kumaş ve tasarım deneyimini aç.",
       "url": "https://www.afair.live/dokuma-ufuk/index.html",
-      "sha256": "885f15bfe2444affc5396f820c83a621330351bdaa786c8be13f62b54f19aa85"
+      "sha256": "4f1ed75fc06adc0e122c2b6cf486139400ca452d34a305b468dc745fb4927b7c"
     },
     {
       "path": "canli-yayin-akisi/index.html",
@@ -157,7 +157,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/canli-yayin-akisi/index.html",
-      "sha256": "2a92354d052fc7cabafcf083ab1043cc43aaaa8353d9d212fbdc20a67625d158"
+      "sha256": "69464851d83fdc349c5aa9785b86f0f6c68367ade577a841b8b94a52116edb9a"
     },
     {
       "path": "dila/sinema.html",
@@ -166,7 +166,7 @@
       "restored": false,
       "description": "Sahne ve film deneyimini aç.",
       "url": "https://www.afair.live/dila/sinema.html",
-      "sha256": "06c3b3251ed1bebe01429e0be846ea1a20b36ca207217d508fdabb88d57851c1"
+      "sha256": "791dac32b315f826d3e6f9c398bb9040304312ef796c5f5a6433bc3756995b2e"
     },
     {
       "path": "terazi-dila.html",
@@ -175,7 +175,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/terazi-dila.html",
-      "sha256": "660b07af3895919c4ac6fdc6c3c691ab48a9bf05bb2264c65e213c9d34c354f9"
+      "sha256": "65104d0ba8cf4be701c58d2882ffc30d8190625b23824cf4318d9807a454c736"
     },
     {
       "path": "dila-video/index.html",
@@ -184,7 +184,7 @@
       "restored": false,
       "description": "Sahne ve film deneyimini aç.",
       "url": "https://www.afair.live/dila-video/index.html",
-      "sha256": "b1b7248a967fa13e0b59eed9c7495ec1fb1a1aaea584ae4481902898ddaf1a42"
+      "sha256": "cbf619336244856bdd9ab55ec148876909af52e802552b686cb64451e7ebe4a8"
     },
     {
       "path": "yasam-masasi-onceki.html",
@@ -193,7 +193,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/yasam-masasi-onceki.html",
-      "sha256": "f9fea386d0ba26fafb5109af35bc5c541f0f1d408f9c62d2d03a327e24b29044"
+      "sha256": "51aad6d1203b0cfb25ddef45705e169cb16bb5fe3a7e66612e1a4a2d400be5ce"
     },
     {
       "path": "ekip-kapisi.html",
@@ -202,7 +202,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/ekip-kapisi.html",
-      "sha256": "cd1c372a804345542385c7f514c3191a2a6dc112ba14eb659ceb18e922fff6dd"
+      "sha256": "8d969f63e1796548039a7f4e75d20bb16658fce2c0516bc34a3da823f2fe63ac"
     },
     {
       "path": "uc-rota/index.html",
@@ -211,7 +211,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/uc-rota/index.html",
-      "sha256": "9b29f402983a910e76277b30845f9fc98620a10a842d96747661cd24713a8f16"
+      "sha256": "c58c791f23646c494fb7635b7954d862672bd8ee876c19c1c9ec1d189b6de06c"
     },
     {
       "path": "yasam-destegi/index.html",
@@ -220,7 +220,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/yasam-destegi/index.html",
-      "sha256": "15a1188f642c1f27c0370f4d928bbf0071bd585e3c65217066a27f50ea38e478"
+      "sha256": "5e5ef45d82f663577b8a597b12a4134e248172b161f0f916a79c716cb8a4e61c"
     },
     {
       "path": "terazi.html",
@@ -229,7 +229,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/terazi.html",
-      "sha256": "4043c26c422168e77a82ceaf54e9902a41793bcfbcaaee358046f2d659164525"
+      "sha256": "ec9c0f816e098d9e9565c7a6f01403c6c3e0a0d78418abcdcaf77bc5db262b17"
     },
     {
       "path": "prizma/index.html",
@@ -238,7 +238,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/prizma/index.html",
-      "sha256": "08874c07b3bce1fc05f4d997193f59313a544c94e7c199b2cf5e8321cb50ced6"
+      "sha256": "cd2b3aae7dd2defe32bfbcf6ed4287498defef2936d7a48edc50b76aceafe3bd"
     },
     {
       "path": "dila-video/galeriden-atolyeye/index.html",
@@ -247,7 +247,7 @@
       "restored": false,
       "description": "Sahne ve film deneyimini aç.",
       "url": "https://www.afair.live/dila-video/galeriden-atolyeye/index.html",
-      "sha256": "72271e0e10888bd65ef389ba7dd1dee3e182e99041df231435973f92df76937c"
+      "sha256": "231674232a00284694bff934a839664280ba62db1b61ae13cbcbea9757c49441"
     },
     {
       "path": "terazi-katalog.html",
@@ -256,7 +256,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/terazi-katalog.html",
-      "sha256": "fba68313319489e709393bdf16dbb719d9b773807f7ee17ca2f99e036c9c3d4e"
+      "sha256": "b7369679ce28cee2101bebbe78afcdc2e504e7b7d188d1b7df4c823d0d11ec4d"
     },
     {
       "path": "calisma-notu.html",
@@ -274,7 +274,7 @@
       "restored": false,
       "description": "Kumaş ve tasarım deneyimini aç.",
       "url": "https://www.afair.live/dokuma-ufuk/ilk-kurgu.html",
-      "sha256": "148e00581d6c28419ff4f33b147a5693182acb195ce279a79d70cd466f7e91be"
+      "sha256": "75b9a1fa2d95850778483b6ad6a35e3f0feb3378f00485ed4fca61102940a222"
     },
     {
       "path": "sahne/index.html",
@@ -283,7 +283,7 @@
       "restored": false,
       "description": "Sahne ve film deneyimini aç.",
       "url": "https://www.afair.live/sahne/index.html",
-      "sha256": "957e77a1671d11e27945cd8736fa739b6110879be2ef8b5487443cb1fc024fd8"
+      "sha256": "1f38139b208c2ebb1c16ac716fa98dd45a36507647bfa948615aa324f92be1c9"
     },
     {
       "path": "teknik-sergi/index.html",
@@ -292,7 +292,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/teknik-sergi/index.html",
-      "sha256": "9e9baf9ce4cfa2f104aa2cffd138f6cfe430f8f2a7a65e7bffe5b8c5904300fd"
+      "sha256": "4dfcd8b181a342b22748f05fe67688e6f065114ca285037802a37bc4596aaa36"
     },
     {
       "path": "prizma/video.html",
@@ -301,7 +301,7 @@
       "restored": false,
       "description": "Sahne ve film deneyimini aç.",
       "url": "https://www.afair.live/prizma/video.html",
-      "sha256": "e31652019430b4c0f26111ba977c61fcd1a19c52b65da9ed12a67d46eecb4b00"
+      "sha256": "c3a63b051bf82a3feeb9227f38a5e5bdf4fa1c055167a8dfd0dbe7a9689aaa3d"
     },
     {
       "path": "iki-mezura-randevu.html",
@@ -319,7 +319,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/vip-ozel-dikim/index.html",
-      "sha256": "8933462908ff571b6bff93c0bf662cf4a682edf2642601702f41ac8ef9c2a6a0"
+      "sha256": "91f5c30e1f805092e59e01b1f40e5e2e46f02899d4216eefa91a0d5b7e9c58a6"
     },
     {
       "path": "kapi-sahnesi.html",
@@ -328,7 +328,7 @@
       "restored": false,
       "description": "Sahne ve film deneyimini aç.",
       "url": "https://www.afair.live/kapi-sahnesi.html",
-      "sha256": "d797ce8e7acdd7165574dd59ff552b9f8d8dd3d5b35689238bafb1cb7f692c78"
+      "sha256": "db1238b5373e881aa937f146413b1abfacfff1c1e68ed80b1a55e8ba87084623"
     },
     {
       "path": "terazi-kapi.html",
@@ -337,7 +337,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/terazi-kapi.html",
-      "sha256": "b6772724da888c9e216ea484f7f51f044609ff173b382cad0ff81e7a1cb377a2"
+      "sha256": "8deaebb92966bf7b97de5e2282d64ae0cdffb4443509e620459a54d06b9b4be7"
     },
     {
       "path": "karbon-8d/index.html",
@@ -346,7 +346,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/karbon-8d/index.html",
-      "sha256": "9efda706e730c1f2ac13de1ecafa9f523d764f3f0c10f20b9da22fef88d04832"
+      "sha256": "ff3bf38f85a4e8eb6593e99536c8859702ad7cfac85faeae72bf1e0183904130"
     },
     {
       "path": "terazi-kutu.html",
@@ -355,7 +355,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/terazi-kutu.html",
-      "sha256": "81c05b04ae341764ae5adeecc9045991bcdc4badcae1851a8d05eefa11a152b4"
+      "sha256": "aac0d65816a03d2ea1975b44707286ee4b01d22922f8921f78002c1b1cc13b01"
     },
     {
       "path": "dila/yasam-alani.html",
@@ -364,7 +364,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/dila/yasam-alani.html",
-      "sha256": "cb0d205b36f58deb68f94410cd8c8a65f74d9e47a7e9ba1908007ae6c4bc8ebb"
+      "sha256": "da5c239db2c342e2ed1f25e40efa2cd52bdd4be2db06d5ca9e28f538b4a321a0"
     },
     {
       "path": "kulis-isik/index.html",
@@ -373,7 +373,7 @@
       "restored": false,
       "description": "Sahne ve film deneyimini aç.",
       "url": "https://www.afair.live/kulis-isik/index.html",
-      "sha256": "2c1d18779c3974ccd37c8047d1cf2e611e55bc0b8f3db0763a40f1ace2835b77"
+      "sha256": "a977ae10eccdcaf054bf89bc286b0b0080960cacf44d78a0c249ce7394407a7e"
     },
     {
       "path": "prizma/front2.html",
@@ -382,7 +382,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/prizma/front2.html",
-      "sha256": "510463a74c8303577cf2f2e9ab0668f8dceac5676f93fbe02c1d919fb715df2b"
+      "sha256": "5c9c0d1b3c8f74d52d0a47c521b0713108cd07cb8b31204f3bbfa87bca43f88f"
     },
     {
       "path": "dila/iki-mezura.html",
@@ -391,7 +391,7 @@
       "restored": false,
       "description": "Ölçü ve atölye deneyimini aç.",
       "url": "https://www.afair.live/dila/iki-mezura.html",
-      "sha256": "8435c60784c48e7ecd865f23fc5dce5dcdf2129edf9855ac64ea0c034e2e4967"
+      "sha256": "84cb3bc3188050ad29dd3c45906dbd08d51feef48ad63cc3b9d85ecbfc646ddd"
     },
     {
       "path": "calisma-rehberi/film.html",
@@ -400,7 +400,7 @@
       "restored": false,
       "description": "Sahne ve film deneyimini aç.",
       "url": "https://www.afair.live/calisma-rehberi/film.html",
-      "sha256": "60b47171c441e0df9265c4cb55d0e48a28e4624ebd256911bdf46c8ea93cc08a"
+      "sha256": "08c78ba865cde4c35b7efaaef3cc8b544037d90208aa3af2e2c6e79f58ac7dde"
     },
     {
       "path": "nami.html",
@@ -409,7 +409,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/nami.html",
-      "sha256": "b494812220f9784e87b57df98c1af814ad71d60b2c874313f15a149bb2b89d58"
+      "sha256": "7065b18600e361409ac6f1644852038b5a3d60a6cbfcad5a141071b1ef57309d"
     },
     {
       "path": "olcum/eslesme/index.html",
@@ -418,7 +418,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/olcum/eslesme/index.html",
-      "sha256": "4f77a239e0d7ee3a923c6378b928064ad4e0fa7f3e97bc7844d56d501adece21"
+      "sha256": "0287058344f7a7a00fa92b77653ef34efb6e20401727b03a25e16a681f2bf14d"
     },
     {
       "path": "prizma/atolye/index.html",
@@ -427,7 +427,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/prizma/atolye/index.html",
-      "sha256": "395d945da8ffc22324320a519155a132e19029c7d85675dbd3bcf5f85f33de1e"
+      "sha256": "8116939586a6e3ac3572ff231239608a7dab196369b0287c72277e7d017faaab"
     },
     {
       "path": "prova-fisi/index.html",
@@ -436,7 +436,7 @@
       "restored": false,
       "description": "Ölçü ve atölye deneyimini aç.",
       "url": "https://www.afair.live/prova-fisi/index.html",
-      "sha256": "5be82b958a9dc82e36252e0b61697ef0e78edb3c93e60521b3de0aaf002e27bd"
+      "sha256": "5be64fd5a826fe325989492358875385b3d1ca7e95d831d3c945fe1e1d241281"
     },
     {
       "path": "terazi-kapilar.html",
@@ -445,7 +445,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/terazi-kapilar.html",
-      "sha256": "912dee63c912a9c82618f88fc61f2234034022f7714d265745d7fd6f541448c0"
+      "sha256": "3750ca538f17cbdd78fcce2a8bac0a5b86611b8d487349d5505649100bcbf7cf"
     },
     {
       "path": "prizma/front1.html",
@@ -454,7 +454,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/prizma/front1.html",
-      "sha256": "24537160b2db8e8d117e2ca79cbd02285ddb6d5149f816aa094443d0f3260b39"
+      "sha256": "54815896ed6b4ba81f432274995b67e9bbc6455a2695de37d916871fea60ed78"
     },
     {
       "path": "podyum-sahne/index.html",
@@ -463,7 +463,7 @@
       "restored": false,
       "description": "Sahne ve film deneyimini aç.",
       "url": "https://www.afair.live/podyum-sahne/index.html",
-      "sha256": "21bceff73aba04a1927e268add1a562e8b55921bf2d73bb07cb577a32c051aec"
+      "sha256": "1df9e1c71479e6b4924d2e4d9e929d9fdaea4fbedaf0c69609b1913c6bcc8dd9"
     },
     {
       "path": "afair-live-vitrin.html",
@@ -481,7 +481,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/prizma/front4.html",
-      "sha256": "dc8d873f16f060cc5cc033ca9f8e9cc331847ef048ed34f5bd900f47170d8791"
+      "sha256": "30b097c0eaa1c6f2d39b966f163757d66012229d7a6fe7d0b2ad7d5942ab9091"
     },
     {
       "path": "dila-rehber.html",
@@ -490,7 +490,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/dila-rehber.html",
-      "sha256": "9df25769eaa55773e378323ce73edaeb87bf01130351a44370424a671f25c5a1"
+      "sha256": "20500519fe40d93eb8744e86d83070752794917d90bac5f75a913251d5a7a648"
     },
     {
       "path": "dila/index.html",
@@ -499,7 +499,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/dila/index.html",
-      "sha256": "6d1f76f1370f4b997612f0eb4f887b8a2d3c0509b8e511284f2836d199860d15"
+      "sha256": "523ce2d42f519ce365a9fa74294c93c7a1e2def9c9bd695458c572503d5002b5"
     },
     {
       "path": "calisma-rehberi/yayin-hazirlik.html",
@@ -508,7 +508,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/calisma-rehberi/yayin-hazirlik.html",
-      "sha256": "fdc837b3900457bfd75b02f8bfaf1998bdc715c98449df1219663af3a299121e"
+      "sha256": "ae80f1b04ad34cc1cefb6873ce5e29b1aeae7c04bc06e575a869c215ffee465d"
     },
     {
       "path": "karbon-ucus/index.html",
@@ -517,7 +517,7 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/karbon-ucus/index.html",
-      "sha256": "cc2b7c75967058325be73e73a1d615f0d6fe2bfc05a040e5a8ce2009bba78f78"
+      "sha256": "c9eb728bad222499f02aeaf50cf99b9dac463e663c5a040f88c8d065860e6f30"
     },
     {
       "path": "rufat-kulis.html",
@@ -535,7 +535,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/olcum-kutusu.html",
-      "sha256": "160e1bdab9c1f84960f6be813da5b64fd168141ecb0d09279b587e3f9f92e2d4"
+      "sha256": "50565811b250120f6e7ed12528d5b5e1934a96ae6df16d1dea6e40fb79df96bf"
     },
     {
       "path": "olcum/index.html",
@@ -544,7 +544,7 @@
       "restored": false,
       "description": "Araçlar deneyimini aç.",
       "url": "https://www.afair.live/olcum/index.html",
-      "sha256": "26fee757643a5d6bc64bc4f2b50ebea1566e992240ff1f04d6a506695fec744a"
+      "sha256": "8d35d72f97683d435b032e0d0606c54530936379a8acc133f40f23da6e9369dd"
     },
     {
       "path": "dila/canli-podyum.html",
@@ -553,7 +553,7 @@
       "restored": false,
       "description": "Sahne ve film deneyimini aç.",
       "url": "https://www.afair.live/dila/canli-podyum.html",
-      "sha256": "1f9b93d12d29f5e98deb8e64051a37808cabc2c695d7c8dfb46e7a2264b39dab"
+      "sha256": "5fa4786d715e037f3364d5f4fe43c6fad4747d813505e044d5bb8c5823bdd4f6"
     },
     {
       "path": "prizma/front3.html",
@@ -562,7 +562,8 @@
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç.",
       "url": "https://www.afair.live/prizma/front3.html",
-      "sha256": "6f2548fb69b994acb0c1fe0ac0844b30b497d62b722d3eab9624bef0cc5f6de4"
+      "sha256": "fe500b228ee2318070554624675c6b2b498e8f2e99eac39fb8ad1e8714f04639"
     }
-  ]
+  ],
+  "hash_normalization": "UTF-8 text; CRLF normalized to LF as in Git publication"
 }
