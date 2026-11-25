@@ -79,9 +79,9 @@
   var indeksler = new Uint16Array(idxArr);
 
   function yuzeyHesapla(t) {
-    var wGuc = 0.20 + durum.ruzgarGuc * 0.22 + durum.itki * 0.55;
+    var wGuc = 0.16 + durum.ruzgarGuc * 0.16 + durum.itki * 0.55;
     durum.itki *= 0.93;
-    var faz = t * (0.48 + durum.ruzgarGuc * 0.32);
+    var faz = t * (0.32 + durum.ruzgarGuc * 0.22);
     for (var j = 0; j < N; j++) {
       var v = j / (N - 1);
       for (var i = 0; i < N; i++) {
@@ -487,7 +487,7 @@
     else if (MOD === 'kapi_pasaport') {
       var kapiNo = Math.max(1, Math.min(50000, Number(val('inp-kapi', 1903))));
       var fr = val('inp-front', 'F1');
-      var imza = val('inp-imza', 'rufat.afair.studio').trim().toLowerCase().replace(/[^a-z0-9.-]/g, '').slice(0, 253) || 'rufat.afair.studio';
+      var imza = val('inp-imza', 'rufat.afair.studio');
       var kapiKod = 'KAPI-' + ('00000' + kapiNo).slice(-5);
       var muhur = fnvOzeti(kapiKod + '|' + fr + '|' + imza);
       durum.yaw = (kapiNo % 360) * Math.PI / 180;
