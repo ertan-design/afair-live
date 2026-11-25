@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AFAIR LIVE · FİNAL 2 — Online terzin kapında hazır.</title>
-  <meta name="description" content="Canlı terzi müsaitlik matrisi, evde iki-mezura ölçü + Pantone kumaş numune seçimi ve VIP prova bileti indirme.">
+  <title>AFAIR LIVE · FİNAL 2 — Prova talebini hazırla.</title>
+  <meta name="description" content="İstediğin bölgeyi, saati ve kumaş numunesini seç. Talebi taslak olarak indir.">
   <link rel="stylesheet" href="./final.css">
 </head>
 <body>
@@ -20,15 +20,15 @@
     </nav>
   </header>
 
-  <section class="atolye-panel" id="atolye-panel" aria-label="İki-Mezura Online Terzi Randevu Final" hidden>
-    <h2>İki-Mezura Online Terzi Randevu Final</h2>
-    <p class="aciklama">Canlı terzi müsaitlik matrisi, evde iki-mezura ölçü + Pantone kumaş numune seçimi ve VIP prova bileti indirme.</p>
+  <section class="atolye-panel" id="atolye-panel" aria-label="İki Mezura prova talebi" hidden>
+    <h2>İki Mezura prova talebi</h2>
+    <p class="aciklama">İstediğin bölgeyi, saati ve kumaş numunesini seç. Talebi taslak olarak indir.</p>
     
         <div class="form-izgara">
           <div class="alan"><label for="inp-bolge">Terzi Ekibi Noktası</label>
             <select id="inp-bolge"><option value="atasehir">Ataşehir Modern (Blok A·B·C Kapıda)</option><option value="nisantasi">Nişantaşı AFFFAIR Showroom</option><option value="online">360° Online İki-Mezura Canlı</option></select>
           </div>
-          <div class="alan"><label for="inp-saat">Bugünkü Müsait Saat</label>
+          <div class="alan"><label for="inp-saat">Tercih edilen saat</label>
             <select id="inp-saat"><option value="14:30">14:30 · Baş Terzi + Kartela</option><option value="17:00">17:00 · İki-Mezura Ekibi</option><option value="20:00">20:00 · VIP Akşam Provası</option></select>
           </div>
           <div class="alan"><label for="inp-numune">Numune Kumaş Paketi</label>
@@ -38,7 +38,7 @@
     <div class="sonuc-kutu" id="canli-sonuc">Hesaplanıyor...</div>
     <div class="svg-kutu" id="canli-svg" hidden></div>
     <div class="aksiyon-bar">
-      <a class="indir-bag" id="btn-indir" href="data:application/json;charset=utf-8,%7B%7D" download="final-iki-mezura-randevu-cikti.json">Çıktıyı İndir (.json)</a>
+      <a class="indir-bag" id="btn-indir" href="data:application/json;charset=utf-8,%7B%7D" download="final-iki-mezura-randevu-cikti.json">Talep taslağını indir (.json)</a>
       <a class="indir-bag" id="btn-svg-indir" href="data:image/svg+xml;charset=utf-8," download="final-iki-mezura-randevu-plan.svg" hidden>Paftayı İndir (.svg)</a>
       <button type="button" class="dugme" id="btn-senkron-yay">Senkron Zincirine Yaz</button>
       <button type="button" class="dugme" id="atolye-kapat">Kapat ✕</button>
@@ -47,8 +47,8 @@
   </section>
 
   <section class="baslik" aria-label="Sahne özeti">
-    <h1>Online terzin kapında hazır.</h1>
-    <p>Ataşehir, Nişantaşı ve 360° online iki-mezura prova randevusu.</p>
+    <h1>Prova talebini hazırla.</h1>
+    <p>Ataşehir, Nişantaşı veya çevrimiçi prova için bir taslak oluştur.</p>
   </section>
 
   <footer class="alt">
@@ -60,6 +60,6 @@
     <div class="etiket" id="durum">15-1040 TCX Altın Mezura · 360°</div>
   </footer>
 
-  <script src="./final.js"></script>
+  <script src="./final.js?v=0b25967da8ee"></script>
 </body>
 </html>
