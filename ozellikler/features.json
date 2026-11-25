@@ -2,6 +2,13 @@
   "site": "afair-live",
   "entries": [
     {
+      "path": "kartela/index.html",
+      "title": "Başka İstanbul Yok · Kartela",
+      "description": "Ataşehir’in gerçek planı, plaka plaka dokundu. Ayır, üfle, bak.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
       "path": "final/birlesik-56-sahne/index.html",
       "title": "1903 Birleşik 56-Modül Sergisi",
       "description": "WebGL2, Verlet kumaş fiziği ve WebAudio spektrum tohumlarını tek çatı altında toplayan dev sergi.",
