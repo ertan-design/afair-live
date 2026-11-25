@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DILA FRONT-02 · Afair Live Iki Mezura ve Terzi Kalip Atolyesi</title>
+
+<link rel="stylesheet" href="./final-style.css">
+<script src="./final-app.js" defer></script>
+</head>
+<body>
+<div class="karbon-final-topbar"><span class="kf-title">AFFFAIR LIVE · İki-Mezura SVG Kalıp &amp; Terzi Masası</span><div style="display:flex;gap:8px;flex-wrap:wrap"><a href="/">← Ana Sayfa</a><a href="/ozellikler/">Tüm Özellikler Dizini</a></div></div>
+<div class="wrap">
+  
+  <div class="dila-nav">
+    <div><strong>DİLA × AFFAIR 8-KONSEPT SENKRON AĞI</strong></div>
+    <div class="dila-nav-links"><a href="/dila-front1" class="">Front-01: AI Sanat Galerisi</a><a href="/dila-front2" class="active">Front-02: İki Mezura & Terzi</a><a href="/dila-front3" class="">Front-03: Anti-Siyah Kroma Aynası</a><a href="/dila-front4" class="">Front-04: 8-Konsept & 8-Prompt Komuta</a></div>
+  </div>
+  <header>
+    <div>
+      <div class="eyebrow">RYTE · AFAIR.LIVE · İKİ MEZURA &amp; EVE GELEN TERZİ · FRONT 2 / 4</div>
+      <h1>İki Mezura Eşleştirme &amp; İkiz Kalıp-Tuval Çizim Tezgahı</h1>
+    </div>
+    <span class="pill" id="f2Status"></span>
+  </header>
+
+  <div class="grid-2">
+    <div class="card">
+      <h2>1. Eve Giden İki Mezura Girişi ("Affair'dan Dila Ben")</h2>
+      <p class="sub"><strong>Mezura-1</strong> bedeni ve hareket payını, <strong>Mezura-2</strong> ise evin duvarını ve kişinin sanat eserine yaklaşma mesafesini ölçer.</p>
+
+      <label class="ctrl"><span>Mezura-1 · Omuz Genişliği (cm)</span><strong id="shVal"></strong></label>
+      <input type="range" id="shIn" min="34" max="52" value="41">
+
+      <label class="ctrl"><span>Mezura-1 · Bel Çevresi (cm)</span><strong id="waVal"></strong></label>
+      <input type="range" id="waIn" min="56" max="104" value="68">
+
+      <label class="ctrl"><span>Mezura-1 · Boy Uzunluğu (cm)</span><strong id="heVal"></strong></label>
+      <input type="range" id="heIn" min="150" max="195" value="168">
+
+      <label class="ctrl"><span>Mezura-2 · Duvar Genişliği (cm)</span><strong id="wlVal"></strong></label>
+      <input type="range" id="wlIn" min="160" max="420" value="240">
+
+      <label class="ctrl"><span>Mezura-2 · Tabloya Bakış Mesafesi (cm)</span><strong id="gzVal"></strong></label>
+      <input type="range" id="gzIn" min="45" max="180" value="85">
+
+      <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn" id="sealBtn">Terzi Randevu &amp; Ölçü Fişini (.jsonl) Kopyala</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>2. Canlı SVG Terzi Patronu × İkiz Galeri Tuvali</h2>
+      <p class="sub">Sol çizim ceket kalıbını, sağ çizim aynı orandan doğan <code>afair.studio</code> tuval ölçeğini gösterir.</p>
+      <div class="blueprint">
+        <svg id="patternSvg" width="480" height="255" viewBox="0 0 480 255"></svg>
+      </div>
+      <div class="kpi-row">
+        <div class="kpi"><div>GEREKLİ KUMAŞ METRAJI</div><strong id="yardTxt" style="font-size:15px;color:var(--accent)"></strong></div>
+        <div class="kpi"><div>AKTİF KUMAŞ (FRONT-01)</div><strong id="fabTxt" style="font-size:13px"></strong></div>
+        <div class="kpi"><div>İKİZ TABLO EBADI</div><strong id="artDimTxt" style="font-size:14px"></strong></div>
+      </div>
+    </div>
+  </div>
+
+  <h2 style="font-size:15px;font-weight:normal;margin-bottom:6px">Canlı Sıçrama Günlüğü</h2>
+  <div class="log-box" id="logBox"></div>
+</div>
+
+</body>
+</html>

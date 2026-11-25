@@ -3,9 +3,63 @@
   "site": "afair-live",
   "origin": "https://www.afair.live",
   "homepage_preserved": true,
-  "entry_count": 63,
-  "restored_count": 5,
+  "entry_count": 69,
+  "restored_count": 11,
   "entries": [
+    {
+      "path": "final/birlesik-56-sahne/index.html",
+      "title": "1903 Birleşik 56-Modül Sergisi",
+      "description": "WebGL2, Verlet kumaş fiziği ve WebAudio spektrum tohumlarını tek çatı altında toplayan dev sergi.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.live/final/birlesik-56-sahne/index.html",
+      "sha256": "84ed1ad7c4e5fb8919e3aa476bf095a53583b67db9b4d11bde0b6e4823f2e7c6"
+    },
+    {
+      "path": "final/kapilar-444050/index.html",
+      "title": "444.050 Kapılar Arayüzü",
+      "description": "Science tarafından hazırlanan selinahbap × afair.live birleşik kapı ve adresleme sahnesi.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.live/final/kapilar-444050/index.html",
+      "sha256": "8a8080a5167e1e2d302f467903609280c2252bd5442df068e5049c3ee6fbdffc"
+    },
+    {
+      "path": "final/kroma-aynasi/index.html",
+      "title": "Sıfır-Siyah ΔE & Kelvin Aynası",
+      "description": "Saf siyah yerine sıcak gece çiviti ve 3200K–6500K günışığı kontrastını ölçen renk analizi.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.live/final/kroma-aynasi/index.html",
+      "sha256": "e9fc61292da0fb84f0924574a158be46e19b43a8445891cc946adc862d6a6c38"
+    },
+    {
+      "path": "final/iki-mezura-kalip/index.html",
+      "title": "İki-Mezura SVG Kalıp & Terzi",
+      "description": "Mezura-A beden ve Mezura-B hareket zarfını çizen etkileşimli kalıp ve terzi randevu masası.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.live/final/iki-mezura-kalip/index.html",
+      "sha256": "4abd4bb2e041f34dac7be39e3042a0260081ddd96740b1ff44a73dc114d0ec74"
+    },
+    {
+      "path": "final/higgsreel-performans/index.html",
+      "title": "Dila HiggsReel & H.264 Stüdyosu",
+      "description": "Higgsfield DoP kamera senaryosu ve yerel donanım H.264 4-klip kesintisiz sinema laboratuvarı.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.live/final/higgsreel-performans/index.html",
+      "sha256": "5b0c609998016a50a4aab12c64d7ac504810fab97c5ea76d17625b671ef56393"
+    },
+    {
+      "path": "final/atolye-8d-ses-ucus/index.html",
+      "title": "8B İpek · 8B Ses · 3-Kule Uçuş",
+      "description": "Git geçmişinden kurtarılan 6-Pantone TCX hiper-ipek, Sürreal 8B, uzamsal WebAudio ses ve halka sayaçlı uçuş.",
+      "category": "Geri getirilen",
+      "restored": true,
+      "url": "https://www.afair.live/final/atolye-8d-ses-ucus/index.html",
+      "sha256": "0ce332c75ee1e3bada76973ae794ddd353018244b0b1aa9699eb5449a3e0c3ae"
+    },
     {
       "path": "sahne-slot/index.html",
       "title": "50.000 slotlu sahne",

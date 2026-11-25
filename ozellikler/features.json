@@ -2,6 +2,48 @@
   "site": "afair-live",
   "entries": [
     {
+      "path": "final/birlesik-56-sahne/index.html",
+      "title": "1903 Birleşik 56-Modül Sergisi",
+      "description": "WebGL2, Verlet kumaş fiziği ve WebAudio spektrum tohumlarını tek çatı altında toplayan dev sergi.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/kapilar-444050/index.html",
+      "title": "444.050 Kapılar Arayüzü",
+      "description": "Science tarafından hazırlanan selinahbap × afair.live birleşik kapı ve adresleme sahnesi.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/kroma-aynasi/index.html",
+      "title": "Sıfır-Siyah ΔE & Kelvin Aynası",
+      "description": "Saf siyah yerine sıcak gece çiviti ve 3200K–6500K günışığı kontrastını ölçen renk analizi.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/iki-mezura-kalip/index.html",
+      "title": "İki-Mezura SVG Kalıp & Terzi",
+      "description": "Mezura-A beden ve Mezura-B hareket zarfını çizen etkileşimli kalıp ve terzi randevu masası.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/higgsreel-performans/index.html",
+      "title": "Dila HiggsReel & H.264 Stüdyosu",
+      "description": "Higgsfield DoP kamera senaryosu ve yerel donanım H.264 4-klip kesintisiz sinema laboratuvarı.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "final/atolye-8d-ses-ucus/index.html",
+      "title": "8B İpek · 8B Ses · 3-Kule Uçuş",
+      "description": "Git geçmişinden kurtarılan 6-Pantone TCX hiper-ipek, Sürreal 8B, uzamsal WebAudio ses ve halka sayaçlı uçuş.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
       "path": "sahne-slot/index.html",
       "title": "50.000 slotlu sahne",
       "description": "Işık perdesi, 50.000 kapı haritası, podyum ve 8 GPT akışı; her sahne bir slot, her slotu bir GPT ekler.",

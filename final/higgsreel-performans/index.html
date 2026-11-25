@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DİLA × AFAIR · Higgsfield / HiggsReel &amp; Karbon Donanım H.264 Video Stüdyosu</title>
+
+<link rel="stylesheet" href="./final-style.css">
+<script src="./final-app.js" defer></script>
+</head>
+<body>
+<div class="karbon-final-topbar"><span class="kf-title">AFFFAIR LIVE · HiggsReel &amp; Donanım H.264 Stüdyosu</span><div style="display:flex;gap:8px;flex-wrap:wrap"><a href="/">← Ana Sayfa</a><a href="/ozellikler/">Tüm Özellikler Dizini</a></div></div>
+<nav class="nav">
+  <span style="color:var(--teal);font-family:monospace;font-weight:800">🎬 DİLA HIGGSREEL &amp; KARBON H.264 STÜDYOSU</span>
+  <a href="/final/kroma-aynasi/">Dila Karbon Atölye</a>·
+  <a href="/dila">Dila 4-Front</a>·
+  <a href="/ozellikler/dila-reel/">Dila Video v1</a>·
+  <a href="https://www.afair.studio/afair-studio-vitrin.html" target="_blank" rel="noopener">afair.studio ↗</a>·
+  <a href="https://www.afair.live/afair-live-vitrin.html" target="_blank" rel="noopener">afair.live ↗</a>·
+  <a href="/dila_higgsreel_manifest.json" target="_blank">Manifest JSON ↗</a>
+</nav>
+<div class="wrap">
+  <div class="hero">
+    <span class="bdg">⚡ TEK TETİK 4 REEL ÜRETİLDİ · SIFIR SAF SİYAH</span>
+    <span class="bdg">🔗 HIGGSFIELD DoP API + YEREL DONANIM H.264 KÖPRÜSÜ</span>
+    <span class="bdg">📡 HTTP 206 RANGE + POSTER (&lt;25 KB İLK YÜK)</span>
+    <h1 style="font-size:21px;margin:4px 0">Dila × AFAIR · Dikey (9:16) HiggsReel &amp; Sinema (16:9) Performans Laboratuvarı</h1>
+    <p style="color:var(--mut);font-size:12.5px">Resmi <code>api.higgsfield.ai</code> (<code>Authorization: Key ID:SECRET</code>) bağlayıcısı hazır; bulut anahtarı olmadığında <b>kendi yerel donanım H.264 API'miz</b> sıfır maliyetle saniyeler içinde <code>avc1</code> Dila Reel videolarını üretir.</p>
+    <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+      <button data-kf-ev="kf_ev_0">▶ 4 Klip Kesintisiz HiggsReel Akışını Başlat</button>
+      <button class="sec" data-kf-ev="kf_ev_1">⏸ Tümünü Duraklat</button>
+      <span id="chainMsg" style="font:700 12px monospace;color:var(--teal);align-self:center"></span>
+    </div>
+    <div class="kpis" id="kpis"></div>
+  </div>
+
+  <div class="reels" id="reels"></div>
+
+  <div class="cols">
+    <div class="box">
+      <h3>🌐 HiggsReel Üretimlerini Siteye Entegre Etmenin 3 Mimari Yolu (Alt Ajan Sentezi)</h3>
+      <div class="row"><b>Yol 1 · Ön-Yayın "Çek → H.264 Sıkıştır → Mühürle" Hattı (Şu An Canlıda Aktif):</b> CLI/Python köprüsü <code>api.higgsfield.ai</code> veya yerel donanım API'sinden klibi üretir, 7 günlük bulut silinme riskini aşmak için <code>/media/*.mp4</code> + <code>&lt;25 KB .jpg poster</code> olarak mühürler. <code>preload="metadata"</code> ve <code>Accept-Ranges: bytes</code> sayesinde sayfa açılışında yalnızca poster + başlık iner.</div>
+      <div class="row"><b>Yol 2 · Vercel Sunucusuz BFF Proxy (<code>/api/higgsfield</code> — Sıfır Anahtar Sızıntısı):</b> <code>HIGGSFIELD_API_KEY:SECRET</code> yalnızca sunucu ortamında tutulur; istemci <code>POST /api/higgsfield</code> ile <code>DoP</code> kamera hareketini gönderir, <code>Idempotency-Key</code> çifte kredi çekimini önler.</div>
+      <div class="row"><b>Yol 3 · Hibrit Bulut → Yerel Donanım H.264 Fallback Kapısı:</b> Anahtar veya kredi olmadığında sistem kesintisiz olarak <code>dila_higgsreel_motoru.py</code> yerel H.264 motoruna düşer (bulutta <code>161 sn</code> süren 4 klip yerelde <b><span id="locSec"></span> sn</b> içinde tamamlandı).</div>
+    </div>
+    <div class="box">
+      <h3>🎞️ 8-Sahneli Dila × AFAIR Higgsfield DoP Kamera Senaryosu</h3>
+      <div id="scList"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
