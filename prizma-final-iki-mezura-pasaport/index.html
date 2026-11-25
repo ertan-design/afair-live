@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AFFFAIR LIVE · Evde İki-Mezura Çift Kalıp & SHA-256 Pasaport Final</title>
+  <meta name="description" content="Kurtarılan final sürüm: Mezura-A beden ve Mezura-B hareket/ışık payı ile Ön + Arka/Kol canlı SVG kalıp ve WebCrypto SHA-256 ölçü pasaportu.">
+  <link rel="stylesheet" href="./mezura2.css">
+  <script defer src="./mezura2.js"></script>
+</head>
+<body>
+  <header class="m-head">
+    <strong>AFFFAIR LIVE · İKİ-MEZURA TERZİ PASAPORTU FİNAL</strong>
+    <a class="m-back" href="../">← Ana Sayfaya Dön</a>
+  </header>
+
+  <main class="m-wrap">
+    <section class="m-grid">
+      <div class="m-card">
+        <p class="eyebrow">MEZURA-A (BEDEN) + MEZURA-B (HAREKET &amp; IŞIK PAYI)</p>
+        <h1>Ön ve arka kalıbı canlı çiz.</h1>
+        <div class="sl-grid">
+          <div>
+            <label for="a-omuz">Mezura-A · Omuz <strong id="va-omuz">45 cm</strong></label>
+            <input id="a-omuz" type="range" min="36" max="54" value="45">
+            <label for="a-gogus">Mezura-A · Göğüs <strong id="va-gogus">98 cm</strong></label>
+            <input id="a-gogus" type="range" min="78" max="126" value="98">
+            <label for="a-bel">Mezura-A · Bel <strong id="va-bel">82 cm</strong></label>
+            <input id="a-bel" type="range" min="60" max="114" value="82">
+          </div>
+          <div>
+            <label for="b-hareket">Mezura-B · Hareket Payı <strong id="vb-hareket">+4.0 cm</strong></label>
+            <input id="b-hareket" type="range" min="10" max="90" value="40">
+            <label for="b-kol">Mezura-B · Kol Boyu <strong id="vb-kol">63 cm</strong></label>
+            <input id="b-kol" type="range" min="54" max="72" value="63">
+            <label for="b-kumas">Pantone Kumaş Seçimi</label>
+            <select id="b-kumas">
+              <option value="19-5420 TCX · Gece Zümrüdü İpek">19-5420 TCX · Gece Zümrüdü İpek</option>
+              <option value="19-0915 TCX · Gece Espresso Gabardin">19-0915 TCX · Gece Espresso Gabardin</option>
+              <option value="19-2520 TCX · Koyu Mürdüm Saten">19-2520 TCX · Koyu Mürdüm Saten</option>
+              <option value="18-1340 TCX · Yanık Bakır Jakar">18-1340 TCX · Yanık Bakır Jakar</option>
+            </select>
+          </div>
+        </div>
+
+        <svg viewBox="0 0 640 260" class="bp-svg" aria-label="Ön beden ve arka-kol teknik SVG kalıp çizimi">
+          <rect x="6" y="6" width="628" height="248" rx="12" fill="#130a0d" stroke="#4a2832"></rect>
+          <text x="155" y="28" text-anchor="middle" fill="#e4b66d" font-size="11">ÖN BEDEN (MEZURA-A + B)</text>
+          <polygon id="svg-front" points="85,46 225,46 238,220 72,220" fill="rgba(228,182,109,0.16)" stroke="#e4b66d" stroke-width="2"></polygon>
+          <text x="455" y="28" text-anchor="middle" fill="#88d8b0" font-size="11">ARKA BEDEN &amp; KOL DÜŞÜMÜ</text>
+          <polygon id="svg-back" points="385,46 525,46 534,220 376,220" fill="rgba(136,216,176,0.14)" stroke="#88d8b0" stroke-width="2"></polygon>
+          <rect id="svg-sleeve" x="546" y="54" width="54" height="156" rx="10" fill="rgba(217,123,140,0.16)" stroke="#d97b8c" stroke-width="2"></rect>
+          <text x="320" y="244" text-anchor="middle" fill="#d9c6c9" font-size="11" id="svg-meta">Metraj hesaplanıyor...</text>
+        </svg>
+      </div>
+
+      <aside class="m-card">
+        <img class="at-img" src="./sahne1_terzi.jpg" alt="İki mezura evde terzi atölyesi" width="960" height="540">
+        <h2>SHA-256 Ölçü Pasaportu (Yerel Taslak)</h2>
+        <pre class="seal-out" id="seal-out">Mühürleniyor...</pre>
+        <p class="honest">Not: Bu ölçü kartı tarayıcıda gerçek WebCrypto SHA-256 ile mühürlenen yerel taslaktır; canlı terzi randevusu arka uç bağlandığında onaylanır.</p>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
