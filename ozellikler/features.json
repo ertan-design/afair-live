@@ -490,6 +490,13 @@
       "category": "Şehir ve yaşam",
       "restored": false,
       "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "final-terazi/dort-deneyim/index.html",
+      "title": "Dört deneyim, bir tasarım",
+      "description": "Mekânını anlat, rengini seç, eserini yerleştir: Live, Studio, Gallery, Art tek akışta.",
+      "category": "Geri getirilen",
+      "restored": true
     }
   ]
 }
