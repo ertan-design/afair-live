@@ -1,0 +1,160 @@
+{
+  "sema": "GAIA_EKIP_YETENEK_HARITASI/2.4",
+  "zaman": "2026-11-25T01:17:00+03:00",
+  "odak": "4_KARLI_SITE_50K_SLOT_TEK_TETIK",
+  "slot_mimarisi": {
+    "eski_darbogaz": 4,
+    "ilk_11_takim": 11,
+    "codekafa_genisletme": 16,
+    "hedef_tek_tetik_slot": 50000,
+    "site_basina_esit_slot": 12500,
+    "paket_akisi": "R_COMBO_6_KATMAN (INDEX, ACTIVE_ONLY, TIER1_SNAPSHOT, SLOT_50K, EXPORT_REPORT, ZIP)"
+  },
+  "karli_4_site": [
+    {
+      "id": "SITE-1",
+      "domain": "ertanaraz.com",
+      "rol": "Ana Komuta, Portfoy ve Tek Evren Orkestrasyonu",
+      "uclar": [
+        "https://ertanaraz.com/",
+        "https://ertanaraz.com/merkez",
+        "https://ertanaraz.com/kovan",
+        "https://ertanaraz.com/kredi",
+        "https://ertanaraz.com/rytela",
+        "https://ertanaraz.com/zip",
+        "https://ertanaraz.com/slot50k",
+        "https://ertanaraz.com/radar",
+        "https://ertanaraz.com/radar.json",
+        "https://ertanaraz.com/karbon51",
+        "https://ertanaraz.com/afair1903",
+        "https://ertanaraz.com/canli_isler.html",
+        "https://ertanaraz.com/kapi-sahnesi.html",
+        "https://ertanaraz.com/gpt-1903.json",
+        "https://ertanaraz.com/terra",
+        "https://ertanaraz.com/gokceada",
+        "https://ertanaraz.com/sitemap.xml",
+        "https://ertanaraz.com/llms.txt",
+        "https://ertanaraz.com/dila",
+        "https://ertanaraz.com/dila-senkron",
+        "https://ertanaraz.com/dila_senkron.json",
+        "https://ertanaraz.com/dila-video",
+        "https://ertanaraz.com/dila_video_manifest.json",
+        "https://ertanaraz.com/3d",
+        "https://ertanaraz.com/atasehir-ucus",
+        "https://ertanaraz.com/afffair",
+        "https://ertanaraz.com/afffair.json",
+        "https://ertanaraz.com/prizma/video",
+        "https://ertanaraz.com/yetenekler.json",
+        "https://ertanaraz.com/canli_isler",
+        "https://ertanaraz.com/canli_isler.json",
+        "https://ertanaraz.com/kutu"
+      ]
+    },
+    {
+      "id": "SITE-2",
+      "domain": "codekafa.com",
+      "rol": "Bagimsiz Canli Hakem (Terazi) ve 16-Slot Muhendislik Vitrini",
+      "uclar": [
+        "https://www.codekafa.com/durum.json",
+        "https://www.codekafa.com/karne.json",
+        "https://www.codekafa.com/llms.txt"
+      ]
+    },
+    {
+      "id": "SITE-3",
+      "domain": "selinahbap.com",
+      "rol": "50.000 Kapi Uretim Hatti ve Tarla Provasi Vitrini",
+      "uclar": [
+        "https://www.selinahbap.com/prova"
+      ]
+    },
+    {
+      "id": "SITE-4",
+      "domain": "afair.studio",
+      "rol": "0-KB ZIP Studyo, Ticari Sunum ve afair.live Canli Sahne",
+      "uclar": [
+        "https://www.afair.live/",
+        "https://www.afair.studio/",
+        "https://www.xn--ataehirmodern-ktc.com/",
+        "https://www.xn--modernataehir-qtc.com/"
+      ]
+    }
+  ],
+  "takim_11_slot": [
+    {
+      "slot": "S01",
+      "rol": "Kaleci / Terazi Hakemi",
+      "site": "codekafa.com"
+    },
+    {
+      "slot": "S02",
+      "rol": "Sag Bek / DNS ve Vercel Yayin",
+      "site": "ertanaraz.com"
+    },
+    {
+      "slot": "S03",
+      "rol": "Stoper-1 / SHA-256 Muhurcu",
+      "site": "ertanaraz.com"
+    },
+    {
+      "slot": "S04",
+      "rol": "Stoper-2 / Karantina Filtresi",
+      "site": "codekafa.com"
+    },
+    {
+      "slot": "S05",
+      "rol": "Sol Bek / R_COMBO 6-Katman Paket",
+      "site": "afair.studio"
+    },
+    {
+      "slot": "S06",
+      "rol": "On Libero / 1-RYTE KB Tavan",
+      "site": "ertanaraz.com"
+    },
+    {
+      "slot": "S07",
+      "rol": "Merkez / JSON-NDJSON Koprusu",
+      "site": "ertanaraz.com"
+    },
+    {
+      "slot": "S08",
+      "rol": "10 Numara / ZIP-Ici HTML Sahne",
+      "site": "afair.studio"
+    },
+    {
+      "slot": "S09",
+      "rol": "Sag Kanat / 50K Kapi Uretici",
+      "site": "selinahbap.com"
+    },
+    {
+      "slot": "S10",
+      "rol": "Sol Kanat / Tarla Provasi Akis",
+      "site": "selinahbap.com"
+    },
+    {
+      "slot": "S11",
+      "rol": "Santrfor / Tek-Tetik Komuta",
+      "site": "ertanaraz.com"
+    }
+  ],
+  "bir_ryte_referansi": {
+    "bayt": 72768276,
+    "kib": 71062.77,
+    "dosya": 773,
+    "klasor": 122,
+    "sha16": "1c3a50d8730efe30"
+  },
+  "ryte_adres_protokolu": {
+    "sema": "RYTE-ADDR/1.0",
+    "klasor_sablon": "@TO-<HEDEF_GRUP>__FROM-<GONDEREN>__<YYYYMMDD_HHMM>__<KONU>",
+    "alt_ajan_gerekli": false,
+    "zarf_dosyasi": "00_ROTA.json"
+  },
+  "ozerk_yayin_kilidi": {
+    "surum": "2.0",
+    "kural": "Guncellenenleri canliya almadan yeni guncelleme yapma (EXIT 2 -> --canliya-al -> EXIT 0)",
+    "adresleme": "SHA-sabit deterministik (e001..e085 + h_sha8)",
+    "toplam_gercek_canli_is": 551,
+    "acik_katalog_json": "https://ertanaraz.com/canli_isler.json"
+  }
+}

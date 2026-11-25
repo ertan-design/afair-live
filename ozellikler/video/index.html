@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dila x AFAIR · Canli Video Studyosu &amp; Higgsfield AI Koprusu</title>
+
+<link rel="stylesheet" href="sayfa.css">
+</head>
+<body>
+<nav id="gaia-nav">
+  <a href="/">Ana OS</a>
+  <a href="/dila">Dila Studyo</a>
+  <a href="/dila-senkron">Dila 8-Senkron</a>
+  <a href="/dila-video" class="on">Dila Video</a>
+  <a href="/3d">3D / VR Sahne</a>
+  <a href="/slot50k">50K Slot</a>
+  <a href="/radar">37-Site Radar</a>
+  <a href="/afair1903">AFAIR 1903</a>
+  <a href="_v/yetenekler.json">yetenekler.json</a>
+</nav>
+<main class="wrap">
+  <section class="hero">
+    <h1>Dila x AFAIR · Canli Video Studyosu &amp; Higgsfield AI API Koprusu</h1>
+    <p class="sub">Saf siyah yasagina (%0 siyah; gece laciverti, kirik kemik, zumrut yesili, sicak bronz) tam uyumlu Dila x AFAIR sinema videolari. Resmi <code>api.higgsfield.ai</code> bulut koprusu + sifir-maliyet yerel FFmpeg H.264 motoru tek hatta calisir.</p>
+    <div class="kpis">
+      <span>Render Hizi: <strong>138,5 fps (1,30 sn / klip)</strong></span>
+      <span>Format: <strong>1280x720 · 30 fps · H.264 +faststart</strong></span>
+      <span>Higgsfield API: <strong>https://api.higgsfield.ai (Key tak-calistir hazir)</strong></span>
+    </div>
+  </section>
+
+  <section class="grid2">
+    <article class="card">
+      <h2>01 · afair.live — Eve Gelen Iki Mezura &amp; Atolye</h2>
+      <video src="_v/dila_01_afair_live_iki_mezura.mp4" autoplay muted loop playsinline controls></video>
+      <div class="meta"><span>6 sn · 880.149 B · 138,5 fps</span><code>SHA-16: 4b3ccdc82f85400b</code></div>
+    </article>
+    <article class="card">
+      <h2>02 · afair.studio — AI Galeri Art &amp; Ipek Siluet</h2>
+      <video src="_v/dila_02_afair_studio_galeri_art.mp4" autoplay muted loop playsinline controls></video>
+      <div class="meta"><span>6 sn · 1.073.900 B · 136,4 fps</span><code>SHA-16: 67b5327c3180adc6</code></div>
+    </article>
+  </section>
+
+  <section class="box">
+    <h3>Higgsfield Uretimlerini Siteye Guvenli Entegre Etmenin 3 Adimi</h3>
+    <ol>
+      <li><strong>Sunucu/Yerel Kopru (Key Sifir Sizinti):</strong> <code>Authorization: Key HF_API_KEY_ID:HF_API_KEY_SECRET</code> yalnizca sunucu veya yerel <code>higgsfield_dila_kopru.py</code> tarafinda calisir; tarayici koduna asla yazilmaz.</li>
+      <li><strong>Asenkron Akis + 7 Gunluk Saklama Aynasi:</strong> <code>POST api.higgsfield.ai/...</code> -&gt; <code>status_url</code> yoklama -&gt; <code>completed</code> oldugunda MP4 indirilir, SHA-256 ile muhurlenip kalici statik depoya aynalanir.</li>
+      <li><strong>Aninda Fallback (Kendi Yerel API'miz):</strong> Bulut anahtari yokken <code>image-generator</code> + yerel FFmpeg <code>2,68 sn</code> icinde canliya hazir H.264 klipleri uretir (<a href="_v/dila_video_manifest.json" data-s="s68d9815d">dila_video_manifest.json</a>).</li>
+    </ol>
+  </section>
+</main>
+</body>
+</html>

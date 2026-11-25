@@ -1,0 +1,44 @@
+{
+  "sema": "DILA_HIGGSFIELD_VIDEO_STUDIO/1.0",
+  "zaman": "2026-11-25T01:06:31+03:00",
+  "higgsfield_api": {
+    "base_url": "https://api.higgsfield.ai",
+    "auth_format": "Authorization: Key <HF_API_KEY_ID>:<HF_API_KEY_SECRET>",
+    "durum": "KEY_BEKLIYOR_YEREL_MOTOR_AKTIF"
+  },
+  "uretilen_videolar": [
+    {
+      "mod": "YEREL_FFMPEG_SINEMA",
+      "dosya": "dila_01_afair_live_iki_mezura.mp4",
+      "cozunurluk": "1280x720",
+      "fps": 30,
+      "sure_video_sn": 6,
+      "render_sure_sn": 1.3,
+      "render_hiz_fps": 138.5,
+      "bayt": 880149,
+      "sha16": "4b3ccdc82f85400b"
+    },
+    {
+      "mod": "YEREL_FFMPEG_SINEMA",
+      "dosya": "dila_02_afair_studio_galeri_art.mp4",
+      "cozunurluk": "1280x720",
+      "fps": 30,
+      "sure_video_sn": 6,
+      "render_sure_sn": 1.32,
+      "render_hiz_fps": 136.4,
+      "bayt": 1073900,
+      "sha16": "67b5327c3180adc6"
+    },
+    {
+      "mod": "YEREL_FFMPEG_BIRLESIK_REEL",
+      "dosya": "dila_03_afair_birlesik_vitrin.mp4",
+      "kaynak_klip": [
+        "dila_01_afair_live_iki_mezura.mp4",
+        "dila_02_afair_studio_galeri_art.mp4"
+      ],
+      "render_sure_sn": 0.06,
+      "bayt": 1953253,
+      "sha16": "49aace08d98371eb"
+    }
+  ]
+}
