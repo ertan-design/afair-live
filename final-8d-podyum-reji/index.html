@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AFAIR LIVE · FİNAL 3 — Ateşin ipeği. 8D kulis.</title>
+  <meta name="description" content="WebAudio 8D binaural panner, ipek hışırtı sentezleyici, 2400K–5800K kulis spotu ve BPM defile senaryosu ihracı.">
+  <link rel="stylesheet" href="./final.css">
+</head>
+<body>
+  <canvas id="tuval" aria-label="360 derece yönlendirilebilir 3 boyutlu final sahnesi"></canvas>
+
+  <header class="ust">
+    <div class="sol">
+      <a class="damga" href="/">AFAIR LIVE · FİNAL 3</a>
+    </div>
+    <nav class="sag" aria-label="Final sahne geçişi">
+      <button type="button" class="dugme" id="atolye-ac" aria-expanded="false">Final Atölyesi ＋</button>
+      <a class="dugme" href="/final-50bin-kapi-pasaport/">Sonraki →</a>
+    </nav>
+  </header>
+
+  <section class="atolye-panel" id="atolye-panel" aria-label="8D Uzamsal Ses & Kulis Reji Final" hidden>
+    <h2>8D Uzamsal Ses & Kulis Reji Final</h2>
+    <p class="aciklama">WebAudio 8D binaural panner, ipek hışırtı sentezleyici, 2400K–5800K kulis spotu ve BPM defile senaryosu ihracı.</p>
+    
+        <div class="form-izgara">
+          <div class="alan"><label for="inp-bpm">Podyum Yürüyüş Temposu (BPM)</label>
+            <input id="inp-bpm" type="range" min="72" max="128" value="98">
+          </div>
+          <div class="alan"><label for="inp-spot">Kulis Kelvin Spotu (K)</label>
+            <input id="inp-spot" type="range" min="2400" max="5800" step="100" value="3400">
+          </div>
+          <div class="alan"><label for="inp-pan">8D Uzamsal Ses Yörüngesi</label>
+            <select id="inp-pan"><option value="sekiz">8-Çizgisi Binaural Dönüş</option><option value="podyum">Ön Sıra Podyum Geçişi</option><option value="kulis">Kulis Kadife Perde Akustiği</option></select>
+          </div>
+        </div>
+    <div class="sonuc-kutu" id="canli-sonuc">Hesaplanıyor...</div>
+    <div class="svg-kutu" id="canli-svg" hidden></div>
+    <div class="aksiyon-bar">
+      <a class="indir-bag" id="btn-indir" href="data:application/json;charset=utf-8,%7B%7D" download="final-8d-podyum-reji-cikti.json">Çıktıyı İndir (.json)</a>
+      <a class="indir-bag" id="btn-svg-indir" href="data:image/svg+xml;charset=utf-8," download="final-8d-podyum-reji-plan.svg" hidden>Paftayı İndir (.svg)</a>
+      <button type="button" class="dugme" id="btn-senkron-yay">Senkron Zincirine Yaz</button>
+      <button type="button" class="dugme" id="atolye-kapat">Kapat ✕</button>
+    </div>
+    <pre class="kod-cikti" id="zincir-cikti"></pre>
+  </section>
+
+  <section class="baslik" aria-label="Sahne özeti">
+    <h1>Ateşin ipeği. 8D kulis.</h1>
+    <p>Power of Fire 8D uzamsal ses, Kelvin ışık ve podyum temposu.</p>
+  </section>
+
+  <footer class="alt">
+    <div class="kontrol" role="group" aria-label="Sahne kontrolleri">
+      <button type="button" class="dugme" id="btn-ruzgar">Rüzgâr</button>
+      <button type="button" class="dugme" id="btn-isik">Işık</button>
+      <button type="button" class="dugme" id="btn-ses" aria-pressed="false">8D Ses</button>
+    </div>
+    <div class="etiket" id="durum">16-1450 TCX Ateş İpeği · 360°</div>
+  </footer>
+
+  <script src="./final.js"></script>
+</body>
+</html>

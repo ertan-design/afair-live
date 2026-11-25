@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AFAIR LIVE · FİNAL 4 — 50.000 kapı. Tek pasaport.</title>
+  <meta name="description" content="KAPI-00001..50000 deterministik gezgin ve 4-Önyüz (Galeri, Mezura, Mekân, Podyum) birleşik SHA-256 pasaportu.">
+  <link rel="stylesheet" href="./final.css">
+</head>
+<body>
+  <canvas id="tuval" aria-label="360 derece yönlendirilebilir 3 boyutlu final sahnesi"></canvas>
+
+  <header class="ust">
+    <div class="sol">
+      <a class="damga" href="/">AFAIR LIVE · FİNAL 4</a>
+    </div>
+    <nav class="sag" aria-label="Final sahne geçişi">
+      <button type="button" class="dugme" id="atolye-ac" aria-expanded="false">Final Atölyesi ＋</button>
+      <a class="dugme" href="/">Sonraki →</a>
+    </nav>
+  </header>
+
+  <section class="atolye-panel" id="atolye-panel" aria-label="50.000 Kapı & 4-Front Pasaport Final" hidden>
+    <h2>50.000 Kapı & 4-Front Pasaport Final</h2>
+    <p class="aciklama">KAPI-00001..50000 deterministik gezgin ve 4-Önyüz (Galeri, Mezura, Mekân, Podyum) birleşik SHA-256 pasaportu.</p>
+    
+        <div class="form-izgara">
+          <div class="alan"><label for="inp-kapi">Kapı Numarası (1 .. 50.000)</label>
+            <input id="inp-kapi" type="number" min="1" max="50000" value="1903">
+          </div>
+          <div class="alan"><label for="inp-front">Aktif Dila Önyüzü (4-Front)</label>
+            <select id="inp-front"><option value="F1">Front-1 · AI Galeri &amp; Renk</option><option value="F2">Front-2 · İki-Mezura Kalıp</option><option value="F3">Front-3 · Mimari Yaşam Alanı</option><option value="F4">Front-4 · Canlı Defile &amp; Pasaport</option></select>
+          </div>
+          <div class="alan"><label for="inp-imza">Tasarımcı Alt-Alanı</label>
+            <input id="inp-imza" type="text" value="rufat.afair.studio">
+          </div>
+        </div>
+    <div class="sonuc-kutu" id="canli-sonuc">Hesaplanıyor...</div>
+    <div class="svg-kutu" id="canli-svg" hidden></div>
+    <div class="aksiyon-bar">
+      <a class="indir-bag" id="btn-indir" href="data:application/json;charset=utf-8,%7B%7D" download="final-50bin-kapi-pasaport-cikti.json">Çıktıyı İndir (.json)</a>
+      <a class="indir-bag" id="btn-svg-indir" href="data:image/svg+xml;charset=utf-8," download="final-50bin-kapi-pasaport-plan.svg" hidden>Paftayı İndir (.svg)</a>
+      <button type="button" class="dugme" id="btn-senkron-yay">Senkron Zincirine Yaz</button>
+      <button type="button" class="dugme" id="atolye-kapat">Kapat ✕</button>
+    </div>
+    <pre class="kod-cikti" id="zincir-cikti"></pre>
+  </section>
+
+  <section class="baslik" aria-label="Sahne özeti">
+    <h1>50.000 kapı. Tek pasaport.</h1>
+    <p>Selinahbap × AFAIR kapı gezgini ve 4-Önyüz SHA-256 mührü.</p>
+  </section>
+
+  <footer class="alt">
+    <div class="kontrol" role="group" aria-label="Sahne kontrolleri">
+      <button type="button" class="dugme" id="btn-ruzgar">Rüzgâr</button>
+      <button type="button" class="dugme" id="btn-isik">Işık</button>
+      <button type="button" class="dugme" id="btn-ses" aria-pressed="false">8D Ses</button>
+    </div>
+    <div class="etiket" id="durum">18-2027 TCX Sahne Gül Kurusu · 360°</div>
+  </footer>
+
+  <script src="./final.js"></script>
+</body>
+</html>

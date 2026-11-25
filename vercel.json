@@ -82,6 +82,38 @@
     {
       "source": "/podyum-sahne/kapi/",
       "destination": "/podyum-sahne/kapi/index.html"
+    },
+    {
+      "source": "/final-1903-orkestrator",
+      "destination": "/final-1903-orkestrator/index.html"
+    },
+    {
+      "source": "/final-1903-orkestrator/",
+      "destination": "/final-1903-orkestrator/index.html"
+    },
+    {
+      "source": "/final-iki-mezura-randevu",
+      "destination": "/final-iki-mezura-randevu/index.html"
+    },
+    {
+      "source": "/final-iki-mezura-randevu/",
+      "destination": "/final-iki-mezura-randevu/index.html"
+    },
+    {
+      "source": "/final-8d-podyum-reji",
+      "destination": "/final-8d-podyum-reji/index.html"
+    },
+    {
+      "source": "/final-8d-podyum-reji/",
+      "destination": "/final-8d-podyum-reji/index.html"
+    },
+    {
+      "source": "/final-50bin-kapi-pasaport",
+      "destination": "/final-50bin-kapi-pasaport/index.html"
+    },
+    {
+      "source": "/final-50bin-kapi-pasaport/",
+      "destination": "/final-50bin-kapi-pasaport/index.html"
     }
   ],
   "buildCommand": "",
