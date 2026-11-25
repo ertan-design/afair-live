@@ -1,0 +1,76 @@
+:root {
+  --bg: #14090c;
+  --panel: #200e14;
+  --line: #48212d;
+  --ink: #faf0ea;
+  --muted: #caaeb6;
+  --gold: #e4b56d;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+}
+.cn-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 15px 24px;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+}
+.cn-nav a { color: var(--ink); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; font-size: 11px; }
+.cn-nav a:hover { border-color: var(--gold); color: var(--gold); }
+.cn-wrap { max-width: 1280px; margin: 24px auto; padding: 0 20px 44px; }
+.eyebrow { margin: 0 0 6px; font-size: 11px; letter-spacing: 0.16em; color: var(--gold); }
+h1 { margin: 0 0 8px; font-family: Georgia, serif; font-weight: 500; font-size: clamp(26px, 3.6vw, 42px); }
+.lead { margin: 0 0 20px; color: var(--muted); max-width: 740px; }
+.cinema-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(290px, 0.9fr); gap: 20px; }
+.screen-col, .reel-col {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 18px;
+}
+.stage-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #0d0608;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  display: block;
+}
+.player-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 12px; }
+.cbtn {
+  background: #2e151d;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.cbtn.is-on { background: var(--gold); color: #190d10; border-color: var(--gold); font-weight: 700; }
+.pmeta { font-family: ui-monospace, monospace; font-size: 12px; color: var(--gold); }
+.reel-col h2 { margin: 0 0 12px; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+.reel-list { display: flex; flex-direction: column; gap: 8px; }
+.rbtn {
+  text-align: left;
+  background: #170a0e;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+  color: var(--ink);
+  cursor: pointer;
+}
+.rbtn.is-on { border-color: var(--gold); background: #2c131b; }
+.rbtn strong { display: block; font-size: 13px; }
+.rbtn span { font-size: 11px; color: var(--muted); font-family: ui-monospace, monospace; }
+@media (max-width: 900px) { .cinema-grid { grid-template-columns: 1fr; } }
