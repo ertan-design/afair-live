@@ -1,6 +1,6 @@
 {
  "sema": "terazi.butunluk.v1",
- "paket_sha": "7492640de9a3d21f96927caa54b286120190369f452c3df530bed16dadc6661e",
+ "paket_sha": "297fecb17f400a03e3ca66a915638d81c1ddc8eb6fb77716cf24a507fd438471",
  "algoritma": "SHA-256 (dosyanin tam baytlari)",
  "kullanim": "Her dosyayi /<ad> adresinden indir, SHA-256 hesapla, 'sha' ile karsilastir. Sitede: Defter > Butunlugu denetle.",
  "gorev_kapisi": "K2-S7-00099-3",
@@ -474,16 +474,16 @@
    "sha": "6d54599de409fc65688e912ff84be96ce653c5073c40557cfb848c8e8d562777"
   },
   "terazi.css": {
-   "bayt": 18271,
-   "sha": "aedb0edc7741e2d14622b9c600ed51c94d81bb6af46b0a633925acc3e3dfa8a0"
+   "bayt": 18696,
+   "sha": "6beba7a73956e0fe3cce124ec15daf52faaed1495954e302d20ae75321cfd80b"
   },
   "terazi.html": {
-   "bayt": 10529,
-   "sha": "037bd273f586942a1c713162a0c0b59f1b4a804ad1368b326f0d64567a3c0373"
+   "bayt": 10560,
+   "sha": "08ce49af9247d2d8a08f857024285495eddece59af6db2bc55c20ea14b7f3e8a"
   },
   "terazi.js": {
-   "bayt": 38973,
-   "sha": "5696719a076a1b66823dc588c8b245e4a72b87331f7b8f018e70047bbe2a0db4"
+   "bayt": 39727,
+   "sha": "ff76ce04724c802c107b1c723b960a47865a747f2e9026d0e18d14d203f61100"
   }
  }
 }

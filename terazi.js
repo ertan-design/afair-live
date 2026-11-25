@@ -122,7 +122,7 @@ function vitrinCiz() {
 // ---------- sahne perdesi: WebGPU -> WebGL2 -> CSS ----------
 const GLSL = `#version 300 es
 precision highp float;
-uniform vec2 r; uniform float t; out vec4 o;
+uniform vec2 r; uniform vec2 m; uniform float t; out vec4 o;
 float h(vec2 p){return fract(sin(dot(p,vec2(12.9898,78.233)))*43758.5453);}
 void main(){
   vec2 uv=gl_FragCoord.xy/r;
@@ -131,7 +131,7 @@ void main(){
   float f2=sin(x*2.3-t*.17+uv.y*1.5)*.5+.5;
   vec3 c=mix(vec3(.055,.031,.047),vec3(.643,.408,.298),pow(f1,3.)*.8+f2*.15);
   c=mix(c,vec3(.031,.059,.106),smoothstep(.35,1.,uv.x));
-  vec2 s=vec2(.52+.08*sin(t*.3),.62);
+  vec2 s=m;
   float d=length((uv-s)*vec2(r.x/r.y,1.));
   c+=vec3(.88,.69,.49)*.35*exp(-d*d*4.);
   vec2 cell=floor(gl_FragCoord.xy/18.);
@@ -141,7 +141,7 @@ void main(){
   c+=mix(vec3(.05,.1,.083),vec3(.5,1.,.83)*.9,yan)*nokta*smoothstep(.45,.9,uv.x);
   o=vec4(c,1.);
 }`;
-const WGSL = `struct U { r: vec2f, t: f32, p: f32 };
+const WGSL = `struct U { r: vec2f, m: vec2f, t: f32, a: f32, b: f32, c: f32 };
 @group(0) @binding(0) var<uniform> u: U;
 @vertex fn vs(@builtin(vertex_index) i: u32) -> @builtin(position) vec4f {
   var p = array<vec2f, 3>(vec2f(-1., -3.), vec2f(3., 1.), vec2f(-1., 1.));
@@ -157,7 +157,7 @@ fn h(p: vec2f) -> f32 { return fract(sin(dot(p, vec2f(12.9898, 78.233))) * 43758
   let f2 = sin(x * 2.3 - t * .17 + uv.y * 1.5) * .5 + .5;
   var c = mix(vec3f(.055, .031, .047), vec3f(.643, .408, .298), pow(f1, 3.) * .8 + f2 * .15);
   c = mix(c, vec3f(.031, .059, .106), smoothstep(.35, 1., uv.x));
-  let s = vec2f(.52 + .08 * sin(t * .3), .62);
+  let s = u.m;
   let d = length((uv - s) * vec2f(r.x / r.y, 1.));
   c += vec3f(.88, .69, .49) * .35 * exp(-d * d * 4.);
   let cell = floor(q / 18.);
@@ -170,6 +170,14 @@ fn h(p: vec2f) -> f32 { return fract(sin(dot(p, vec2f(12.9898, 78.233))) * 43758
 
 async function perdeKur() {
   const cv = $("#perde"), yaz = m => { const e = $("#perde-motor"); if (e) e.textContent = m; };
+  // spot isigi kullanici yonetir: imlec / dokunma; 4 sn dokunulmazsa yavasca gezinir
+  const isik = [0.52, 0.62]; let elle = -1e9;
+  const sahne = cv.parentElement;
+  sahne.addEventListener("pointermove", e => {
+    const b = cv.getBoundingClientRect();
+    isik[0] = Math.min(1, Math.max(0, (e.clientX - b.left) / b.width)); isik[1] = Math.min(1, Math.max(0, 1 - (e.clientY - b.top) / b.height));
+    elle = performance.now(); if (!hareketAcik) kare();
+  });
   if (!cv) return;
   const boyut = () => { const k = Math.min(devicePixelRatio || 1, 2) * .6; cv.width = Math.max(1, Math.round(cv.clientWidth * k)); cv.height = Math.max(1, Math.round(cv.clientHeight * k)); };
   boyut();
@@ -184,10 +192,10 @@ async function perdeKur() {
         ctx.configure({ device: cihaz, format: bicim, alphaMode: "opaque" });
         const mod = cihaz.createShaderModule({ code: WGSL });
         const hat = cihaz.createRenderPipeline({ layout: "auto", vertex: { module: mod, entryPoint: "vs" }, fragment: { module: mod, entryPoint: "fs", targets: [{ format: bicim }] }, primitive: { topology: "triangle-list" } });
-        const tampon = cihaz.createBuffer({ size: 16, usage: GPUBufferUsage.UNIFORM | GPUBufferUsage.COPY_DST });
+        const tampon = cihaz.createBuffer({ size: 32, usage: GPUBufferUsage.UNIFORM | GPUBufferUsage.COPY_DST });
         const bag = cihaz.createBindGroup({ layout: hat.getBindGroupLayout(0), entries: [{ binding: 0, resource: { buffer: tampon } }] });
         ciz = t => {
-          cihaz.queue.writeBuffer(tampon, 0, new Float32Array([cv.width, cv.height, t, 0]));
+          cihaz.queue.writeBuffer(tampon, 0, new Float32Array([cv.width, cv.height, isik[0], isik[1], t, 0, 0, 0]));
           const kod = cihaz.createCommandEncoder();
           const g = kod.beginRenderPass({ colorAttachments: [{ view: ctx.getCurrentTexture().createView(), loadOp: "clear", storeOp: "store", clearValue: { r: 0, g: 0, b: 0, a: 1 } }] });
           g.setPipeline(hat); g.setBindGroup(0, bag); g.draw(3); g.end();
@@ -207,21 +215,21 @@ async function perdeKur() {
         gl.attachShader(p, sh(gl.FRAGMENT_SHADER, GLSL));
         gl.linkProgram(p); if (!gl.getProgramParameter(p, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(p));
         gl.useProgram(p);
-        const ur = gl.getUniformLocation(p, "r"), ut = gl.getUniformLocation(p, "t");
-        ciz = t => { gl.viewport(0, 0, cv.width, cv.height); gl.uniform2f(ur, cv.width, cv.height); gl.uniform1f(ut, t); gl.drawArrays(gl.TRIANGLES, 0, 3); };
+        const ur = gl.getUniformLocation(p, "r"), ut = gl.getUniformLocation(p, "t"), um = gl.getUniformLocation(p, "m");
+        ciz = t => { gl.viewport(0, 0, cv.width, cv.height); gl.uniform2f(ur, cv.width, cv.height); gl.uniform2f(um, isik[0], isik[1]); gl.uniform1f(ut, t); gl.drawArrays(gl.TRIANGLES, 0, 3); };
         motor = "WebGL2";
       } catch (e) { algiNot.webgl2 = "derleme hatası"; ciz = null; }
     }
   }
   let dongu = 0, t0 = performance.now(), gorunur = true;
-  const kare = () => { if (!ciz) return; ciz((performance.now() - t0) / 1000); if (hareketAcik && gorunur) dongu = requestAnimationFrame(kare); };
+  const kare = () => { if (!ciz) return; const sn = (performance.now() - t0) / 1000; if (performance.now() - elle > 4000 && hareketAcik) { isik[0] = .52 + .12 * Math.sin(sn * .3); isik[1] = .62 + .05 * Math.cos(sn * .2); } ciz(sn); if (hareketAcik && gorunur) dongu = requestAnimationFrame(kare); };
   const yeniden = () => { cancelAnimationFrame(dongu); kare(); };
   new ResizeObserver(() => { boyut(); if (!hareketAcik) yeniden(); }).observe(cv);
   new IntersectionObserver(([e]) => { gorunur = e.isIntersecting; if (gorunur) yeniden(); }).observe(cv);
   hareketDinleyici.add(yeniden);
   yeniden();
-  yaz(`Sahne motoru: ${motor}${ciz ? "" : " (gölgelendirici çalışmadı)"} · ${hareketAcik ? "hareketli" : "tek kare"}`);
-  hareketDinleyici.add(() => yaz(`Sahne motoru: ${motor} · ${hareketAcik ? "hareketli" : "tek kare"}`));
+  yaz(`Sahne motoru: ${motor}${ciz ? "" : " (gölgelendirici çalışmadı)"} · ${hareketAcik ? "hareketli" : "tek kare"} · imleç ışığı yönetir`);
+  hareketDinleyici.add(() => yaz(`Sahne motoru: ${motor} · ${hareketAcik ? "hareketli" : "tek kare"} · imleç ışığı yönetir`));
   vitrinCiz();
 }
 
