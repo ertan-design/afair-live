@@ -487,7 +487,7 @@
     else if (MOD === 'kapi_pasaport') {
       var kapiNo = Math.max(1, Math.min(50000, Number(val('inp-kapi', 1903))));
       var fr = val('inp-front', 'F1');
-      var imza = val('inp-imza', 'rufat.afair.studio');
+      var imza = val('inp-imza', 'rufat.afair.studio').trim().toLowerCase().replace(/[^a-z0-9.-]/g, '').slice(0, 253) || 'rufat.afair.studio';
       var kapiKod = 'KAPI-' + ('00000' + kapiNo).slice(-5);
       var muhur = fnvOzeti(kapiKod + '|' + fr + '|' + imza);
       durum.yaw = (kapiNo % 360) * Math.PI / 180;
