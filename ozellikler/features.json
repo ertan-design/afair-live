@@ -1,0 +1,425 @@
+{
+  "site": "afair-live",
+  "entries": [
+    {
+      "path": "ozellikler/koleksiyon-yayini/index.html",
+      "title": "Defile programı",
+      "description": "Dosyandan yerel video aç; gösterim listesini oluştur.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "ozellikler/olcu-kunye/index.html",
+      "title": "Ölçü ve renk künyesi",
+      "description": "İki mezura, ton künyesi ve atölye akışını incele.",
+      "category": "Geri getirilen",
+      "restored": true
+    },
+    {
+      "path": "afair-live-vitrin.html",
+      "title": "Tasarım sahneye çıkar.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "birlesik.html",
+      "title": "50.000 kapı. Her biri bir GPT'nin işi.",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "calisma-notu.html",
+      "title": "Gördüğün ne?",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "calisma-rehberi/defile.html",
+      "title": "Canlı defile",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "calisma-rehberi/film.html",
+      "title": "Moda filmleri",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "calisma-rehberi/yayin-hazirlik.html",
+      "title": "Yayın provası",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dila-rehber.html",
+      "title": "Uygulama rehberi",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dila/canli-podyum.html",
+      "title": "Ölçün, rengin ve seçtiğin eser podyuma çıkar; 17 eşzamanlı prompt bir sonraki sıçramayı kurar.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "dila/iki-mezura.html",
+      "title": "Mezura-A bedeni ölçer, Mezura-B nefes ve hareket zarfını çizer.",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç."
+    },
+    {
+      "path": "dila/sinema.html",
+      "title": "Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre Kumaş Fizik &amp; Açık Kapılar",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "dila/yasam-alani.html",
+      "title": "Körü körüne kural değil: Saf Siyah ile Gece Çivitini yan yana kendi gözünle gör.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dokuma-ufuk/ilk-kurgu.html",
+      "title": "Harita Karosu Değil, Dokunmuş Ufuk: Üç Kuleden GAIA’ya Kanat Açan Tam Yaşam Ekosistemi",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "ekip-kapisi.html",
+      "title": "Ekip Kapısı",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "iki-mezura-randevu.html",
+      "title": "İki Mezura Online Terzi",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç."
+    },
+    {
+      "path": "kapi-sahnesi.html",
+      "title": "İşin başladığı ve sonucunun görüldüğü kapılar",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "nami.html",
+      "title": "Nami Tetikleri",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "nexus.html",
+      "title": "Akışını kur. Sahneye taşı.",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "olcum-kutusu.html",
+      "title": "Ölçüm Kutusu",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "prizma/filo.html",
+      "title": "44 Tekil Alan Adının Dürüst Canlı Envanteri.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "prizma/front1.html",
+      "title": "Siyah Asla Giymemen Gerekiyor: Yeni Siyahını Bul, 8 Konsepti Senkronla.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "prizma/front2.html",
+      "title": "Mezura-A Bedeni Okur, Mezura-B Hareket &amp; Işık Payını Çizer.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "prizma/front3.html",
+      "title": "Üstündeki Ceketle Evindeki Tablo Aynı Işıkta ve Aynı Akorda Konuşsun.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "prizma/front4.html",
+      "title": "Tüm Sıçramalar Tek SHA-256 Pasaportta: 4 Front + Video + 50.000 Kapı Mührü.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "prizma/video.html",
+      "title": "Higgsfield Üretimleri +faststart Onarıldı, Kendi RTX 3090 Motorumuz 5,54 Saniyede Yayında.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "rufat-kulis.html",
+      "title": "Çekim hazır. Işığı yönlendir.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "selin-kapilar.html",
+      "title": "50.000 iş kapısı",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "terazi-dila.html",
+      "title": "Dila, hareketle.",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "terazi-kapi.html",
+      "title": "Kapı — Selinahbap × AFAIR",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "terazi-kapilar.html",
+      "title": "selinahbap · 444.050 kapı",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "terazi-katalog.html",
+      "title": "GPT/model ölçüm aletleri · 64 alet",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "terazi-kutu.html",
+      "title": "Kutu · paket 9",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "terazi.html",
+      "title": "Fikirden sahneye.",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "tetikler.html",
+      "title": "Bir çağrı. Somut işler.",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "yasam-masasi-onceki.html",
+      "title": "Dokun. Çevir. Dalgalandır.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "canli-yayin-akisi/index.html",
+      "title": "Defile sesini dalgalandır.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dila-video/galeriden-atolyeye/index.html",
+      "title": "Galeriden atölyeye",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "dila-video/index.html",
+      "title": "Dila. Hareketli atölye.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "dila/index.html",
+      "title": "Yaptığın her seçim, bir sonraki sıçramayı diker.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "dokuma-ufuk/index.html",
+      "title": "Defile hazırlığı",
+      "category": "Kumaş ve tasarım",
+      "restored": false,
+      "description": "Kumaş ve tasarım deneyimini aç."
+    },
+    {
+      "path": "karbon-8d/index.html",
+      "title": "Kumaşı seç. Terzin gelsin.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "karbon-ucus/index.html",
+      "title": "Çatıdan uç. Şehre in.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "kulis-isik/index.html",
+      "title": "Loş ışığı yönlendir.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "olcum/aletler/index.html",
+      "title": "83 doğrulanmış alet",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "olcum/eslesme/index.html",
+      "title": "PC ve web aynı mı?",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "olcum/index.html",
+      "title": "Ölçümler",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "olcum/kapi-hakemi/index.html",
+      "title": "8 motor, 8 mercek",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "podyum-canli/index.html",
+      "title": "Ateşin ipeğini izle.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "podyum-sahne/index.html",
+      "title": "Tasarım sahnede. Teknoloji perde arkasında.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "podyum-sahne/kapi/index.html",
+      "title": "444.050 kapı. Her piksel bir kapı adresi.",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "prizma/atolye/index.html",
+      "title": "Podyumu yönet. Terzi kalıbını çiz.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "prizma/index.html",
+      "title": "Filmi seç. Salonda izle.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "prova-fisi/index.html",
+      "title": "Provanı hazırla.",
+      "category": "Ölçü ve atölye",
+      "restored": false,
+      "description": "Ölçü ve atölye deneyimini aç."
+    },
+    {
+      "path": "sahne/index.html",
+      "title": "Her kapı bir sahne .",
+      "category": "Sahne ve film",
+      "restored": false,
+      "description": "Sahne ve film deneyimini aç."
+    },
+    {
+      "path": "teknik-sergi/index.html",
+      "title": "Her kapı bir sahne.",
+      "category": "Araçlar",
+      "restored": false,
+      "description": "Araçlar deneyimini aç."
+    },
+    {
+      "path": "uc-cati/index.html",
+      "title": "Burada yaşam yere sığmaz.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "uc-rota/index.html",
+      "title": "Evin bir başlangıç. İstanbul devamı.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "vip-ozel-dikim/index.html",
+      "title": "İki mezura. Tek prova.",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    },
+    {
+      "path": "yasam-destegi/index.html",
+      "title": "Evin için ne lazım?",
+      "category": "Şehir ve yaşam",
+      "restored": false,
+      "description": "Şehir ve yaşam deneyimini aç."
+    }
+  ]
+}

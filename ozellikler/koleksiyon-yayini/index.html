@@ -1,0 +1,14 @@
+<!doctype html><html lang="tr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AFAIR Live · Defile yayını</title>
+<link rel="stylesheet" href="./style-1.css">
+<nav aria-label="Ana menü"><a class="logo" href="#basla">AFAIR LIVE</a><div><a href="#oynatici">Yayın</a><a href="#akıs">Program</a><a href="https://www.afair.studio/">Stüdyo</a></div></nav>
+<main id="basla">
+<section class="hero"><div><p class="eyebrow">Defile ve arşiv</p><h1>Podyum<br>ekranı</h1><p class="muted">Yayın ekibinin seçtiği defile kaydını oynat. Programı hazırla ve yayın kartını paylaş.</p><p class="status" id="stageStatus" aria-live="polite">Yayın kaynağı bekleniyor.</p></div>
+<div class="screen" id="oynatici"><div class="curtain" aria-hidden="true"></div><div class="screentext" id="cover"><span>Yayın beklemede</span><span>AFAIR LIVE</span></div><video id="video" controls playsinline preload="metadata" aria-label="Defile video oynatıcısı" hidden></video></div></section>
+<div class="grid">
+<section class="card"><h2>Oynatıcı kontrolü</h2><form id="mediaForm"><label>Doğrudan HTTPS video adresi<input id="mediaUrl" type="url" placeholder="https://…/defile.mp4"></label><div class="row"><button class="primary" type="submit">Adresten aç</button><button type="button" id="clear" disabled>Kaynağı kaldır</button></div></form>
+<label>Bilgisayardan MP4 veya WebM seç<input id="clip" type="file" accept="video/mp4,video/webm,.mp4,.webm"></label><output id="mediaStatus" role="status">Video içeriğini seçtiğinde oynatıcı etkinleşir.</output></section>
+<section class="card" id="akıs"><h2>Defile programı</h2><form id="agendaForm"><label>Program adı<input id="eventName" maxlength="80" required placeholder="Program adı"></label><label>Yerel saat<input id="eventTime" type="datetime-local" required></label><div class="row"><button class="primary" type="submit">Programa ekle</button><button type="button" id="export" disabled>Programı indir</button></div></form><ul id="agenda" class="agenda"></ul><output id="agendaStatus" role="status">Henüz planlanan oturum yok.</output></section>
+</div></main>
+<footer><a href="https://afffair.com/">AFFFAIR ana sitesi</a> · Yerel yayın hazırlığı</footer>
+<script src="./script-2.js"></script></html>
