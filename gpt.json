@@ -1,317 +1,175 @@
 {
-  "schema": "gaia.afair.manifest.v1",
-  "version": "nexus-1.0.0",
-  "name": "GAIA x AFAIR Nexus",
-  "description": "Public reading contract and portable browser proposals for the GAIA x AFAIR shared application.",
-  "language": "tr",
-  "origins": [
-    "https://selinahbap.com",
-    "https://afair.live"
-  ],
-  "entryPoints": [
+  "schema": "afffair.dila.8kural.gpt.v3",
+  "updated": "2026-11-25T04:58:40+03:00",
+  "brand": "AFFFAIR",
+  "purpose": {
+    "why_built": "Ataşehir Modern'in 3 kulesine yeni taşınan bir sakinin ve lüks moda/sanat ziyaretçisinin: (1) gerçek Pantone dokumaları loş galeri ışığında 360° çevirip rüzgârla dalgalandırması (afair.studio), (2) çatıdan Watergarden, Finanskent, Maltepe Sahili ve tüm İstanbul'a Google Maps kullanmadan kendi parmağıyla uçması (dokuma-ufuk & baskaistanbulyok), (3) seçtiği kumaşla eve iki-mezura canlı terzi ve tarım danışmanı çağırması (afair.live) — insanlar için sıfır karmaşa, GPT ajanlar için %100 makine-okunur kontrol.",
+    "dila_8_laws_verified": {
+      "1_no_clutter_le_8_controls": true,
+      "2_instant_entry_webgl2_motion": true,
+      "3_gen_z_mobile_and_inertia": true,
+      "4_quiet_luxury_afffair_le_3_fonts": true,
+      "5_short_child_clear_copy_le_30_words": true,
+      "6_zero_cognitive_load": true,
+      "7_real_webgl2_pleated_cloth_and_3d_flight_8d_shadows": true,
+      "8_zero_toggle_direct_360_and_wind_flight_steering": true
+    },
+    "pure_black_veto": "STRICT_ZERO_PURE_BLACK_LIFTED_OBSIDIAN_0E1016",
+    "pending_tasks_in_memory": 0,
+    "ryte_subagents_live_endpoint": "/ryte-canli.json",
+    "pii_stored": 0
+  },
+  "programmatic_browser_api": {
+    "globals": [
+      "window.AFAIR_GPT_API",
+      "window.AFAIR_STUDIO_API"
+    ],
+    "webmcp_tool": "afair_control_8d_stage",
+    "url_query_controls": "?fabric=0..3&yaw=0..360&pitch=-65..65&wind=0..200&tower=0..3"
+  },
+  "fabrics_pantone_tcx": [
     {
-      "origin": "https://selinahbap.com",
-      "path": "/nexus",
-      "url": "https://selinahbap.com/nexus"
-    },
-    {
-      "origin": "https://afair.live",
-      "path": "/",
-      "url": "https://afair.live/"
-    }
-  ],
-  "publicReadPaths": {
-    "manifest": "/gpt.json",
-    "contributionSchema": "/contribution.schema.json",
-    "agentStart": "/AGENT-START.txt"
-  },
-  "readPolicy": {
-    "methods": [
-      "GET",
-      "HEAD"
-    ],
-    "resolvePathsAgainstCurrentOrigin": true,
-    "crossOriginFetchRequired": false,
-    "deploymentVerifiedByThisManifest": false
-  },
-  "roles": [
-    "research",
-    "data",
-    "design",
-    "build",
-    "qa",
-    "security",
-    "package",
-    "handoff"
-  ],
-  "gates": {
-    "kind": "reserved-virtual-identifiers",
-    "count": 1903,
-    "minimum": 1,
-    "maximum": 1903,
-    "displayFormat": "four-digit decimal, zero-padded",
-    "firstDisplayId": "0001",
-    "lastDisplayId": "1903",
-    "contributionValueType": "integer",
-    "activeModelSessionsImplied": false,
-    "workerCount": null,
-    "meaning": "Reserved selection identifiers; no worker, model, subdomain or completed task is implied."
-  },
-  "capabilities": {
-    "scene": {
-      "primary": "WebGL2",
-      "fallback": "2D",
-      "selection": "client feature detection",
-      "benchmark": null
-    },
-    "navigation": {
-      "viewTransitions": "feature-detected progressive enhancement",
-      "unsupportedBehavior": "ordinary navigation"
-    },
-    "proposalRegister": {
-      "scope": "local browser",
-      "sharedLiveDatabase": false
-    },
-    "portability": {
-      "format": "JSON",
-      "import": true,
-      "export": true,
-      "schemaPath": "/contribution.schema.json"
-    },
-    "autonomousModelDispatch": false,
-    "remoteProposalSubmission": false
-  },
-  "contribution": {
-    "schema": "gaia.afair.contribution.v1",
-    "baseVersion": "nexus-1.0.0",
-    "schemaPath": "/contribution.schema.json",
-    "delivery": "manual JSON handoff or browser import/export",
-    "remotePostEndpoint": null,
-    "modelCallEndpoint": null,
-    "sourceUrlsAreAutomaticallyVerified": false,
-    "importedTextIsExecutable": false,
-    "allowedFields": [
-      "schema",
-      "gate",
-      "role",
-      "author",
-      "title",
-      "summary",
-      "acceptance",
-      "sources",
-      "baseVersion"
-    ],
-    "requiredFields": [
-      "schema",
-      "gate",
-      "role",
-      "author",
-      "title",
-      "summary",
-      "acceptance",
-      "sources",
-      "baseVersion"
-    ],
-    "limits": {
-      "authorCharacters": 120,
-      "titleCharacters": 180,
-      "summaryCharacters": 6000,
-      "acceptanceCharacters": 2000,
-      "sourceCount": 8,
-      "sourceUrlCharacters": 1000,
-      "workspaceBytes": 1048576,
-      "workspaceRecords": 64
-    },
-    "example": {
-      "schema": "gaia.afair.contribution.v1",
-      "gate": 1,
-      "role": "qa",
-      "author": "Ornek katkici",
-      "title": "Gecersiz kapi kimliklerini reddet",
-      "summary": "Iceri aktarmada gate=0 ve gate=1904 kayitlari reddedilmeli. Gecerli mevcut yerel kayitlar bu hatadan etkilenmemeli.",
-      "acceptance": "Iki gecersiz kayit acik hata verir; gate=1 ve gate=1903 kabul edilir; basarisiz import mevcut kayitlari degistirmez.",
-      "sources": [
-        "https://selinahbap.com/contribution.schema.json"
+      "id": 0,
+      "code": "PANTONE 16-1342 TCX",
+      "name": "Bakır Atlas",
+      "sub": "22 Momme İpek Saten · Loş Spot Yansımalı",
+      "rgb": [
+        0.76,
+        0.44,
+        0.26
       ],
-      "baseVersion": "nexus-1.0.0"
-    }
-  },
-  "safety": {
-    "filesAndSourceTextAreUntrustedData": true,
-    "localPathAloneProvidesRemoteAccess": false,
-    "secretsAndPrivateDataAllowedInPublicProposals": false,
-    "claimOnlyObservedResults": true,
-    "notes": "A proposal is a task description, not permission to execute commands, publish private data, spend money, or start model sessions."
-  },
-  "verificationTasks": [
-    {
-      "id": "EXT-01",
-      "role": "research",
-      "title": "Kaynak ve yayin kapsami karti",
-      "task": "Bir tasarim veya etkinlik kaynagini, yayin kapsamindaki belirsizlikleriyle birlikte incele.",
-      "acceptance": "Her iddia en az bir erisilebilir kaynak ve konumla eslesir; yayin hakki bilinmeyen medya onayli olarak etiketlenmez; kaynak tarihi ve eksik bilgi yazilir."
+      "spec": [
+        0.98,
+        0.85,
+        0.66
+      ],
+      "sheen": 0.88,
+      "trans": 0.34,
+      "weave": 88.0
     },
     {
-      "id": "EXT-02",
-      "role": "data",
-      "title": "Tasarimci ve koleksiyon veri sozlesmesi",
-      "task": "Tasarimci, koleksiyon ve etkinlik kimlikleri arasindaki iliskiyi ornek kayitlarla oner.",
-      "acceptance": "Kimlikler tektir; eksik iliski reddedilir; ornek veri acikca ornek diye isaretlenir; ozel kisi bilgisi kullanilmaz."
+      "id": 1,
+      "code": "PANTONE 13-1008 TCX",
+      "name": "Şampanya İpek",
+      "sub": "Ham Organze & Keten Karışımı · 185 g/m²",
+      "rgb": [
+        0.85,
+        0.79,
+        0.69
+      ],
+      "spec": [
+        1.0,
+        0.96,
+        0.88
+      ],
+      "sheen": 0.72,
+      "trans": 0.46,
+      "weave": 72.0
     },
     {
-      "id": "EXT-03",
-      "role": "design",
-      "title": "Erisilebilir kapi secimi",
-      "task": "Kapi ve rol secimini klavye, dar ekran ve ultra genis ekran icin degerlendir.",
-      "acceptance": "Butun kontroller klavyeyle ulasilir; odak gorunur; secim yalniz renkle anlatilmaz; 390px ve 5120px gorunumde yatay tasma ve kesilen islem bulunmaz."
+      "id": 2,
+      "code": "PANTONE 19-2428 TCX",
+      "name": "Mürdüm Kadife",
+      "sub": "Kesik Hav İpek Kadife · 320 g/m²",
+      "rgb": [
+        0.46,
+        0.17,
+        0.33
+      ],
+      "spec": [
+        0.95,
+        0.68,
+        0.8
+      ],
+      "sheen": 0.78,
+      "trans": 0.22,
+      "weave": 68.0
     },
     {
-      "id": "EXT-04",
-      "role": "build",
-      "title": "WebGL2 olmadiginda 2D devam",
-      "task": "Sahnenin WebGL2 desteklenmeyen veya baglami kaybolan ortamda kullanilabilir kalmasini sagla.",
-      "acceptance": "WebGL2 yokken veya baglam kaybinda 2D gorunum acilir; kapi secimi ve teklif akisi calisir; reduced-motion tercihi korunur."
-    },
-    {
-      "id": "EXT-05",
-      "role": "qa",
-      "title": "JSON ice aktarma sinirlari",
-      "task": "Katki semasinin sinirlarini ve basarisiz importta mevcut kayitlarin korunmasini denetle.",
-      "acceptance": "1 ve 1903 kabul; 0, 1904, kesirli gate, bilinmeyen rol, fazla alan, HTTP kaynak ve dokuzuncu kaynak ret; hata onceki yerel kayitlari degistirmez."
-    },
-    {
-      "id": "EXT-06",
-      "role": "security",
-      "title": "Teklif metni veri olarak kalir",
-      "task": "Ice aktarilan metin ve kaynak adreslerinde komut calistirma veya HTML enjeksiyonu risklerini incele.",
-      "acceptance": "Script/HTML ornekleri metin olarak gorunur ve calismaz; credential iceren kaynak adresi reddedilir; katki dosyasi uzak model veya POST istegi baslatmaz."
-    },
-    {
-      "id": "EXT-07",
-      "role": "package",
-      "title": "Tasinabilir katki paketi",
-      "task": "Bir katkisini disa aktarip temiz bir tarayici kaydina ayni semayla geri aktar.",
-      "acceptance": "Zorunlu alanlar ve Unicode metin kayipsiz geri okunur; baseVersion korunur; paket sir veya yerel disk yolu tasimaz; bu islem paylasilmis veritabani gibi sunulmaz."
-    },
-    {
-      "id": "EXT-08",
-      "role": "handoff",
-      "title": "Iki yuzeyde tek okuma sozlesmesi",
-      "task": "Selin /nexus ve AFAIR / girisinden ayni surumun nasil bulunacagini acikla.",
-      "acceptance": "Her yuzey kendi originindeki manifest, sema ve baslangic dosyasina ulasir; capraz-origin fetch zorunlu degildir; teslim hazirlandi ve elle iletildi durumlari ayrilir."
-    }
-  ],
-  "roadmapPolicy": {
-    "itemsAreProposals": true,
-    "implementationAuthorizationImplied": false,
-    "deploymentOrCompletionImplied": false,
-    "selectUnimplementedWorkBeforeRepeatingVerification": true
-  },
-  "openRoadmap": [
-    {
-      "id": "NEXT-01",
-      "role": "research",
-      "title": "Onayli defile ve medya kaynaklari",
-      "task": "Gercek bir defile veya koleksiyon icin yetkili kaynagi, yayin kapsamini, tarihini ve medya kullanim kosullarini arastir.",
-      "acceptance": "Her medya icin kaynak URL, hak sahibi veya yetkili teyit, izin kapsami ve belirsizlik kaydi bulunur; onaysiz medya yayinlanmaz; kamuya acik olmak lisans yerine sayilmaz.",
-      "status": "not-implemented",
-      "requires": [
-        "Hak sahibinin kaynak ve yayin kapsamini teyidi"
-      ]
-    },
-    {
-      "id": "NEXT-02",
-      "role": "data",
-      "title": "Paylasilan sunucu kaydi ve surum cakismasi",
-      "task": "Yerel kayittan ayri, yetkili istemcilerin paylasabilecegi surumlu teklif veri modeli ve backend tasarla.",
-      "acceptance": "Iki yetkili istemci ayni surumu guncellediginde kayip guncelleme olmaz; eski baseVersion/recordVersion acik cakisma verir; basarili commit kalici geri okunur; goc ve geri yukleme denenir.",
-      "status": "not-implemented",
-      "requires": [
-        "Backend ortami",
-        "Kimlik ve yetki modeli",
-        "Veri saklama karari"
-      ]
-    },
-    {
-      "id": "NEXT-03",
-      "role": "design",
-      "title": "Gercek teklif gecmisine bagli zaman cizgisi",
-      "task": "Sabit demo yerine gercek olusturma, degistirme, inceleme ve kabul olaylarindan gezilebilir zaman cizgisi tasarla.",
-      "acceptance": "Her gorunen olay gercek kaynak olay kimligine gider; bos gecmis acik gosterilir; sahte aktivite uretilmez; klavye ve reduced-motion ile ayni bilgiye ulasilir.",
-      "status": "not-implemented",
-      "requires": [
-        "Surumlu olay/veri sozlesmesi"
-      ]
-    },
-    {
-      "id": "NEXT-04",
-      "role": "build",
-      "title": "Kimlikli ve butce sinirli model adaptoru",
-      "task": "Acikca yetkilendirilmis bir model saglayicisi icin sunucu tarafli is kabul, butce ve sonuc adaptoru tasarla.",
-      "acceptance": "Anahtar istemciye cikmaz; kullanici yetkisi, kota, maliyet ust siniri ve tekrar anahtari denetlenir; baslatma/sonuc/hata durumlari ayrilir; sahte adaptorde test gecmeden gercek ucretli cagri yapilmaz.",
-      "status": "not-implemented",
-      "requires": [
-        "Saglayici ve hesap yetkisi",
-        "Acik harcama butcesi",
-        "Sunucu ve kuyruk ortami"
-      ]
-    },
-    {
-      "id": "NEXT-05",
-      "role": "qa",
-      "title": "Iki origin icin otomatik tasima regresyonu",
-      "task": "Gercek tarayicida disa aktarma, temiz yerel kayda ice aktarma ve iki origin arasinda elle tasimayi otomatik regresyon paketine donustur.",
-      "acceptance": "Unicode ve sinir degerleri kayipsiz gider; kotayi asan veya bozuk import eski kayitlari korur; her origin ayri test edilir; gercek dosya indirme/okuma ve surum esligi kaniti uretilir.",
-      "status": "not-implemented",
-      "requires": [
-        "Tarayici test ortami",
-        "Iki yuzeyin aday surumleri"
-      ]
-    },
-    {
-      "id": "NEXT-06",
-      "role": "security",
-      "title": "Cok kullanicili kimlik ve onay yetkisi",
-      "task": "Gonderen, ureten, inceleyen ve yayinlayan roller icin kimlik ve yetki akislarini tehdit modeliyle birlikte tasarla.",
-      "acceptance": "Yetkisiz teklif okuma/yazma reddedilir; ureten kendi isine bagimsiz kabul veremez; onay geri alma ve oturum iptali kayitlidir; kisisel veri ve sirlar halka acik manifestte bulunmaz.",
-      "status": "not-implemented",
-      "requires": [
-        "Kimlik saglayicisi karari",
-        "Rol ve veri gorunurlugu sozlesmesi"
-      ]
-    },
-    {
-      "id": "NEXT-07",
-      "role": "package",
-      "title": "Medya kokeni ve butunluk manifesti",
-      "task": "Video baytlarini katki JSONuna gommeden medya referansi, kokeni ve dosya SHA-256 degeri tasiyan ayri paket manifesti oner.",
-      "acceptance": "Her varlik izinli kaynak, surum, MIME, bayt boyutu ve hash ile eslesir; hash farki reddedilir; eksik erisim acik kaydedilir; katki JSONunda ham video, Base64 medya veya ozel anahtar bulunmaz.",
-      "status": "not-implemented",
-      "requires": [
-        "Onayli medya kaynaklari",
-        "Medya erisim ve saklama karari"
-      ]
-    },
-    {
-      "id": "NEXT-08",
-      "role": "handoff",
-      "title": "Bagimsiz inceleme kuyrugu ve imzali kabul",
-      "task": "Ureticiden farkli yetkili denetcinin kararini, incelenen urun hashini ve surumu baglayan devir/kabul akisini tasarla.",
-      "acceptance": "Karar yalniz dogru urun hash/surumune uygulanir; imza dogrulama, yetki, anahtar kimligi ve iptal durumu kontrol edilir; olumsuz karar ve yeniden teslim ayrilir; imza icerigin dogrulugunun tek basina kaniti sayilmaz.",
-      "status": "not-implemented",
-      "requires": [
-        "Kimlik ve yetki modeli",
-        "Kalici inceleme kuyrugu",
-        "Imzalama ve anahtar yonetimi karari"
-      ]
+      "id": 3,
+      "code": "PANTONE 19-3924 TCX",
+      "name": "Gece İpeği",
+      "sub": "Saf Siyah Yasağı İkamesi · Derin İndigo",
+      "rgb": [
+        0.19,
+        0.27,
+        0.44
+      ],
+      "spec": [
+        0.76,
+        0.84,
+        0.98
+      ],
+      "sheen": 0.9,
+      "trans": 0.3,
+      "weave": 96.0
     }
   ],
-  "triggerProtocol": {
-    "version": "nami-1.0.0",
-    "catalog": "https://www.afair.live/trigger-catalog.json",
-    "packetSchema": "https://www.afair.live/trigger.schema.json",
-    "builder": "https://www.afair.live/tetikler",
-    "dispatch": "manual",
-    "automaticModelLaunch": false
-  }
+  "atasehir_3tower_routes": [
+    {
+      "id": 0,
+      "name": "Watergarden",
+      "tower": "Kule 1 · 43. Kat",
+      "to": "Watergarden AVM & Sanat",
+      "rgb": [
+        0.82,
+        0.56,
+        0.3
+      ],
+      "tx": -1.65,
+      "ty": -0.55,
+      "tz": -1.35
+    },
+    {
+      "id": 1,
+      "name": "Finanskent",
+      "tower": "Kule 2 · 35. Kat",
+      "to": "Finanskent Fırsat & Ses",
+      "rgb": [
+        0.38,
+        0.68,
+        0.82
+      ],
+      "tx": 1.65,
+      "ty": -0.45,
+      "tz": -1.55
+    },
+    {
+      "id": 2,
+      "name": "Maltepe Sahil",
+      "tower": "Kule 3 · 25. Kat",
+      "to": "Sahil Konser & Spor",
+      "rgb": [
+        0.36,
+        0.74,
+        0.62
+      ],
+      "tx": -0.65,
+      "ty": -0.62,
+      "tz": 1.45
+    },
+    {
+      "id": 3,
+      "name": "İstanbul",
+      "tower": "Üst Halka · +420m",
+      "to": "Başka İstanbul Yok",
+      "rgb": [
+        0.78,
+        0.46,
+        0.66
+      ],
+      "tx": 0.15,
+      "ty": 0.82,
+      "tz": -1.75
+    }
+  ],
+  "live_surfaces": [
+    "https://www.afair.studio/",
+    "https://www.afair.studio/dokuma-ufuk/",
+    "https://www.afair.studio/karbon-8d/",
+    "https://www.afair.studio/karbon-ucus/",
+    "https://www.afair.live/",
+    "https://www.afair.live/karbon-8d/",
+    "https://ertanaraz.com/baskaistanbulyok"
+  ]
 }

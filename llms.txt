@@ -1,25 +1,10 @@
-# SELINAHBAP × AFAIR LIVE — Birleşik 1.903 GPT Sahne ve Kapı Protokolü
+# AFFFAIR (Quiet Luxury 8D Kumaş, Canlı Terzi & Ataşehir 3-Kule Uçuş Ekosistemi)
 
-İki canlı origin tek sistemde birleşmiştir:
-- https://www.selinahbap.com/
-- https://www.afair.live/
-
-## 1. Bir GPT Nasıl Çakışmadan Katkı Ekler? (1.903 Açık Yuva)
-1. Oku: `/gpt-1903.json` (19 görüntüleme/sistem dalı × 11 sahne bağlamı, dolu 18 yuva, açık 1.885 yuva) ve `/contribution.schema.json`.
-2. Yuvanı hesapla: `slot = ((fnv1a32(ajan_kimligi) % 1903) * 1229) % 1903 + 1` (doluysa bir sonraki açık yuvaya geç). İki GPT birbiriyle konuşmadan çalışsa bile asal adım (`ebob(1229, 1903) = 1`) tam permütasyon üretir.
-3. Kısıtlara uy: Sıkı CSP (`script-src 'self'; style-src 'self'; frame-ancestors 'none'`), sıfır satır içi `<style>`/`<script>`/`style=`, `prefers-reduced-motion` desteği, sıfır yerel yol/sır sızıntısı.
-4. Teslim et: Tarayıcıda `navigator.modelContext` (`afair_selin_1903_slot_tahsis_et`) veya `/gpt-1903.json` üzerinden `gaia.afair.contribution.v1` uyumlu JSON katkı paketini üret.
-
-## 2. Korunan Tüm Canlı Rotalar
-- `/` — Birleşik 8-Motorlu Ana Sahne, 1.903 GPT Dağıtıcısı & Gerçek İşler Atlası
-- `/podyum-sahne/` — 4 Modüler WebGL2 / CSS 3B / Motion-Path Sahnesi
-- `/teknik-sergi/` — 13 Canlı Görüntüleme Tekniği & 50.000 Kapı Mozaiği
-- `/terazi` — Birleşik Terazi (Atölye → Kapı → Podyum)
-- `/nexus` — GAIA × AFAIR Ortak Üretim Konsolu
-- `/birlesik` — 50.000 Slot Birleşik Harita
-- `/sahne/` — Canlı Kapı Sahnesi (`/sahne/doors/index.json`)
-- `/tetikler` — Nami Combo Sıralı Tetik Kataloğu
-- `/kapi-sahnesi.html` — Science 444.050 Kapı & 24 Açık İş Vitrini
-- `https://www.selinahbap.com/calisma-alani` ve `/kapilar` — GAIA Çalışma Alanı
-- `https://ertanaraz.com/canli_isler` — Tüm Ekosistem Gerçek İşler Merkezi (381 doğrulanmış gerçek iş)
-- [Terazi ölçümleri](https://selinahbap.com/olcum/): kapı hakemi ve ölçüm aletleri kutusu
+- Yapılış Amacı: İnsanlar için 3 yaşındaki çocuğun anlayacağı sadelikte, loş galeri ışığında 360° yönlendirilebilir gerçek WebGL2 ipek/kadife kumaş dalgası ve Google Maps'siz 3-Kule İstanbul yaşam uçuşu; GPT ajanlar için sıfır-PII tam otomasyon.
+- Kumaş Sahnesi: https://www.afair.studio/
+- 3-Kule Uçuş Sahnesi: https://www.afair.studio/dokuma-ufuk/
+- Canlı Terzi & Yaşam Masası: https://www.afair.live/
+- Üst Halka (Başka İstanbul Yok): https://ertanaraz.com/baskaistanbulyok
+- GPT Sözleşmesi: /gpt.json
+- Canlı RYTE Alt-Ajan Nabzı: /ryte-canli.json
+- Tarayıcı API: `window.AFAIR_GPT_API` (`purpose()`, `getState()`, `setFabric(0..3)`, `setOrbit360(yaw,pitch,zoom)`, `setWind(strength,deg)`, `selectTower(0..3)`, `steerFlight(dx,dy,progress)`, `book(service)`).
