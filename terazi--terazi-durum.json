@@ -1,0 +1,18 @@
+{
+ "sema": "birlesik.durum.v1",
+ "zaman": "2026-11-25T06:11:59+0300",
+ "gorev_adet": 1944,
+ "dolu": {
+  "K2-S7-00099-3": {
+   "durum": "SONUC",
+   "acan": "TERAZI"
+  }
+ },
+ "defter": {
+  "satir": 198,
+  "son": "70cde2434e98741eb96ebca0dab6c541f7a5ee86abf26d9e0443eadc4bd4e621",
+  "zincir_dogru": true
+ },
+ "kapi_toplam": 444050,
+ "kapi_degisen": 98
+}
