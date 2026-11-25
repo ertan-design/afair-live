@@ -1,6 +1,4 @@
-<!doctype html>
-<html lang="tr" data-sayfa="ana">
-<head>
+<!DOCTYPE html><html lang="tr" data-sayfa="ana"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="dark">
@@ -14,7 +12,7 @@
 <link rel="alternate" type="application/json" href="/terazi-gpt.json" title="GPT protokolü">
 <link rel="stylesheet" href="/terazi.css">
 <script type="module" src="/terazi.js"></script>
-</head>
+<meta name="site-identity" content="afair-live"></head>
 <body>
 <a class="atla" href="#icerik">İçeriğe geç</a>
 <header class="ust">
@@ -48,22 +46,23 @@
   <h2 id="kopru-b">Atölye → kapı → sahne</h2>
   <p class="aciklama">afair.studio'nun koleksiyon taslağı, selinahbap'ın 8 rollü kapısı ve afair.live'ın yayın programı aynı pakette buluşur. Paket tarayıcıda hazırlanır, hiçbir yere gönderilmez.</p>
   <div class="kopru">
-    <form id="kopru-form" class="kart" novalidate>
+    <form id="kopru-form" class="kart" novalidate="">
       <fieldset><legend><b>Atölye</b> · afair.studio</legend>
-        <label>Tasarımcı <input name="tasarimci" maxlength="80" required autocomplete="off" placeholder="Örnek stüdyo"></label>
-        <label>Koleksiyon <input name="koleksiyon" maxlength="80" required autocomplete="off" placeholder="Doku Etüdü"></label>
+        <label>Tasarımcı <input name="tasarimci" maxlength="80" required="" autocomplete="off" placeholder="Örnek stüdyo"></label>
+        <label>Koleksiyon <input name="koleksiyon" maxlength="80" required="" autocomplete="off" placeholder="Doku Etüdü"></label>
         <label>Parçalar <small>her satır: ad · malzeme · #renk (en çok 12)</small>
-          <textarea name="parcalar" rows="3" maxlength="1200" placeholder="Ceket · yün · #a4684c&#10;Elbise · ipek · #f2cb9c"></textarea></label>
+          <textarea name="parcalar" rows="3" maxlength="1200" placeholder="Ceket · yün · #a4684c
+Elbise · ipek · #f2cb9c"></textarea></label>
       </fieldset>
       <fieldset><legend><b>Kapı</b> · selinahbap.com</legend>
-        <label>Kapı numarası <input name="kapi" inputmode="numeric" pattern="k?0*([1-9][0-9]{0,4})" required placeholder="1903 veya k001903"></label>
+        <label>Kapı numarası <input name="kapi" inputmode="numeric" pattern="k?0*([1-9][0-9]{0,4})" required="" placeholder="1903 veya k001903"></label>
         <output id="kapi-rol" class="rozet" for="kapi">rol: —</output>
       </fieldset>
       <fieldset><legend><b>Sahne</b> · afair.live</legend>
-        <label>Yayın zamanı <input name="zaman" type="datetime-local" required></label>
+        <label>Yayın zamanı <input name="zaman" type="datetime-local" required=""></label>
         <label>Yayın kaynağı <small>isteğe bağlı, yalnız https MP4/WebM</small><input name="kaynak" type="url" inputmode="url" placeholder="https://…/defile.mp4"></label>
       </fieldset>
-      <div class="satir"><button class="dugme" type="submit">Paketi hazırla</button><button class="dugme bos" type="button" id="kopru-indir" disabled>JSON indir</button></div>
+      <div class="satir"><button class="dugme" type="submit">Paketi hazırla</button><button class="dugme bos" type="button" id="kopru-indir" disabled="">JSON indir</button></div>
       <p id="kopru-hata" class="hata" role="alert"></p>
     </form>
     <div class="kart onizleme" id="kopru-onizleme" aria-live="polite">
@@ -78,7 +77,7 @@
   <div class="podyum">
     <div class="sahne-cerceve">
       <div class="perde-css" id="podyum-perde"><span>Yayın beklemede</span><b>AFAIR LIVE</b></div>
-      <video id="podyum-video" controls playsinline preload="none" hidden></video>
+      <video id="podyum-video" controls="" playsinline="" preload="none" hidden=""></video>
     </div>
     <div>
       <p id="podyum-durum" class="kucuk" aria-live="polite">Yayın kaynağı bekleniyor. Doğrulanmış bir yayın saati henüz eklenmedi.</p>
@@ -103,15 +102,15 @@
     <div id="atlas-ipucu" role="tooltip"></div>
   </div>
   <p id="atlas-durum" class="kucuk" aria-live="polite"></p>
-  <div id="kapi-pop" popover role="dialog" aria-labelledby="kapi-pop-b" class="kart pop"></div>
+  <div id="kapi-pop" popover="" role="dialog" aria-labelledby="kapi-pop-b" class="kart pop"></div>
 </section>
 
 <section id="gpt" class="bolum" aria-labelledby="gpt-b">
   <p class="ust-yazi">04 · GPT KAPISI</p>
   <h2 id="gpt-b">Adını yaz, işin gelsin.</h2>
   <p class="aciklama">Her ada tek iş düşer: <code>sha256(ad)</code> ilk 12 hane mod 1.944. Dolu kapı atlanır. Kapıyı almak ve bitirmek yerel defterde yapılır; ikinci açan reddedilir.</p>
-  <form id="gpt-form" class="satir" novalidate>
-    <label class="genis">GPT adı <input name="ad" required pattern="[A-Za-z0-9_.\-]{2,40}" maxlength="40" placeholder="GPT-1903" autocomplete="off"></label>
+  <form id="gpt-form" class="satir" novalidate="">
+    <label class="genis">GPT adı <input name="ad" required="" pattern="[A-Za-z0-9_.\-]{2,40}" maxlength="40" placeholder="GPT-1903" autocomplete="off"></label>
     <button class="dugme" type="submit">Kapımı bul</button>
     <button class="dugme bos" type="button" id="gpt-1903">1.903 adı dağıt</button>
   </form>
@@ -148,9 +147,10 @@
 </main>
 
 <footer class="alt">
-  <p><a href="https://www.selinahbap.com/" rel="noopener">selinahbap.com</a> · <a href="https://www.afair.live/" rel="noopener">afair.live</a> · <a href="https://afair.studio/" rel="noopener">afair.studio</a> · <a href="/terazi-kapi.html?k=k001903">k001903</a></p>
-  <p class="kucuk">Aynı sahne iki adreste: <a href="https://www.selinahbap.com/terazi">selinahbap.com/terazi</a> · <a href="https://www.afair.live/terazi">afair.live/terazi</a></p>
+  <p><a href="https://www.selinahbap.com/" rel="noopener">selinahbap.com</a> · <a href="/" rel="noopener">afair.live</a> · <a href="https://afair.studio/" rel="noopener">afair.studio</a> · <a href="/terazi-kapi.html?k=k001903">k001903</a></p>
+  <p class="kucuk">Aynı sahne iki adreste: <a href="https://www.selinahbap.com/terazi">selinahbap.com/terazi</a> · <a href="/terazi">afair.live/terazi</a></p>
   <p class="kucuk">Hesap, ödeme veya kişisel bilgi gerektirmez. Dosya içeriği yüklenmez; paket tarayıcıda hazırlanır. Yerel taslak yalnız bu tarayıcıda durur.</p>
 </footer>
-</body>
-</html>
+
+
+</body></html>

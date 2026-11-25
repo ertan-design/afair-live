@@ -1,14 +1,12 @@
-<!doctype html>
-<html lang="tr">
-<head>
+<!DOCTYPE html><html lang="tr"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
 <title>Selinahbap · Kapılar</title>
 <link rel="stylesheet" href="/selin-kapilar.release.css">
-</head>
+<meta name="site-identity" content="afair-live"></head>
 <body>
-<header><strong>SELİNAHBAP</strong><div class="actions"><a href="olcum-kutusu.html">Ölçüm kutusu</a><a href="ekip-kapisi.html" id="team-gate">Ekip kapısı</a><a href="#is">İşin sonucu</a></div></header>
+<header><strong>SELİNAHBAP</strong><div class="actions"><a href="/olcum-kutusu.html">Ölçüm kutusu</a><a href="/ekip-kapisi.html" id="team-gate">Ekip kapısı</a><a href="#is">İşin sonucu</a></div></header>
 <main>
 <section class="intro"><div><h1>50.000 iş kapısı</h1><p>Bir kapı aç, dosyanı seç, sonucu aynı kapıda gör.</p></div><aside><p>8 iş türü · 1 / 4 / 8 / 11 kapılı giriş</p><p>Dosya içeriği tarayıcıda işlenir.</p></aside></section>
 <div class="stats"><span class="chip"><strong>50.000</strong> açılabilir</span><span class="chip"><strong id="active">—</strong> / 50 ayrılmış</span><span class="chip" id="mode">Sergi</span></div>
@@ -16,8 +14,8 @@
 <section class="panel" aria-labelledby="catalog-title">
 <h2 id="catalog-title">Kapı seç</h2>
 <div class="actions">
-<label for="tier">Sergi boyutu</label><select id="tier"><option value="50">50</option><option value="500">500</option><option value="5000" selected>5.000</option><option value="50000">50.000</option></select>
-<label for="entry">Giriş</label><select id="entry"><option value="1">1 kapı</option><option value="4">4 kapı</option><option value="8" selected>8 kapı</option><option value="11">11 kapı</option></select>
+<label for="tier">Sergi boyutu</label><select id="tier"><option value="50">50</option><option value="500">500</option><option value="5000" selected="">5.000</option><option value="50000">50.000</option></select>
+<label for="entry">Giriş</label><select id="entry"><option value="1">1 kapı</option><option value="4">4 kapı</option><option value="8" selected="">8 kapı</option><option value="11">11 kapı</option></select>
 </div>
 <div class="actions"><label for="goto">Kapı numarası</label><input id="goto" type="number" min="1" max="50000" step="1" inputmode="numeric"><button id="open" type="button">Aç</button></div>
 <div id="grid" class="grid" aria-label="Sergilenen kapılar"></div>
@@ -30,5 +28,6 @@
 </section>
 </div>
 </main>
-<script src="/selin-kapilar.release.js" defer></script>
+<script src="/selin-kapilar.release.js" defer=""></script>
+
 </body></html>

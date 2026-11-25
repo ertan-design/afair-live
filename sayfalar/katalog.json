@@ -1,0 +1,521 @@
+{
+  "schema": "site.pages.v1",
+  "site": "AFAIR Live",
+  "origin": "https://www.afair.live",
+  "role": "Yayın ve moda sahnesi",
+  "source_commit": "feae2d816483ab0932841e0ed4ccdf82b8763b24",
+  "generated_at": "2026-11-25T03:08:11.030Z",
+  "verification": "Repository snapshot; live HTTP checks recorded separately",
+  "items": [
+    {
+      "url": "/afair-live-vitrin",
+      "title": "Tasarım sahneye çıkar.",
+      "category": "Keşif",
+      "source_file": "afair-live-vitrin.html",
+      "source_blob": "49bfe1f75a6b88fa139e8c57b24ab09ef8cd6801",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/birlesik",
+      "title": "50.000 kapı. Her biri bir GPT'nin işi.",
+      "category": "Teknik",
+      "source_file": "birlesik.html",
+      "source_blob": "f6fbfdda44708edf91e12fb71d25fb60f5677e83",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/calisma-rehberi/defile",
+      "title": "Canlı defile",
+      "category": "Hazırlık",
+      "source_file": "calisma-rehberi/defile.html",
+      "source_blob": "90390e57fc570f4fcea4dbceadf8463b827284a8",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/calisma-rehberi/film",
+      "title": "Moda filmleri",
+      "category": "Hazırlık",
+      "source_file": "calisma-rehberi/film.html",
+      "source_blob": "48b9dc296ab5d0796e3f552be115d6508229c92d",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/calisma-rehberi/yayin-hazirlik",
+      "title": "Yayın provası",
+      "category": "Hazırlık",
+      "source_file": "calisma-rehberi/yayin-hazirlik.html",
+      "source_blob": "3e031deb89c001928cad8dd1b5cf48bfeee687ec",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila-rehber",
+      "title": "Uygulama rehberi",
+      "category": "Hazırlık",
+      "source_file": "dila-rehber.html",
+      "source_blob": "d02dd132f9342342bcd19a06b60a2c9adc9f1097",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila-video/galeriden-atolyeye/",
+      "title": "Galeriden atölyeye",
+      "category": "Görüntü",
+      "source_file": "dila-video/galeriden-atolyeye/index.html",
+      "source_blob": "7c8a922d2769a33731e826afd2e67103bc535817",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila-video/",
+      "title": "Dila. Hareketli atölye.",
+      "category": "Görüntü",
+      "source_file": "dila-video/index.html",
+      "source_blob": "46310c2abfa6d537d58a7ae1d4cb608e5b44515f",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/canli-podyum",
+      "title": "Ölçün, rengin ve seçtiğin eser podyuma çıkar; 17 eşzamanlı prompt bir sonraki sıçramayı kurar.",
+      "category": "Görüntü",
+      "source_file": "dila/canli-podyum.html",
+      "source_blob": "fc236f2db2957c49fd40866b647e34ddd082a58c",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/iki-mezura",
+      "title": "Mezura-A bedeni ölçer, Mezura-B nefes ve hareket zarfını çizer.",
+      "category": "Hazırlık",
+      "source_file": "dila/iki-mezura.html",
+      "source_blob": "8d3e31492edba4378f99b37cf1084e0b8955751a",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/",
+      "title": "Yaptığın her seçim,bir sonraki sıçramayı diker.",
+      "category": "Malzeme",
+      "source_file": "dila/index.html",
+      "source_blob": "facf7927f7bf664e7c2f51445f7570921aa005d8",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/sinema",
+      "title": "Dila 5. Önyüz · Birleşik Sinema, WebGPU 50.000 Hücre Kumaş Fizik & Açık Kapılar",
+      "category": "Görüntü",
+      "source_file": "dila/sinema.html",
+      "source_blob": "5d1281e86c500612d51a24bce9b0f66b35bdc693",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dila/yasam-alani",
+      "title": "Körü körüne kural değil: Saf Siyah ile Gece Çivitini yan yana kendi gözünle gör.",
+      "category": "Hazırlık",
+      "source_file": "dila/yasam-alani.html",
+      "source_blob": "b25a0d7d261cae877c10e2651840a1172a1dedeb",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dokuma-ufuk/ilk-kurgu",
+      "title": "Harita Karosu Değil, Dokunmuş Ufuk: Üç Kuleden GAIA’ya Kanat Açan Tam Yaşam Ekosistemi",
+      "category": "Malzeme",
+      "source_file": "dokuma-ufuk/ilk-kurgu.html",
+      "source_blob": "1ae13c1cfd262cfdacba9bed995d8c4c52512f04",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/dokuma-ufuk/",
+      "title": "Defile hazırlığı",
+      "category": "Malzeme",
+      "source_file": "dokuma-ufuk/index.html",
+      "source_blob": "7b33b579cd414cdca899ed30dc15895fe76bdbda",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/ekip-kapisi",
+      "title": "Ekip Kapısı",
+      "category": "Teknik",
+      "source_file": "ekip-kapisi.html",
+      "source_blob": "cfa5dca6fe9a714924e2c67afb572aed5e794f0e",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/kapi-evreni/",
+      "title": "İş başlar.Sonuç görünür.",
+      "category": "Teknik",
+      "source_file": "kapi-evreni/index.html",
+      "source_blob": "e5a4ebd53097185f122317dc33a544e7698d7f9a",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/kapi-sahnesi",
+      "title": "İşin başladığı ve sonucunun görüldüğü kapılar",
+      "category": "Teknik",
+      "source_file": "kapi-sahnesi.html",
+      "source_blob": "26478c47eb7c261ccc85e6549d43140932f234c9",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/karbon-8d/",
+      "title": "Kumaşı seç. Terzin gelsin.",
+      "category": "Keşif",
+      "source_file": "karbon-8d/index.html",
+      "source_blob": "1b9569fa7db24a313e380e7009eece4b8d1c1de1",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/karbon-ucus/",
+      "title": "Çatıdan uç.Şehre in.",
+      "category": "Keşif",
+      "source_file": "karbon-ucus/index.html",
+      "source_blob": "d904bd70eb7970f458b82d746e827023e522fcbd",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/nami",
+      "title": "Nami Tetikleri",
+      "category": "Teknik",
+      "source_file": "nami.html",
+      "source_blob": "0932403eeefdbfb41eaf2e1caf43b46312ba2c17",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/nexus",
+      "title": "Akışını kur.Sahneye taşı.",
+      "category": "Teknik",
+      "source_file": "nexus.html",
+      "source_blob": "5d1f8d0a462391040019433a44c80bfcdbbe3cc0",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/olcum-kutusu",
+      "title": "Ölçüm Kutusu",
+      "category": "Teknik",
+      "source_file": "olcum-kutusu.html",
+      "source_blob": "d02548a1e50ec172cb4a2afc6df3e934c487d2f4",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/olcum/aletler/",
+      "title": "83 doğrulanmış alet",
+      "category": "Teknik",
+      "source_file": "olcum/aletler/index.html",
+      "source_blob": "b4e07e6dbf3b5c7f9c515528835baa5b4214ba72",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/olcum/eslesme/",
+      "title": "PC ve web aynı mı? İlan edilen 56 dosya",
+      "category": "Teknik",
+      "source_file": "olcum/eslesme/index.html",
+      "source_blob": "6e7205178563d8799d1a7eb84aa8877100ddfd5b",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/olcum/",
+      "title": "Ölçümler",
+      "category": "Teknik",
+      "source_file": "olcum/index.html",
+      "source_blob": "9449490d5fe273eb6539777920eff56370ee44c9",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/olcum/kapi-hakemi/",
+      "title": "8 motor, 8 mercek",
+      "category": "Teknik",
+      "source_file": "olcum/kapi-hakemi/index.html",
+      "source_blob": "8d292c083731dd2e4a99a804d3248ea588a6e0a0",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/podyum-sahne/",
+      "title": "Tasarım sahnede.Teknoloji perde arkasında.",
+      "category": "Görüntü",
+      "source_file": "podyum-sahne/index.html",
+      "source_blob": "9b131aeec11da91eb65adda653162aefc14a0489",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/podyum-sahne/kapi/",
+      "title": "444.050 kapı. Her piksel bir kapı adresi.",
+      "category": "Teknik",
+      "source_file": "podyum-sahne/kapi/index.html",
+      "source_blob": "c46bea44dbcbd8132bac991276f69f58e01e828b",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/atolye/",
+      "title": "Kumaşına dokun.Evinden uç.",
+      "category": "Keşif",
+      "source_file": "prizma/atolye/index.html",
+      "source_blob": "2a9ebb127166f95d0df8539ccf0283e66a9dc21f",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/filo",
+      "title": "44 Tekil Alan Adının Dürüst Canlı Envanteri.",
+      "category": "Keşif",
+      "source_file": "prizma/filo.html",
+      "source_blob": "f30af2cc0da70656241ab4ccb4b6938712c4685f",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/front1",
+      "title": "Siyah Asla Giymemen Gerekiyor:Yeni Siyahını Bul, 8 Konsepti Senkronla.",
+      "category": "Keşif",
+      "source_file": "prizma/front1.html",
+      "source_blob": "36df91944da0db0cec58d33ad8f24c2bab8aa675",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/front2",
+      "title": "Mezura-A Bedeni Okur,Mezura-B Hareket & Işık Payını Çizer.",
+      "category": "Keşif",
+      "source_file": "prizma/front2.html",
+      "source_blob": "14b29daefb162f3b73e4aca3027c6013cdcf0d34",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/front3",
+      "title": "Üstündeki Ceketle Evindeki TabloAynı Işıkta ve Aynı Akorda Konuşsun.",
+      "category": "Keşif",
+      "source_file": "prizma/front3.html",
+      "source_blob": "13c3cc9d93d63b285973caf25447ff77f7e0bc7c",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/front4",
+      "title": "Tüm Sıçramalar Tek SHA-256 Pasaportta:4 Front + Video + 50.000 Kapı Mührü.",
+      "category": "Keşif",
+      "source_file": "prizma/front4.html",
+      "source_blob": "6c346534eeee63ddfc23c2170af95a205fcbaff2",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/",
+      "title": "Tek DNA Profili, 3 Canlı Front,8 Senkron Konsept & 50.000 Kapı.",
+      "category": "Keşif",
+      "source_file": "prizma/index.html",
+      "source_blob": "b5e289089cf0c5046d1b0ebb1f84313b4187b32b",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prizma/video",
+      "title": "Higgsfield Üretimleri +faststart Onarıldı,Kendi RTX 3090 Motorumuz 5,54 Saniyede Yayında.",
+      "category": "Görüntü",
+      "source_file": "prizma/video.html",
+      "source_blob": "d8a1b5c273407724199cc864fbf12bcc05738532",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/prova-fisi/",
+      "title": "Provanı hazırla.",
+      "category": "Hazırlık",
+      "source_file": "prova-fisi/index.html",
+      "source_blob": "e1febf4aace7cad465c1f609a212f57c4260d902",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/sahne/",
+      "title": "Her kapı bir sahne.",
+      "category": "Görüntü",
+      "source_file": "sahne/index.html",
+      "source_blob": "3058cbd99fd97bb4ace5fe2b27f52c71510efe4a",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/selin-kapilar",
+      "title": "50.000 iş kapısı",
+      "category": "Teknik",
+      "source_file": "selin-kapilar.html",
+      "source_blob": "8369de7a20e08bb076dd2a36df293dd26b3f46b0",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/teknik-sergi/",
+      "title": "Her kapı bir sahne.",
+      "category": "Teknik",
+      "source_file": "teknik-sergi/index.html",
+      "source_blob": "b8b2ece0be740806e70ab34067106035acb40f79",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/terazi-dila",
+      "title": "Dila'nın dört önyüzü, hareketle.",
+      "category": "Teknik",
+      "source_file": "terazi-dila.html",
+      "source_blob": "82ca174db1ce49147c410db1bbbdd5527ff4ae82",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/terazi-kapi",
+      "title": "Kapı — Selinahbap × AFAIR",
+      "category": "Teknik",
+      "source_file": "terazi-kapi.html",
+      "source_blob": "77f9e5dd0fe8b6fb7feb98749fda63699480cf25",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/terazi-kapilar",
+      "title": "selinahbap · 444.050 kapı",
+      "category": "Teknik",
+      "source_file": "terazi-kapilar.html",
+      "source_blob": "9afa6b1bf73a3cafbc48263313ef10bcd95bbf0c",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/terazi-katalog",
+      "title": "GPT/model ölçüm aletleri · 64 alet",
+      "category": "Teknik",
+      "source_file": "terazi-katalog.html",
+      "source_blob": "83348cffeaedc64a21806c439983729de82f088b",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/terazi-kutu",
+      "title": "Kutu · paket 9",
+      "category": "Teknik",
+      "source_file": "terazi-kutu.html",
+      "source_blob": "1daf0afb0fbf85b7e3127da95bc94b2f92a483e2",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/terazi",
+      "title": "Fikirden sahneye.",
+      "category": "Teknik",
+      "source_file": "terazi.html",
+      "source_blob": "1e772a209ad2638f9ba1405575868c0b2eb27553",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/tetikler",
+      "title": "Bir çağrı.Somut işler.",
+      "category": "Teknik",
+      "source_file": "tetikler.html",
+      "source_blob": "ba4a3b112d1fcbc16136df9ad095eb4674c8cbef",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/uc-cati/",
+      "title": "Burada yaşamyere sığmaz.",
+      "category": "Keşif",
+      "source_file": "uc-cati/index.html",
+      "source_blob": "3dc7fe0dddfc1b2a6375522cf69cb6975691db26",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/uc-rota/",
+      "title": "Evin bir başlangıç.İstanbul devamı.",
+      "category": "Keşif",
+      "source_file": "uc-rota/index.html",
+      "source_blob": "e5d04861716db604c728ccf728107c36d71bdf89",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    },
+    {
+      "url": "/yasam-destegi/",
+      "title": "Evin içinne lazım?",
+      "category": "Hazırlık",
+      "source_file": "yasam-destegi/index.html",
+      "source_blob": "b8a705cb880070741339c4971b9dec079de445cb",
+      "status": "source_present",
+      "live_http": "not_yet_checked",
+      "content_dependency": "own_html_document"
+    }
+  ]
+}
