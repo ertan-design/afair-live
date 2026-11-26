@@ -114,6 +114,14 @@
     {
       "source": "/final-50bin-kapi-pasaport/",
       "destination": "/final-50bin-kapi-pasaport/index.html"
+    },
+    {
+      "source": "/final-dila-68dil-kulis",
+      "destination": "/final-dila-68dil-kulis/index.html"
+    },
+    {
+      "source": "/final-dila-68dil-kulis/",
+      "destination": "/final-dila-68dil-kulis/index.html"
     }
   ],
   "buildCommand": "",
