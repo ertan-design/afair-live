@@ -64,10 +64,6 @@
       "destination": "/sahne/index.html"
     },
     {
-      "source": "/birlesik-1903",
-      "destination": "/onceki-ana-sayfa.html"
-    },
-    {
       "source": "/dila",
       "destination": "/dila/index.html"
     },
@@ -122,6 +118,14 @@
     {
       "source": "/final-dila-68dil-kulis/",
       "destination": "/final-dila-68dil-kulis/index.html"
+    },
+    {
+      "source": "/birlesik-1903",
+      "destination": "/birlesik-1903/index.html"
+    },
+    {
+      "source": "/birlesik-1903/",
+      "destination": "/birlesik-1903/index.html"
     }
   ],
   "buildCommand": "",
